@@ -7,8 +7,8 @@
 
     
     <title>코딩독학</title>
-    <meta name="description" content="비전공 개발자 코딩독학 일지." />
-    <meta name="keywords" content="online" />
+    <meta name="description" content="비전공 개발자 코딩독학" />
+    <meta name="keywords" content="개발자, 코딩독학, 독학, 비전공 개발자, 코딩 독학, 개발" />
     <meta name="author" content="Martin.M Kang" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   
@@ -18,18 +18,18 @@
     <!-- Open Graph (Facebook, Linkedin) https://ogp.me/#types -->
     <!-- https://ourcodeworld.com/public-media/articles/articleocw-56d1a6901b773.png -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="비전공 개발자 코딩독학" /> 
-    <meta property="og:description" content="코딩독학" />
+    <meta property="og:title" content="코딩독학" /> 
+    <meta property="og:description" content="비전공 개발자 코딩독학" />
     <meta property="og:image" content="img/comstudy.png" />
     <meta property="og:url" content="https://martinkang.github.io" />
-    <meta property="og:site_name" content="min kang site" />
+    <meta property="og:site_name" content="코딩독학" />
 
     <!-- Twitter card (Twitter) -->
     <!-- https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/twitter-cards-implementation-with-websites/Images/summary_card_tweet.png -->
     <meta name="twitter:card" content="Summary" />    
     <!-- Card 종류 : Summary, Photo, Player -->
-    <meta name="twitter:title" content="비전공 개발자 코딩독학" /> 
-    <meta name="twitter:description" content="코딩독학" />
+    <meta name="twitter:title" content="코딩독학" /> 
+    <meta name="twitter:description" content="비전공 개발자 코딩독학" />
     <meta name="twitter:image" content="img/comstudy.png" />
     <meta name="twitter:url" content="https://martinkang.github.io" />
     <meta name="twitter:creator" content="min kang">
@@ -46,92 +46,122 @@
     <!-- Css Reset -->
     <!-- Css 링크 최상단에 둘것. Css 설정 후 reset 하면 먼저 설정된 Css 가 전부 Reset 됨 -->
     <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
 
     <!-- https://fontawesome.com/ -->
     <script src="https://kit.fontawesome.com/d1a2641fbd.js" crossorigin="anonymous"></script>
 
     <!-- Spoqa Hans Sans Neo -->
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css' />
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
-    <script src="css/style.css"></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
 
-<main>
   <!-- Header -->
-  <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <img src="img/comstudy.png" width="40", heignt="32" >
-        <span class="fs-4">코딩독학</span>
+  <header>
+    <div class="header-title">
+      <a href="https://martinkang.github.io/">
+        <img src="img/comstudy.png" width="40", heignt="32" >코딩독학
       </a>
+      <hr>
+    </div> <!-- header-title -->
+  </header><!-- Header -->
 
-      <ul class="nav nav-pills">
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control" placeholder="검색..." aria-label="Search">    
-        </form>
-        
-        <button type="button" class="btn search-btn"><img src="img/search.png" width="26", heignt="26" ></button>
+  <section class="main-section">
+
+  <section class="nav-bar-section">
+    <div class="nav-header-container">
+      <div class="nav-header-title">
+        <a href="https://martinkang.github.io/">
+          <img src="img/comstudy.png" width="40", heignt="32" >코딩독학
+        </a>
+      </div> <!-- side-header-title -->
+      <div class="nav-header-items">
+        <hr>
+        <ul class="nav-header-item">
+        <li>
+          <a href="#" class="nav-header-item-link">
+            <div class="nav-header-item-img"><img src="img/home.png" width="100%", heignt="100%" ></div>
+            <div class="nav-header-item-text1">메인 화면</div>
+            <div class="nav-header-item-text2">메인</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-header-item-link">
+            <div class="nav-header-item-img"><img src="img/develop.png" width="100%", heignt="100%" ></div>
+            <div class="nav-header-item-text1">개발 일지</div>
+            <div class="nav-header-item-text2">개발</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-header-item-link">
+            <div class="nav-header-item-img"><img src="img/bug.png" width="100%", heignt="100%" ></div>
+            <div class="nav-header-item-text1">버그 일지</div>
+            <div class="nav-header-item-text2">버그</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-header-item-link">
+            <div class="nav-header-item-img"><img src="img/study.png" width="100%", heignt="100%" ></div>
+            <div class="nav-header-item-text1">개발 지식</div>
+            <div class="nav-header-item-text2">지식</div>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-header-item-link">
+            <div class="nav-header-item-img"><img src="img/link.png" width="100%", heignt="100%" ></div>
+            <div class="nav-header-item-text1">개발 링크</div>
+            <div class="nav-header-item-text2">링크</div>
+          </a>
+        </li>
       </ul>
-    </header>
-  </div>
+      <hr>
+      </div><!-- nav-header-title -->
+    </div><!-- nav-header-container -->
+  </section> <!-- nav-bar-section -->
+  
 
-  <!-- Sidebar -->
-  <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-      <img src="img/comstudy.png" width="40", heignt="32" >
-      <span class="fs-4">코딩독학</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
-          <img src="img/home.png" width="16", heignt="16" >
-          메인 페이지
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-dark">
-          <img src="img/blog.png" width="16", heignt="16" >
-          블로그 개발일지
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-dark">
-          <img src="img/develop.png" width="16", heignt="16" >
-          풀스택 개발일지
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-dark">
-          <img src="img/bug.png" width="16", heignt="16" >
-          버그 일지
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link link-dark">
-          <img src="img/study.png" width="16", heignt="16" >
-          개발 지식
-        </a>
-      </li>
-    </ul>
-    <hr>
-  </div>
+  <section class="top-header-section">
+    <div class="top-header-title">
+      <a href="https://martinkang.github.io/">
+        <img src="img/comstudy.png" width="40", heignt="32" >코딩독학
+      </a>
+    </div> <!-- top-header-title -->
+  </section><!-- top-header-section -->
+  
+  <section class="main-content-section">
+    코딩독학
+  <!-- main-container -->
+  <div class="main-container">
+ 
+  <!-- main-page -->
+   <div class="mainpage">
+   </div><!-- main-page -->
+  </div><!-- main-container -->
+  
 
-</main>
+  <!-- footer -->
+  
+  </section><!-- main-content-section -->
 
+  </section><!-- main-section -->
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <footer>
+    <div class="footer-title">
+      <a href="https://martinkang.github.io/">
+        <img src="img/comstudy.png" width="40", heignt="32" >코딩독학
+      </a>
+    </div> <!-- top-header-title -->
+  </footer><!-- footer -->
     <!-- Custom styles for this template -->
     <!-- IE11 에서는 ES6 문법 호환이 안됨.
       babel 은 ES6 이후 지원되지 않는 브라우저에서도 해당 자바스크립트 코드가 지원되도록
       기존 문법으로 변경시켜 준다. script type="text/babel" 설정을 하면 사용 가능하다. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
     <script src="js/main.js"></script>
+  
   </body>
+  
 </html>
