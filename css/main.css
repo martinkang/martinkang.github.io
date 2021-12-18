@@ -17,6 +17,14 @@ main {
   overflow-y: hidden;
 }
 
+.search-btn {
+  background: url( "img/serch.png" ) no-repeat;
+  border: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
 .b-example-divider {
   flex-shrink: 0;
   width: 1.5rem;

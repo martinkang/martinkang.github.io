@@ -75,7 +75,7 @@
 
     
     <!-- Custom styles for this template -->
-    <link href="css/sidebars.css" rel="stylesheet">
+    <script src="css/main.css"></script>
   </head>
   <body>
     
@@ -139,6 +139,23 @@
 </svg>
 
 <main>
+  <!-- Header -->
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">코딩독학</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control" placeholder="검색..." aria-label="Search">    
+        </form>
+        <button type="button" class="btn search-btn">검색</button>
+      </ul>
+    </header>
+  </div>
+
   <!-- Sidebar -->
   <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -177,12 +194,6 @@
           개발 지식
         </a>
       </li>
-      <li>
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control" placeholder="검색..." aria-label="Search">
-          <button type="button" class="btn btn-outline-primary me-2">검색</button>
-        </form>
-      </li>
     </ul>
     <hr>
   </div>
@@ -191,7 +202,11 @@
 
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      <script src="css/sidebars.css"></script>
+    <!-- Custom styles for this template -->
+    <!-- IE11 에서는 ES6 문법 호환이 안됨.
+      babel 은 ES6 이후 지원되지 않는 브라우저에서도 해당 자바스크립트 코드가 지원되도록
+      기존 문법으로 변경시켜 준다. script type="text/babel" 설정을 하면 사용 가능하다. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
