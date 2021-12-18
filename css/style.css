@@ -224,9 +224,23 @@ footer {
 
 /* for phone */
 @media only screen and (max-width: 460px) {
+
+  ul .nav-header-item  {
+    all: unset;
+  }
+  .nav-header-items {
+    margin: 0px;
+  }
+  
   .nav-header-item-img {
-    width: 15%;
-    height: 32px;
+    width: 30px;
+    height: 30px;
+  }
+
+   .nav-header-item-text2 {
+    display: block;
+    align-items: center;
+    font-size: 0.8rem;
   }
 }
 
