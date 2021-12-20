@@ -6,8 +6,8 @@ categories: Bugs
 ---
   
 # 참고
-- [준호씨의 블로그][준호블]
+- [준호씨의 블로그][junho-link]
 
 
 
-[준호블]: https://junho85.pe.kr/1850
+[junho-link]: https://junho85.pe.kr/1850
