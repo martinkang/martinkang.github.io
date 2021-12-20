@@ -14,9 +14,14 @@ categories: Git-Blog
 
 
 ### Jekyll 에 Favicon 설정
-그럼 다음과 같이 favicon 이 바뀐 걸 볼 수 있다.
-![before-favicon](/assets/img/post-img/before-favicon.png) ==> 
-![after-favicon](/assets/img/post-img/after-favicon.png)  
+  
+
+*** Favicon 설정 Before ***  
+![before-favicon](/assets/img/post-img/before-favicon.png)  
+
+
+*** Favicon 설정 After ***  
+![after-favicon](/assets/img/post-img/after-favicon.png)    
 
 깨알 디테일이 생겼다.
 
@@ -24,10 +29,18 @@ categories: Git-Blog
 
 ### Open Graph 란?
 
+![open-graph-detail](https://ourcodeworld.com/public-media/articles/articleocw-56d1a6901b773.png)  
+
+*** Open Graph Size ***
 
 ### Open Graph 설정
-![before-OG](/assets/img/post-img/before-OG.png) ==> 
-![after-OG](/assets/img/post-img/after-OG.png)  
+
+*** Open Graph 설정 Before ***  
+![before-OG](/assets/img/post-img/before-OG.png)  
+
+*** Open Graph 설정 After ***  
+![after-OG](/assets/img/post-img/after-OG.png)   
+
 
 # 다음 주제
 - 테마 꾸미기.
@@ -36,6 +49,7 @@ categories: Git-Blog
 - [favicon 정의][favicon-wiki-link]
 - [나의 favicon 그림 출처][그림출처-링크]  
 - [ICO Converter][icoconvert-link]
+- [Open Graph][og-link]
 
 
 
@@ -43,3 +57,4 @@ categories: Git-Blog
 [그림출처-링크]: https://www.pngwing.com/ko/free-png-xmupn
 [icoconvert-link]: https://icoconvert.com/
 [파피콘만드는방법-link]: https://ux.stories.pe.kr/106
+[og-link]: https://ogp.me/
