@@ -7,4 +7,31 @@
 	{%- if jekyll.environment == 'production' and site.google_analytics -%}
 		{%- include google-analytics.html -%}
 	{%- endif -%}
+
+    <!-- 일반적인 Fabicon 설정. (인터넷 탭창 또는 주소창에 표기되는 아이콘) -->
+	<link rel="icon" href="/assets/img/infos/favicon.ico" />
+	<!-- 아이폰용 Fabicon 설정 -->
+	<link rel="apple-touch-icon" href=/assets/img/infos/favicon.ico />
+	<!-- 인터넷 익스플로러 Fabicon -->
+	<link rel="short icon" type="image/x-icon" href=/assets/img/infos/favicon.ico />
+
+	
+    <!-- Open Graph (Facebook, Linkedin) https://ogp.me/#types -->
+    <!-- https://ourcodeworld.com/public-media/articles/articleocw-56d1a6901b773.png -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="코딩독학" /> 
+    <meta property="og:description" content="비전공 개발자 코딩독학 느려도 꾸준히" />
+    <meta property="og:image" content="img/comstudy.png" />
+    <meta property="og:url" content="https://martinkang.github.io" />
+    <meta property="og:site_name" content="코딩독학" />
+
+    <!-- Twitter card (Twitter) -->
+    <!-- https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/twitter-cards-implementation-with-websites/Images/summary_card_tweet.png -->
+    <meta name="twitter:card" content="Summary" />    
+    <!-- Card 종류 : Summary, Photo, Player -->
+    <meta name="twitter:title" content="코딩독학" /> 
+    <meta name="twitter:description" content="비전공 개발자 코딩독학 느려도 꾸준히" />
+    <meta name="twitter:image" content="img/comstudy.png" />
+    <meta name="twitter:url" content="https://martinkang.github.io" />
+    <meta name="twitter:creator" content="min kang">
 </head>
