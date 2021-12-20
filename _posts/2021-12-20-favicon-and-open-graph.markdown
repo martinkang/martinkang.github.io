@@ -26,6 +26,8 @@ categories: Git-Blog
 
 
 ### Open Graph 설정
+![before-OG](/assets/img/post-img/before-OG.png) ==> 
+![after-OG](/assets/img/post-img/after-OG.png)  
 
 # 다음 주제
 - 테마 꾸미기.
@@ -33,7 +35,11 @@ categories: Git-Blog
 # 참조
 - [favicon 정의][favicon-wiki-link]
 - [나의 favicon 그림 출처][그림출처-링크]  
+- [ICO Converter][icoconvert-link]
+
 
 
 [favicon-wiki-link]: https://ko.wikipedia.org/wiki/%ED%8C%8C%EB%B9%84%EC%BD%98
 [그림출처-링크]: https://www.pngwing.com/ko/free-png-xmupn
+[icoconvert-link]: https://icoconvert.com/
+[파피콘만드는방법-link]: https://ux.stories.pe.kr/106
