@@ -19,17 +19,17 @@
     <!-- https://ourcodeworld.com/public-media/articles/articleocw-56d1a6901b773.png -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="코딩독학 - 느려도 꾸준히" /> 
-    <meta property="og:description" content="{% if site.title %}{{ site.title }}{% else %}{{ page.title }}{% endif %}" />
+    {% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | strip_html }}">{% endif %}
     <meta property="og:image" content="/assets/img/infos/open-graph.jpg" />
     <meta property="og:url" content="https://martinkang.github.io" />
-    <meta property="og:site_name" content="코딩독학 - 느려도 꾸준히" />
+    <meta property="og:site_name" content="{{ site.title }}" />
 
     <!-- Twitter card (Twitter) -->
     <!-- https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/twitter-cards-implementation-with-websites/Images/summary_card_tweet.png -->
     <meta name="twitter:card" content="Summary" />    
     <!-- Card 종류 : Summary, Photo, Player -->
     <meta name="twitter:title" content="코딩독학 - 느려도 꾸준히" /> 
-    <meta name="twitter:description" content="{% if post.title %}{{ post.title }}{% else %}{{ page.title }}{% endif %}" />
+    {% if page.excerpt %}<meta name="twitter:description" content="{{ page.excerpt | strip_html }}">{% endif %}
     <meta name="twitter:image" content="/assets/img/infos/open-graph.jpg" />
     <meta name="twitter:url" content="https://martinkang.github.io" />
     <meta name="twitter:creator" content="min kang">
