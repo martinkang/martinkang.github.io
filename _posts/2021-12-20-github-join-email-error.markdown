@@ -6,7 +6,7 @@ categories: Bugs
 ---
   
 GitHub 회원가입시 아래와 같은 lanch code 를 물어본다.  
-![launchcode](/assets/img/bugs-img/launchcode.jpg){: width="70%" height="70%"}  
+![launchcode](/assets/img/bugs-img/launchcode.jpg){: width="500px" height="270px"}  
 문제는 회원 가입시 ***잘못된 email 을 입력한 경우***, 이 코드를 어떻게 할까?  
 의도하지 않았지만, GitHub 만들기 포스트를 쓰는 과정에 새로운 Git 아이디를 만들면서 Email 주소를 잘못 썼다.    
 다시 가입을 해볼까 했지만, 방법이 있을꺼 같아 해결을 시도해 보았다.  
