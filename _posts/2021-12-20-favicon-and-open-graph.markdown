@@ -50,6 +50,7 @@ categories: Git-Blog
 - [나의 favicon 그림 출처][그림출처-링크]  
 - [ICO Converter][icoconvert-link]
 - [Open Graph][og-link]
+- [Open Graph 동적 타이틀 할당][og-동적타이틀-link]
 
 
 
@@ -58,3 +59,4 @@ categories: Git-Blog
 [icoconvert-link]: https://icoconvert.com/
 [파피콘만드는방법-link]: https://ux.stories.pe.kr/106
 [og-link]: https://ogp.me/
+[og-동적타이틀-link]: https://lanace.github.io/articles/what-is-open-graph/
