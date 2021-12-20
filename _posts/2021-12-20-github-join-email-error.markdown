@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "GitHub 가입시 잘못된 메일 주소를 써버렸다."
+title:  "GitHub 가입할때 잘못된 메일 주소를 써버렸다."
 date:   2021-12-20 19:50:00 +0900
 categories: Bugs
 ---
