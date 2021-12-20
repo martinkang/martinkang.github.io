@@ -42,6 +42,9 @@ categories: Git-Blog
 ![after-OG](/assets/img/post-img/after-OG.png)   
 
 
+# 문제 해결
+- [og 태그 (카카오톡, 페이스북 미리보기) + 수정 적용 안될때 초기화하기][og-초기화-link]  
+
 # 다음 주제
 - 테마 꾸미기.
 
@@ -60,3 +63,4 @@ categories: Git-Blog
 [파피콘만드는방법-link]: https://ux.stories.pe.kr/106
 [og-link]: https://ogp.me/
 [og-동적타이틀-link]: https://lanace.github.io/articles/what-is-open-graph/
+[og-초기화-link]: https://infinitt.tistory.com/285
