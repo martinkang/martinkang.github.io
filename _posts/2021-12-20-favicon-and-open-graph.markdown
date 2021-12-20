@@ -42,6 +42,14 @@ categories: Git-Blog
 ![after-OG](/assets/img/post-img/after-OG.png)   
 
 
+### Jinja 를 이용한 Open Graph 동적 Description 설정  
+  
+*** Open Graph 동적 Description 설정 After ***  
+![after-OG2](/assets/img/post-img/after-OG2.png)   
+
+jinja2 를 이용한 동적 Description 설정  
+
+
 # 문제 해결
 - [og 태그 (카카오톡, 페이스북 미리보기) + 수정 적용 안될때 초기화하기][og-초기화-link]  
 
@@ -54,6 +62,7 @@ categories: Git-Blog
 - [ICO Converter][icoconvert-link]
 - [Open Graph][og-link]
 - [Open Graph 동적 타이틀 할당][og-동적타이틀-link]
+- [jekyll 변수 목록][jekyll-변수-link]
 
 
 
@@ -64,3 +73,4 @@ categories: Git-Blog
 [og-link]: https://ogp.me/
 [og-동적타이틀-link]: https://lanace.github.io/articles/what-is-open-graph/
 [og-초기화-link]: https://infinitt.tistory.com/285
+[jekyll-변수-link]: http://jekyllrb-ko.github.io/docs/variables/
