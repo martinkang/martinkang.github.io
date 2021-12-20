@@ -14,7 +14,7 @@ GitHub 회원가입시 아래와 같은 lanch code 를 물어본다.
 
 위 사진을 보면, 빨간 네모 표시를 한 **update your email address** 가 나온다.  
 눌러보면 아래와 같은 setting 에 email 페이지가 나온다.  
-( 또는 github 홈페이지로 들어가서 가입한 email 로 로그인 후 우상단에 profile 을 찾아 ***setting*** 을 누른다. )   
+( 또는 github 홈페이지로 들어가서 가입한 email 로 로그인 후 우상단에 profile 을 찾아 ***setting*** 을 누르고 ***Emails*** 을 찾는다. )   
 ![setting](/assets/img/bugs-img/profile.jpg){: width="120px" height="40px"} 
 <br>
   
