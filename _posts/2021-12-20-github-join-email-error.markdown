@@ -6,7 +6,7 @@ categories: Bugs
 ---
   
 GitHub 회원가입시 아래와 같은 lanch code 를 물어본다.  
-![launchcode](/assets/img/bugs-img/launchcode.jpg){: width="40%" height="40%"}  
+![launchcode](/assets/img/bugs-img/launchcode.jpg){: width="70%" height="70%"}  
 문제는 회원 가입시 ***잘못된 email 을 입력한 경우***, 이 코드를 어떻게 할까?  
 의도하지 않았지만, GitHub 만들기 포스트를 쓰는 과정에 새로운 Git 아이디를 만들면서 Email 주소를 잘못 썼다.    
 다시 가입을 해볼까 했지만, 방법이 있을꺼 같아 해결을 시도해 보았다.  
@@ -20,7 +20,7 @@ GitHub 회원가입시 아래와 같은 lanch code 를 물어본다.
 그리고 아래와 같이 **Unverified** 되어 있음을 알 수 있다. ( launch code 를 입력 안해서 )    
 기존 이메일 버튼 옆에 쓰레기통 표시가 있는데, 눌러봤자 반응이 없다.    
 <br>
-![emailsetting](/assets/img/bugs-img/emailsetting.jpg){: width="50%" height="50%"}  
+![emailsetting](/assets/img/bugs-img/emailsetting.jpg){: width="70%" height="70%"}  
 
 <br>
 잘못된 이메일 주소를 지우기 위해선, 아래 ***Add 버튼으로 제대로 된 Email 주소를 입력*** 해서 등록한 뒤   
