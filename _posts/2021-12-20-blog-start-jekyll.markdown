@@ -24,7 +24,9 @@ categories: Git-Blog
 
 # 참고
 - 준호씨의 블로그 : [cannot load such file --webrick][준호-link]
+- 두-번째저장소 : [GitHub Pages에 포트폴리오 호스팅하기] : [github-page-link]
 
 
 [준호-link]: https://junho85.pe.kr/1850
+[github-page-link]: https://shxrecord.tistory.com/203
 [config-link]:/git-blog/2021/12/20/blog-start-github-config.html
