@@ -21,7 +21,7 @@
     <meta property="og:title" content="코딩독학 - 느려도 꾸준히" /> 
     <meta property="og:description" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:image" content="/assets/img/infos/open-graph.jpg" />
-    <meta property="og:url" content="https://martinkang.github.io" />
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
     <meta property="og:site_name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 
     <!-- Twitter card (Twitter) -->
@@ -31,6 +31,6 @@
     <meta name="twitter:title" content="코딩독학 - 느려도 꾸준히" /> 
     <meta name="twitter:description" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:image" content="/assets/img/infos/open-graph.jpg" />
-    <meta name="twitter:url" content="https://martinkang.github.io" />
+    <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
     <meta name="twitter:creator" content="min kang">
 </head>
