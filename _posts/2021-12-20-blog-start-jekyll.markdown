@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "GitHub 블로그 시작하기 Jekyll "
-date:   2021-12-20 18:00:00 +0900
+title:  "GitHub 블로그 시작하기 - Jekyll 시작하기."
+date:   2021-12-20 18:10:00 +0900
 categories: Git-Blog
 ---
  
@@ -19,10 +19,12 @@ categories: Git-Blog
 - [jekyll 실행시 `require': cannot load such file -- webrick (LoadError). 가 발생한다.][준호-link]  
   
 # 다음 주제
-- [favicon 과 Open Graph][favicon-op-link]
+-[GitHub 블로그 시작하기 - 기본 설정하기.][config-link]
+
 
 # 참고
-- [준호씨의 블로그][준호-link]
+- 준호씨의 블로그 : [cannot load such file --webrick][준호-link]
 
-[favicon-op-link]: /git-blog/2021/12/20/favicon-and-open-graph.html
+
 [준호-link]: https://junho85.pe.kr/1850
+[config-link]:/git-blog/2021/12/20/blog-start-github-config.html
