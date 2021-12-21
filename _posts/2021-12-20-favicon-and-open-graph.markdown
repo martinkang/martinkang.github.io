@@ -29,23 +29,31 @@ categories: Git-Blog
 
 ### Open Graph 란?
 
-![open-graph-detail](https://ourcodeworld.com/public-media/articles/articleocw-56d1a6901b773.png)  
+![open-graph-detail](https://ourcodeworld.com/public-media/articles/articleocw-56d1a6901b773.png) 
+   
 
-*** Open Graph Size ***
+*** Open Graph Size ***  
+  
 
 ### Open Graph 설정
+  
 
 *** Open Graph 설정 Before ***  
 ![before-OG](/assets/img/post-img/before-OG.png)  
 
+  
 *** Open Graph 설정 After ***  
 ![after-OG](/assets/img/post-img/after-OG.png)   
 
 
 ### Jinja 를 이용한 Open Graph 동적 Description 설정  
   
+  
 *** Open Graph 동적 Description 설정 After ***  
 ![after-OG2](/assets/img/post-img/after-OG2.png)   
+이제 Description 에 해당 페이지의 제목이 나온다!  
+
+ 
 
 jinja2 를 이용한 동적 Description 설정  
 
