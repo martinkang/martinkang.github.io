@@ -47,10 +47,14 @@ categories: Git-Blog
 
 
 ### Jinja 를 이용한 Open Graph 동적 Description 설정  
+
   
-  
+*** Open Graph 동적 Description 설정 Before ***   
+![after-OG2-1](/assets/img/post-img/after-OG2-1.png)   
+주소에 상관없이 Description 에 정해진 문구만 나온다.
+
 *** Open Graph 동적 Description 설정 After ***  
-![after-OG2](/assets/img/post-img/after-OG2.png)   
+![after-OG2-2](/assets/img/post-img/after-OG2-2.png)   
 이제 Description 에 해당 페이지의 제목이 나온다!  
 
  
