@@ -19,7 +19,7 @@ categories: Git-Blog
 - [jekyll 실행시 `require': cannot load such file -- webrick (LoadError). 가 발생한다.][준호-link]  
   
 # 다음 주제
--[GitHub 블로그 시작하기 - 기본 설정하기.][config-link]
+- [GitHub 블로그 시작하기 - 기본 설정하기.][config-link]
 
 
 # 참고
