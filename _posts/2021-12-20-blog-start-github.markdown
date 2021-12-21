@@ -19,7 +19,7 @@ categories: Git-Blog
 
 # GitHub Page 생성
  GitHub Blog 를 만들기 위해선 우선 Repository 를 생성해야 한다.  
- Repository 는 저장소를 뜻하는데, GitHub Glog 의 자료들을 저장할 장소이다.    
+ Repository 는 저장소를 뜻하는데, GitHub 블로그의 자료들을 저장할 장소이다.    
  Repository 를 생성하기 위해선 GitHub 에 로그인 한 뒤, 좌상단에 다음 버튼을 누르면 된다.  
 ![create-repo](/assets/img/post-img/start-github-github/create-repo.png)  
 <br>
