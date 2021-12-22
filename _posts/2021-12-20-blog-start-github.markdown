@@ -17,7 +17,6 @@ categories: Git-Blog
 이 글은 나중에 About 으로 옮길 것인데, 블로그 글을 순차적으로 쓰면서 같이 고치기 위햐여 일단 여기 남긴다.  
 블로그 글과 함께 블로그를 점차 꾸밀 예정이다.  
 
-
 # GitHub Page 생성
  GitHub Blog 를 만들기 위해선 우선 Repository 를 생성해야 한다.  
  Repository 를 생성하기 위해선 GitHub 에 로그인 한 뒤, 좌상단에 다음 버튼을 누르면 된다.  
