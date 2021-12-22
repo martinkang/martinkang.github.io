@@ -139,7 +139,7 @@ Username 을 모른다면 GitHub 우상단, 아래 그림의 빨간 네모를 �
 - Dotname : [웹호스팅][webhosting-link]
 
 
-[github-mail-error-link]: /Bugs/2021/12/20/github-join-email-error.html
+[github-mail-error-link]: /bugs/2021/12/20/github-join-email-error.html
 [jetalog-link]: https://jetalog.net/86
 [알파카-link]: https://blog.itcode.dev/posts/2021/06/06/jekyll-blog-prepare-git
 [gitignore-link]: https://gmlwjd9405.github.io/2017/10/06/make-gitignore-file.html
