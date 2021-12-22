@@ -14,14 +14,17 @@ categories: Git-Blog
 여기에 만드는 과정과 실패/해결을 같이 남긴다.  
 그외에 만들면서 생긴 의문점들을 정리해볼 생각이다.  
 <br>
-이 글은 나중에 메인으로 옮길 것인데, 블로그 글을 순차적으로 쓰면서 같이 고치기 위햐여 일단 여기 남긴다.  
+이 글은 나중에 About 으로 옮길 것인데, 블로그 글을 순차적으로 쓰면서 같이 고치기 위햐여 일단 여기 남긴다.  
+블로그 글과 함께 블로그를 점차 꾸밀 예정이다.  
 
 
 # GitHub Page 생성
  GitHub Blog 를 만들기 위해선 우선 Repository 를 생성해야 한다.  
- Repository 는 저장소를 뜻하는데, GitHub 블로그의 자료들을 저장할 장소이다.    
  Repository 를 생성하기 위해선 GitHub 에 로그인 한 뒤, 좌상단에 다음 버튼을 누르면 된다.  
-![create-repo](/assets/img/post-img/start-github-github/create-repo.png)  
+![create-repo](/assets/img/post-img/start-github-github/create-repo.png)    
+
+- ### 용어들 ###  
+  - ***Repository*** : 저장소. GitHub 블로그의 자료들을 저장할 장소이다.  
 <br>
 
 그럼 다음과 같이 Repository Name 을 정할 수 있는데,   
@@ -44,9 +47,15 @@ categories: Git-Blog
 - Add .gitgnore
   - Git 버전 관리에서 제외할 파일 목록을 지정하는 파일이다.
   - Git 버전 관리가 필요없는 파일의 리스트를 여기에 추가하면, Git 이 추적을 하지 않는다.
+    - 일반적으로 Git 은 프로젝트 내에 추가된 모든 파일을 추적하는데, .gitgnore 에 추가하면 파일 추적에서 제외된다.
 - Choose a license
   - 내 Repository 에 License 를 추가한다.
-  - 더 자세한 내용은 아래 참조링크.
+  - 더 자세한 내용은 아래 참고링크.  
+
+- ### 용어들 ###  
+  - ***호스팅*** :서버 컴퓨터의 전체 또는 일정 공간을 이용할 수 있도록 임대해 주는 서비스  
+  - ***버전 관리*** : 파일 변화를 시간에 따라 기록했다가 나중에 특정 시점의 버전을 다시 꺼내올 수 있는 시스템.
+
 
 # GitHub Page 확인하기
 Repository 생성이 성공하면, 나의 새로운 GitHub Blog 의 주소는 https://username.github.io 가 된다.  
@@ -55,13 +64,14 @@ Repository 생성이 성공하면, 나의 새로운 GitHub Blog 의 주소는 ht
 
 GitHub Blog 스타트 성공!.  
 <br>
-<br>
+
 # 의문점들
 
 ### 왜 Repository 의 이름을 username.github.io 로 해야 하는가? ###
 인터넷에 24시간 접속 가능한 홈페이지를 운영하기 위해서는   
 인터넷에 24 시간 연결된 저장공간과, 그 홈페이지를 연결하는 주소(도메인)가 필요하다.  
 <br>
+
 GitHub Pages 는 이런 저장 공간과, 도메인을 제공하는 웹호스팅 서비스를 제공해준다.  
 GitHub Pages 기본적으로 username.github.io 형식의 Repository 를 Root 로 호스팅 하고 있다. ( 즉 기본 설정값 )  
 이로 인해 Repository 에 username.github.io 를 만들면,   
@@ -69,8 +79,14 @@ GitHub Pages 기본적으로 username.github.io 형식의 Repository 를 Root �
 ***즉, GitHub Pages 에서 그렇게 정해놓은것이다.***  
 - 해당 Repository 에서 폴더나 파일을 만들경우, username.github.io/폴더 or 파일 로 접근 가능해진다.  
   - username.github.io 에 Font 폴더를 만들면 ***https://username.github.io/Font*** 로 접근이 가능하다.  
-- 개인 서버에 홈페이지를 올릴경우 도메인 주소에 Root 디렉토리를 마음대로 지정이 가능하다.
+- 개인 서버에 홈페이지를 올릴경우 도메인 주소에 Root 디렉토리를 마음대로 지정이 가능하다.  
 
+- ### 용어들 ###
+  - ***웹호스팅*** 
+    - 일반적으로 웹(WWW) 공간을 임대(hosting)하는 것  
+  - ***도메인***
+    - 실제로 인터넷 사이트 주소는 127.0.0.1 과 같은 IP 주소를 가지는데, 이를 domain.com 과 같이 사람이 쉽게 기억할 수 있게 문자 형태로 표현하는 주소.
+    - 실제 도메인 주소를 가지려면, 도메인 주소를 구매해야 한다.  
 <br>
 
 ### username.github.io 가 아닌 다른 Repository 를 만들었다면? ###
@@ -83,12 +99,6 @@ GitHub Pages 에서 제공한 username.github.io 도메인 주소는 바꿀 수 
 ![page-setting](/assets/img/post-img/start-github-github/github-page-setting.png) 
 <br>
 
-***웹호스팅*** 
-- 일반적으로 웹(WWW) 공간을 임대(hosting)하는 것  
-
-***도메인*** 
-- 실제로 인터넷 사이트 주소는 127.0.0.1 과 같은 IP 주소를 가지는데, 이를 domain.com 과 같이 사람이 쉽게 기억할 수 있게 문자 형태로 표현하는 주소.
-- 실제 도메인 주소를 가지려면, 도메인 주소를 구매해야 한다.
 
 
 ### 내 username 은 어떻게 찾을까? ###
