@@ -203,4 +203,4 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 [jekyll-themes-link]: http://jekyllthemes.org/
 
 [config-link]: /git-blog/2021/12/20/blog-start-github-config.html
-[install-lastest-ruby-link]: /bugs/2021/12/24/install-lastest-ruby.html
+[install-lastest-ruby-link]: /bugs/2021/12/23/install-lastest-ruby.html

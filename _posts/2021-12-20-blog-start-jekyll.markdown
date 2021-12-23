@@ -152,4 +152,4 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
 [GNU-link]: http://korea.gnu.org/
 
 [jekyll-link2]: /git-blog/2021/12/20/blog-start-jekyll2.html
-[install-lastest-ruby-link]: /bugs/2021/12/24/install-lastest-ruby.html
+[install-lastest-ruby-link]: /bugs/2021/12/23/install-lastest-ruby.html
