@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "GitHub 블로그 시작하기 - 기본 설정하기."
-date:   2021-12-20 18:20:00 +0900
+date:   2021-12-20 19:20:00 +0900
 categories: Git-Blog
 ---
 
