@@ -184,8 +184,10 @@ bundle install
 bundle exec jekyll serve
 ```  
 다시 수행하면 테마가 이쁘게 입혀진걸 볼 수 있다.  
+![jekyll-start](/assets/img/post-img/jekyll-start/jekyl-start-theme.png)   
 jekyll 시작 성공!.  
 
+<br>
 
 # 의문점들
 
@@ -199,28 +201,32 @@ jekyll 시작 성공!.
 bundle install
 ```
 을 수행해 본다. 그럼 아래와 같은 에러가 발생할 것이다.  
+에러메시지를 잘 보면 bundle 을 업데이트 하고 bundler 1.17.2 를 설치하란게 보인다.  
+***에러 메시지는 꼭 읽어보자.*** 모든 문제 해결은 에러 메시지부터.  
+
 ![need-17](/assets/img/post-img/jekyll-start/need-bundle-17.png)  
-그래서 시키는대로 ***bundle update --bundler*** 후에 ***gem install bundler:1.17.2*** 를 수행해본다.  
+그래서 시키는대로 ***bundle update --bundler*** 후에 ***gem install bundler:1.17.2*** 를 수행해본다. 다행히 잘 깔린다.  
 ![need-17](/assets/img/post-img/jekyll-start/install-bundle-172.png)   
-적당히 말하면 해당 ***'fetch_bundler'*** 라는 함수를 못찾는다는 것이다.  
-아마도 버전업 되면서 해당 함수의 이름이 바뀌었거나 사라져서 못찾나 보다.  
+그럼 다시 ***bundle install*** 을 수행해 본다.  
 
+![removed-32](/assets/img/post-img/jekyll-start/removed-32.png)   
+테마마다 다르겠지만 Ruby3.2 에는 내가 필요한 pathname#untaint 가 없다고 한다.  
+대놓고 Ruby3.2 는 거부당했다.
+<br>
 결국 적절한 버전을 안받으면 위와같은 상황들이 벌어진다...   
-그래도 굴하지 않고 한번 최신 버전 (2.3.0)을 받아보았다.  
-
-![need-bundle](/assets/img/post-img/jekyll-start/need-bundle-17.png)  
-gemfile.lock 은 아래와 같이 1.17.2 를 명시하기 때문에 해당 버전만 가능 하다고 한다.  
-
-사실 고치면 여기를 넘어갈수도 있을거 같긴한데... 
-이후에 비슷한 문제들이 또 생길 가능성이 크다.  
-이쯤에서 Ruby 버전을 낮추고 1.17.2 를 까는걸로 합의하자.  
-
+또한 어찌저찌 넘어가도 이후에 비슷한 문제들이 또 생길 가능성이 크다.  
+이쯤에서 Ruby 버전을 낮추고 Ruby2.6 버전을 까는걸로 합의하자.  
+<br>
 보통 요즘 소프트웨어들은 독립적으로 만들지 않고, 배포된 많은 오픈 소스들을 필요로 한다.  
 이때 오픈 소스의 버전이 변하면, 내가 기존에 쓰던기능이 사라지거나 변경될 수 있는데  
 이럴경우 내 소스가 동작하지 않을 수 있다.  
-그래서 항상 최신 버전을 받으면 안되고, 용도에 맞게 적절한 버전을 받아야 한다.  
-
-
+그래서 항상 용도에 맞게 적절한 버전을 받아야 한다.  
+추측이지만 Ruby 2.x 에서 3.x 로 바뀌면서 큰 변화가 생겼고, jekyll 은 2.x 대를 유지하고 있기 때문에
+Ruby 3.x 대를 쓰면 위와 같은 에러가 날 것으로 보인다.  
+Jekyll 공식 문서에서 보면 Ruby version 은 2.5 이상을 쓰라고 하니 2.5 <= Ruby < 3.0 버전을 써야 할거 같다.  
+<br>
+***Ruby 2.6.6.1*** 을 다운 받으라는건 이미 내가 성공했기 때문에...  
+<br>
 
 
 ### 2. 오픈소스 Dependency 는 어떻게확인하지 ? ###
@@ -232,7 +238,7 @@ gemfile.lock 은 아래와 같이 1.17.2 를 명시하기 때문에 해당 버�
 Max 버전은 개발자도 알기 힘들고,   
 오픈소스 업데이트 마다 내용을 확인하여 업데이트 하기도 한계가 있다. 그냥 삽질해보는수밖에... )  
 Bundler 1.7.2 Dependency 는 [참고12](#참고)  
-
+<br>
 
 ### 3. bundle exec jekyll serve VS jekyll serve 
 jekyll serve 로 실행이 가능하지만 bundle exec 를 앞에 붙이는걸 추천한다.  
