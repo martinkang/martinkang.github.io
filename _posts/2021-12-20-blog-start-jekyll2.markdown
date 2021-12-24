@@ -98,9 +98,11 @@ bundle exec jekyll serve
 ```  
 다시 수행하면 테마가 이쁘게 입혀진걸 볼 수 있다.  
 ![jekyll-start](/assets/img/post-img/jekyll-start/jekyl-start-theme.png)   
+하지만 웹 페이지 주소를 보면 127.0.0.1:4000 이다.  
+즉 내 로컬 서버에서만 동작하는 블로그이다.  
+내 로컬에서 홈페이지가 잘 구동하는걸 봣으니 진짜로 GitHub 에 올려보자.  
 
-내 로컬에서 홈페이지가 잘 구동하는걸 봣으니 진짜로 GitHub 에 올려보자.
-
+<br>
 
 # GitHub 로 업로드 하자.
 위의 작업은 내 로컬 에서 블로그 페이지를 만들고 수정한 것이고, 실제로 웹상에는 올라가 있지 않다.  
@@ -120,6 +122,9 @@ bundle exec jekyll serve
 
 파일 리스트에서 초록 + 는 새로 추가된 파일이고,   
 노랑 점 찍힌 네모는 수정된 파일이다.  
+
+<br>
+
 만약 여기서 GitHub 로 올리고 싶지 않은 파일이 있다면 좌측에 체크를 해제하면 된다.  
 
 
@@ -135,14 +140,22 @@ GitHub 를 사용하려면 간단하게 몇가지 명령어에 대해선 알아�
 혹시 이전 시점으로 소스를 돌려야 할때, 과거의 Commit 시점으로 되돌릴 수 있는데 이 메시지를 보고 돌려야 한다.  
 ![github-page](/assets/img/post-img/jekyll-start/commit-history.png)    
 
-
-
-
 ABCD 이런식으로 Commit 하면 나중에 찾기 곤란하다.  
+<br>
+
+참고로 Commit 후 파일을 변경했는데, 변경한걸 마지막 Commit 으로 되돌리고 싶다면 Discard 시키면 된다.  
+![github-page](/assets/img/post-img/jekyll-start/discard.png)   
 
 
+Commit 을 다했으면 상단에 Push 를 누르자.  
+![github-page](/assets/img/post-img/jekyll-start/push.png)   
+***push 는 내 로컬에 Commit 된 것을 GitHub 서버의 내 Repository 에 반영해준다.***  
+GitHub 서버의 내 Repository 에 반영을 해야 실제 웹에 올라가게 된다.  
 
-진짜 jekyll 시작 성공!.   
+![github-page](/assets/img/post-img/jekyll-start/start-web.png) 
+
+
+진짜로 웹에 블로그 올리기 성공!.   
 
 <br>
 
@@ -152,6 +165,16 @@ ABCD 이런식으로 Commit 하면 나중에 찾기 곤란하다.
 다음엔 블로그의 기본 설정을 바꿔보자.  
 
 <br>
+
+# 다음 주제
+- [GitHub 블로그 시작하기 - 기본 설정하기.][config-link]
+
+
+<br>
+<br>
+<br>
+<br>
+
 
 # 의문점들
 
@@ -207,14 +230,6 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 
 <br>
 
-# 다음 주제
-- [GitHub 블로그 시작하기 - 기본 설정하기.][config-link]
-
-
-<br>
-<br>
-<br>
-<br>
 
 # 문제 해결
 - [jekyll 실행시 `require': cannot load such file -- webrick (LoadError). 가 발생한다.][준호-link]  
