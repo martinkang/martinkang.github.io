@@ -43,12 +43,13 @@ categories: Git-Blog
 
 jinja2 를 이용한 동적 Description 설정  
 
+# 다음 주제
+- 테마 꾸미기.
+
 
 # 문제 해결
 - [og 태그 (카카오톡, 페이스북 미리보기) + 수정 적용 안될때 초기화하기][og-초기화-link]  
 
-# 다음 주제
-- 테마 꾸미기.
 
 # 참조
 - The Open Graph protocol : [Open Graph][og-link]

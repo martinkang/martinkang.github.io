@@ -64,6 +64,18 @@ Repository 생성이 성공하면, 나의 새로운 GitHub Blog 의 주소는 ht
 GitHub Blog 스타트 성공!.  
 <br>
 
+
+# 다음 주제
+- [GitHub 블로그 시작하기 - Jekyll 시작하기.][jekyll-link]
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
 # 의문점들
 
 ### 왜 Repository 의 이름을 username.github.io 로 해야 하는가? ###
@@ -105,8 +117,6 @@ Username 을 모른다면 GitHub 우상단, 아래 그림의 빨간 네모를 �
 ![check-user-name](/assets/img/post-img/start-github-github/check-user-name.png) 
 
 
-<br>
-
 # 문제 해결 
 - ***[GitHub 가입할때 잘못된 메일 주소를 써버렸다.][github-mail-error-link]***  
   - 실제로 스샷 찍기 위해 새 아이디 만들때 메일 주소를 잘못써 버렸다.  
@@ -125,8 +135,6 @@ Username 을 모른다면 GitHub 우상단, 아래 그림의 빨간 네모를 �
 
 
   
-# 다음 주제
-- [GitHub 블로그 시작하기 - Jekyll 시작하기.][jekyll-link]
   
 # 참고
 - jetalog.net : [Jekyll을 이용해 GitHub에 블로그 만들기][jetalog-link]
@@ -146,4 +154,5 @@ Username 을 모른다면 GitHub 우상단, 아래 그림의 빨간 네모를 �
 [corock-link]: https://corock.tistory.com/436
 [github-page-link]: https://shxrecord.tistory.com/203
 [webhosting-link]: https://www.dotname.co.kr/hosting/web/guide
+
 [jekyll-link]: /git-blog/2021/12/20/blog-start-jekyll.html

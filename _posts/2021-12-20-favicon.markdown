@@ -50,6 +50,7 @@ Favicon 은 정사각형 이며, 일반 이미지 ( jpg, png 등 ) 도 가능하
 # 다음 주제
 - [Open Graph 를 설정해보자][og-link]
 
+
 # 참조
 - wikipedia : [favicon 정의][favicon-wiki-link]
 - pngwing : [favicon 출처][그림출처-링크]  

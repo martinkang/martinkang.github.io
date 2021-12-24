@@ -99,14 +99,22 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
 
 다음장에서 본격적으로 시작해보자.  
 
+<br>
+
+# 다음 주제
+- [GitHub 블로그 시작하기 - Jekyll 시작하기 2.][jekyll-link2]
+
+
+<br>
+<br>
+<br>
+<br>
 
 # 문제 해결
 - [ Ruby 3.x 버전을 받으면 어떻게 될까? ][install-lastest-ruby-link]
   - Ruby3.2 를 받고 겪은 삽질 이야기.  
 
 
-# 다음 주제
-- [GitHub 블로그 시작하기 - Jekyll 시작하기 2.][jekyll-link2]
 
 
 # 용어
@@ -135,6 +143,7 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
 7. Msys2 공식: [Msys2 정의][msys2-link]
 8. GNU 공식: [GNU 공식][GNU-link]
 9. 이수재 블로그: [Jekyll 이란?][이수재-link]
+
 
 
 

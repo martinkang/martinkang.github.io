@@ -157,14 +157,21 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 
 <br>
 
+# 다음 주제
+- [GitHub 블로그 시작하기 - 기본 설정하기.][config-link]
+
+
+<br>
+<br>
+<br>
+<br>
 
 # 문제 해결
 - [jekyll 실행시 `require': cannot load such file -- webrick (LoadError). 가 발생한다.][준호-link]  
   - 이 에러메시지가 나오면 Ruby3.0 버전 이상을 깔았단 거다. Ruby3.x 를 지우고 2.5 이상 버전을 받자.  
   
 
-# 다음 주제
-- [GitHub 블로그 시작하기 - 기본 설정하기.][config-link]
+
 
 
 # 용어
