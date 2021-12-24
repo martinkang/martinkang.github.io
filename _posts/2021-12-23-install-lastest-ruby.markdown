@@ -68,7 +68,4 @@ Max 버전은 개발자도 알기 힘들고,
 오픈소스 업데이트 마다 내용을 확인하여 업데이트 하기도 한계가 있다. 그냥 삽질해보는수밖에... )  
 <br>
 
-[link test][j-link]
-
-[j-link]: ./2021-12-20-blog-start-jekyll.markdown
 [jekyll-link]: /git-blog/2021/12/20/blog-start-jekyll.html
