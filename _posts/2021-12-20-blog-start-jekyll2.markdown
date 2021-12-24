@@ -98,7 +98,57 @@ bundle exec jekyll serve
 ```  
 다시 수행하면 테마가 이쁘게 입혀진걸 볼 수 있다.  
 ![jekyll-start](/assets/img/post-img/jekyll-start/jekyl-start-theme.png)   
-jekyll 시작 성공!.  
+
+내 로컬에서 홈페이지가 잘 구동하는걸 봣으니 진짜로 GitHub 에 올려보자.
+
+
+# GitHub 로 업로드 하자.
+위의 작업은 내 로컬 에서 블로그 페이지를 만들고 수정한 것이고, 실제로 웹상에는 올라가 있지 않다.  
+내 로컬의 변경 내역을 GitHub 에 올려야 GitHub 에서 변경된 정보를 반영하여    
+실제 https//username.github.io 에 블로그가 올라가게 된다.  
+<br>
+이전에 다운받은 GitHub Desktop 을 찾아서 실행시켜 보자.  
+![github-desk](/assets/img/post-img/jekyll-start/github-desktop.png)   
+아래와 같이 add repository 를 선택하자. ( new 가 아니다. )  
+![add-repo](/assets/img/post-img/jekyll-start/add-repo.png)   
+<br>
+
+그리고 여태것 작업한 폴더를 선택한다. 그러면 다음과 같은 화면이 나온다.  
+![github-page](/assets/img/post-img/jekyll-start/github-page.png)    
+
+좌측 창은 추가/변경 된 파일 리스트이고 오른쪽은 파일에서 추가/변경 된 내용이다.  
+
+파일 리스트에서 초록 + 는 새로 추가된 파일이고,   
+노랑 점 찍힌 네모는 수정된 파일이다.  
+만약 여기서 GitHub 로 올리고 싶지 않은 파일이 있다면 좌측에 체크를 해제하면 된다.  
+
+
+GitHub 를 사용하려면 간단하게 몇가지 명령어에 대해선 알아야 한다.  
+( 개발자라면 GitHub 사용법을 꼭 숙지하는걸 추천한다. )  
+이 사이트에서 매우 자세히 설명한다. - [Git 문서][git-scm-link]
+
+![github-page](/assets/img/post-img/jekyll-start/commit.png)    
+아래 Commit 버튼이 있는데 여기에 메시지를 적고 Commit 하자.  
+
+***Commit 은 내 로컬 저장소에 Repository 추가/변경 사항을 기록하는 것이다.***  
+이 Commit 메시지는 의미있는게 좋다.  
+혹시 이전 시점으로 소스를 돌려야 할때, 과거의 Commit 시점으로 되돌릴 수 있는데 이 메시지를 보고 돌려야 한다.  
+![github-page](/assets/img/post-img/jekyll-start/commit-history.png)    
+
+
+
+
+ABCD 이런식으로 Commit 하면 나중에 찾기 곤란하다.  
+
+
+
+진짜 jekyll 시작 성공!.   
+
+<br>
+
+
+
+
 다음엔 블로그의 기본 설정을 바꿔보자.  
 
 <br>
@@ -197,6 +247,7 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 8. 위키백과 : [로케일][로케일-link]
 9. Negabaro`s Blog : [Rails I18n에 대해서]: [I18-link]
 10. jekyll 테마 사이트 : [jekyll themes]:[jekyll-themes-link]
+11. Git : [Git-Ebook]:[git-scm-link]
 
 
 [준호-link]: https://junho85.pe.kr/1850
@@ -208,6 +259,7 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 [로케일-link]: https://ko.wikipedia.org/wiki/%EB%A1%9C%EC%BC%80%EC%9D%BC
 [I18-link]: https://negabaro.github.io/archive/i18n
 [jekyll-themes-link]: http://jekyllthemes.org/
+[git-scm-link]: https://git-scm.com/book/ko/v2
 
 [config-link]: /git-blog/2021/12/20/blog-start-github-config.html
 [install-lastest-ruby-link]: /bugs/2021/12/23/install-lastest-ruby.html

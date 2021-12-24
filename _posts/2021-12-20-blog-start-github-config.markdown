@@ -7,7 +7,8 @@ categories: Git-Blog
 
 
 # GitHub Page 생성
-
+지난번에 홈페이지 시작에 성공하였다.
+![jekyll-start](/assets/img/post-img/start-config/jekyl-start-theme.png)   
 
   
 # 다음 주제
