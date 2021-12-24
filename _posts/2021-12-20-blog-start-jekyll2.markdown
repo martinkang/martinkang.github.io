@@ -107,7 +107,7 @@ bundle exec jekyll serve
 # GitHub 로 업로드 하자.
 위의 작업은 내 로컬 에서 블로그 페이지를 만들고 수정한 것이고, 실제로 웹상에는 올라가 있지 않다.  
 내 로컬의 변경 내역을 GitHub 에 올려야 GitHub 에서 변경된 정보를 반영하여    
-실제 https//username.github.io 에 블로그가 올라가게 된다.  
+실제 https://username.github.io 에 블로그가 올라가게 된다.  
 <br>
 이전에 다운받은 GitHub Desktop 을 찾아서 실행시켜 보자.  
 ![github-desk](/assets/img/post-img/jekyll-start/github-desktop.png)   
@@ -209,25 +209,7 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 <br>
 
 ### 3. Jekyll 구성요소 살펴보기
-![jekyll-list](/assets/img/post-img/jekyll-start/jekyll-first-list.png)  
-- _posts
-  - 실제로 블로그 글을 작성하는 폴더. 
-  - 글을 추가하고 싶으면 이 폴더에 정해진 포맷으로 쓰면 된다.
-- _config.yml
-  - jekyll server 를 돌리기 위한 여러 설정들이 들어있음.
-- .gitignore
-  - jekyll 과 관계없음. git 버전 관리에서 관리하지 않을 리스트.
-- 404.html
-  - 404 에러, 즉 없는 주소로 접근시 나타낼 페이지. 
-- about.markdown
-  - 이건 그냥 소개 페이지.  
-- Gemfile
-  - 사이트에 필요한 Gem([용어3](#용어)) 들의 목록.  
-  - 실제 필요한 Gem 이 있으면 여기에 쓰면 된다. 
-- Gemfile.lock
-  - Gemfile 을 갱신 후 bundle 을 이용하여 install 하면, 설치된 Gem 들의 의존 관계를 여기에 자동 갱신한다.    
-- index.markdown
-
+정리해서 적으려 했는데, jekyll 공식 한글 사이트가 잘나와 있어 링크로 남긴다.  - [Jekyll 구조][jekyll-docu-link]  
 <br>
 
 
@@ -263,6 +245,7 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 9. Negabaro`s Blog : [Rails I18n에 대해서]: [I18-link]
 10. jekyll 테마 사이트 : [jekyll themes]:[jekyll-themes-link]
 11. Git : [Git-Ebook]:[git-scm-link]
+12. jekyll 도뷰먼트 : [jekyll structure][jekyll-docu-link]
 
 
 [준호-link]: https://junho85.pe.kr/1850
@@ -275,6 +258,7 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 [I18-link]: https://negabaro.github.io/archive/i18n
 [jekyll-themes-link]: http://jekyllthemes.org/
 [git-scm-link]: https://git-scm.com/book/ko/v2
+[jekyll-docu-link]: https://jekyllrb-ko.github.io/docs/structure/
 
 [config-link]: /git-blog/2021/12/20/blog-start-github-config.html
 [install-lastest-ruby-link]: /bugs/2021/12/23/install-lastest-ruby.html

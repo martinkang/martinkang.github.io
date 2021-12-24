@@ -6,10 +6,12 @@ categories: Git-Blog
 ---
 
 
-# GitHub Page 생성
-지난번에 홈페이지 시작에 성공하였다.
-![jekyll-start](/assets/img/post-img/start-config/jekyl-start-theme.png)   
+# GitHub 기본 설정  
+지난번에 홈페이지 시작에 성공하였다.  
+그런데 현재 주소창 페이지 이름, 사이드바에 Monos 그리고 카테고리 등이 초기값이다.  
+이 값들을 내가 원하는 이름과 구성으로 바꿀 예정이다.  
 
+![github-page](/assets/img/post-img/start-config/first-theme.png) 
   
 # 다음 주제
 - [favicon 을 설정해보자][favicon-link]
