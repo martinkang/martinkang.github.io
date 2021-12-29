@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ruby 3.x 버전을 받으면 어떻게 될까?"
-date:   2021-12-23 0:20:00 +0900
+date:   2021-12-23 9:20:00 +0900
 categories: Bugs
 ---
 
