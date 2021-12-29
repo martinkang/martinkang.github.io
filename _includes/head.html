@@ -8,7 +8,12 @@
 		{%- include google-analytics.html -%}
 	{%- endif -%}
 
-
+    <!-- 일반적인 Fabicon 설정. (인터넷 탭창 또는 주소창에 표기되는 아이콘)
+	<link rel="icon" href="/assets/img/infos/favicon.ico" />
+	<!-- 아이폰용 Fabicon 설정 -->
+	<link rel="apple-touch-icon" href=/assets/img/infos/favicon.ico />
+	<!-- 인터넷 익스플로러 Fabicon -->
+	<link rel="short icon" type="image/x-icon" href=/assets/img/infos/favicon.ico />
 
     <!-- Open Graph (Facebook, Linkedin) https://ogp.me/#types -->
     <!-- https://ourcodeworld.com/public-media/articles/articleocw-56d1a6901b773.png -->
@@ -27,5 +32,5 @@
     <meta name="twitter:description" content="{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:image" content="/assets/img/infos/open-graph.jpg" />
     <meta name="twitter:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}" />
-    <meta name="twitter:creator" content="min kang"> 
+    <meta name="twitter:creator" content="min kang"> -->
 </head>

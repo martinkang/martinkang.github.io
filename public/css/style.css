@@ -87,7 +87,7 @@ code {
 
 .content {
 	/*margin-left: 180px;*/
-	flex: 1 1 auto;
+	flex: 1 1 70%;
 	padding: 0px 30px;
 }
 
@@ -95,10 +95,10 @@ code {
 	/*position: fixed;*/
 	display: flex;
 	flex-flow: column nowrap;
-	flex: 0 0 220px;
+	flex: 0 0 30%;
 	padding: 15px;
 	z-index: 1;
-	background-color: #222;
+	background-color: #051628;
 	color: #fff;
 }
 
@@ -117,9 +117,17 @@ code {
 	color: #fff;
 }
 
+.sidebar-brand > a > img
+{
+	width: 100%;
+	height: auto;
+}
+
 .lead {
 	font-size: 120%;
-	color: #aaa;
+	font-family: 'aggro';
+	src: url(/assets/fonts/SB-aggro-L.ttf);
+	color: #ffff;
 }
 
 .sidebar-header {
@@ -138,12 +146,18 @@ code {
 	margin-bottom: 5px;
 }
 
+a.nav-item > .nav-img > img {
+	width: 50px;
+	height: 50px;
+}
+
 a.nav-item {
 	font-size: 120%;
 	font-family: "Noto Sans";
 	text-transform: capitalize;
 	color: #aaa;
 }
+
 
 a.nav-item:hover { color: #777; }
 
@@ -307,6 +321,8 @@ footer {
 
 	.content {
 		padding: 0px;
+		top: 0;
+		bottom: unset;
 	}
 	.container {
 	    flex-direction: column;
@@ -314,9 +330,11 @@ footer {
 
 	.sidebar {
 		font-size: 0.8em;
-		flex: 0 0 auto;
+		flex: 0 0 100px;
 		flex-flow: row nowrap;
 		height: auto;
+		top: unset;
+		bottom: 0;
 	}
 
 	.sidebar-nav {
@@ -335,5 +353,32 @@ footer {
 		flex: 0 0 0px;
 		visibility: hidden;
 		display: none;
+	}
+
+	.sidebar-brand > a > img {
+		visibility: hidden;
+		width: 0%;
+		height: 0%;
+	}
+
+	.lead {
+		visibility: hidden;
+		width: 0%;
+		height: 0%;
+	}
+
+	.sidebar-item .nav-title {
+		visibility: hidden;
+		width: 0%;
+		height: 0%;
+	}
+	
+	.sidebar-nav > .nav {
+		display: inline-flex;flex-direction: row;justify-content: space-between;
+	}
+
+	a.nav-item > .nav-img > img {
+		width: 40px;
+		height: 40px;
 	}
 }

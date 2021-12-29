@@ -1,6 +1,6 @@
 <div class="sidebar-item sidebar-header">
 	<div class='sidebar-brand'>
-		<a href="/about/">{{ site.title }}</a>
+		<a href="/about/"><img src="\assets\img\infos\open-graph.jpg" ></a>
 	</div>
 	<p class="lead">{{ site.description }}</p>
 	{%- if social.github -%}
@@ -11,7 +11,7 @@
 	{%- endif -%}
 </div>
 
-<div class="sidebar-item sidebar-nav">
+<!-- <div class="sidebar-item sidebar-nav">
 	<ul class="nav">
       <li class="nav-title">Pages</li>
 	  <li>
@@ -30,7 +30,7 @@
 	    {% endif %}
 	  {% endfor %}
 	</ul>
-</div>
+</div> -->
 
 <div class="sidebar-item sidebar-nav">
   	<ul class="nav">
@@ -38,6 +38,7 @@
 	    {% for category in site.categories %}
 	    <li>
 	    	<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
+				<span class="nav-img"><img src="\assets\img\infos\{{ category | first }}.png" ></span>
 				<span class="name">{{ category | first }}</span>
 				<span class="badge">{{ category | last | size }}</span>
 	    	</a>
@@ -47,6 +48,6 @@
 	</ul>
 </div>
 
-<div class="sidebar-item sidebar-footer">
+<!-- <div class="sidebar-item sidebar-footer">
 	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
-</div>
+</div> -->

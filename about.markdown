@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 코딩독학
 permalink: /about/
 ---
 

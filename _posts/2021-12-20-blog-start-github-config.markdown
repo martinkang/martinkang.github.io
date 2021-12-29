@@ -112,10 +112,16 @@ jekyll 에서 기본적으로 제공하는 변수는 다음과 같다. - [지킬
 하지만 이런 값을 변수에 두고 쓰면 ( site.title 같이 ),  
 site.title 값만 바꿔주면 알아서 모든 페이지의 title 이 변경된다!!.  
 
+ 코드블럭 테마를 설정할 수 있다. - [미리보기 사이트][theme-view-link]
+
+- [favicon 을 설정해보자][favicon-link]
+
+
 <br> 
 # 참고
 - 취미로 코딩하는 개발자 : [GitHub 블로그 기본 설정하기][github-config-link]
 - jekyll 번역 : [jekyll 공식페이지][jekyll-link]
+- spsarolkar.github.io : [블로그 Theme 미리보기][theme-view-link]
  
 
 [favicon-link]: /git-blog/2021/12/20/favicon.html
@@ -123,11 +129,5 @@ site.title 값만 바꿔주면 알아서 모든 페이지의 title 이 변경된
 jekyll-var-link]: https://jekyllrb-ko.github.io/
 [jekyll-var-link]: https://jekyllrb-ko.github.io/docs/variables/
 [jekyll-config-link]:https://jekyllrb-ko.github.io/docs/configuration/
- 
- 코드블럭 테마를 설정할 수 있다. - [미리보기 사이트][theme-view-link]
-
-- spsarolkar.github.io : [블로그 Theme 미리보기][theme-view-link]
 [theme-view-link]: https://spsarolkar.github.io/rouge-theme-preview/
-
-- [favicon 을 설정해보자][favicon-link]
 [favicon-link]: /git-blog/2021/12/20/favicon.html
