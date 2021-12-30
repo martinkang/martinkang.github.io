@@ -141,8 +141,6 @@ header {
 
 .lead {
 	font-size: 100%;
-	font-family: 'aggro';
-	src: url(/assets/fonts/SB-aggro-L.ttf);
 	color: #ffff;
 }
 
@@ -383,6 +381,12 @@ footer {
 		height: 50px;
 		line-height: 50px;
 		overflow: auto;
+		background-color: #051628;
+		border-bottom: 1px solid #fff;
+	}
+
+	header.post-header > .post-title {
+		color: #fff;
 	}
 
 	.sidebar {
@@ -398,6 +402,7 @@ footer {
 		height: 10%;
 		min-height: 80px;
 		max-width: unset;
+		border-top: 1px solid #fff;
 		z-index: 1000;
 	}
 
