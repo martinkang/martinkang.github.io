@@ -91,7 +91,7 @@ header {
 }
 .content {
 	/*margin-left: 180px;*/
-	flex: 1 1 70%;
+	width: 70%;
 	padding: 0px 50px;
 	left : 30%;
 	position: relative;
@@ -157,9 +157,8 @@ header {
 }
 
 .nav-title {
-	font-size: 100%;
-	font-family: "Noto Sans";
-	text-transform: uppercase;
+	font-size: 150%;
+	/* text-transform: uppercase; */
 	border-bottom: 1px solid gray;
 	margin-bottom: 5px;
 }
@@ -167,11 +166,17 @@ header {
 a.nav-item > .nav-img > img {
 	width: 50px;
 	height: 50px;
+
+	/* 그림 세로 가운데 정렬 */
+	vertical-align: middle;
+}
+
+a.nav-item > .name {
+	padding: 0 0 0 10px;
 }
 
 a.nav-item {
 	font-size: 120%;
-	font-family: "Noto Sans";
 	text-transform: capitalize;
 	color: #aaa;
 }
@@ -289,19 +294,14 @@ header.post-header {
 	background-color: #fdfdfd;
 	text-align: center;
 
-
 	width: 100%;
 	height: 60px;
 	max-width: 1050px;
 	top: 0;
 	left : 30%;
-	
 	padding: 0px 10px;
-
 	line-height: 60px;
 	max-width: 1050px;
-
-
 }
 
 header.home {
@@ -356,7 +356,6 @@ footer {
 		line-height: 1.5;
 	}
 
-	
 	.container {
 	    flex-direction: column;
 	}
@@ -381,19 +380,12 @@ footer {
 		height: 50px;
 		line-height: 50px;
 		overflow: auto;
-		background-color: #051628;
 		border-bottom: 1px solid #fff;
 	}
 
-	header.post-header > .post-title {
-		color: #fff;
-	}
-
 	.sidebar {
-		font-size: 0.8em;
-		flex: 0 0 100%;
 		flex-flow: row nowrap;
-		font-size: 0.7em;
+		font-size: 0.6em;
 		padding: 5px;
 		position: fixed;
 		top: unset;
@@ -412,28 +404,45 @@ footer {
 
 	.sidebar-nav {
 		margin: 0px;
+		width: 100%;
+		vertical-align: middle;
 	}
 
 	.sidebar-item {
-		flex: 1 1 auto;
+		padding: 5px;
 	}
 
 	.sidebar-header {
 		margin-bottom: 0px;
 	}
 
-	
+
 	.sidebar-nav > .nav {
 		display: inline-flex;
 		flex-direction: row;
 		justify-content: space-between;
+		align-items: center;
+	}
+
+	a.nav-item > span {
+		display: flex;
 	}
 	
+	a.nav-item > .name {
+		padding: 0;
+		vertical-align: top;
+		justify-content: center;
+	}
 
+	
+	a.nav-item > .nav-img {
+		justify-content: center;
+	}
 
 	a.nav-item > .nav-img > img {
-		width: 40px;
-		height: 40px;
+		width: 30px;
+		height: 30px;
+		justify-content: center;
 	}
 
 
@@ -443,5 +452,5 @@ footer {
 	.lead { visibility: hidden; display: none;	width: 0%; height: 0%; }
 	.sidebar-item .nav-title { visibility: hidden;display: none; width: 0%; height: 0%; padding: 0px; }
 	.sidebar-header { visibility: hidden; display: none; width: 0%; height: 0%; }
-
+	a.nav-item > .badge { visibility: hidden;display: none; width: 0%; height: 0%; padding: 0px; }
 }
