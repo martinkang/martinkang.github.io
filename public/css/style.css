@@ -86,13 +86,13 @@ code {
 	flex-flow: row nowrap;
 }
 
-
+header {
+	padding: 10px;
+}
 .content {
 	/*margin-left: 180px;*/
 	flex: 1 1 70%;
-	padding: 0px 10px;
-
-	top: 100px;
+	padding: 0px 50px;
 	left : 30%;
 	position: relative;
 	max-width: 1050px;
@@ -140,14 +140,14 @@ code {
 }
 
 .lead {
-	font-size: 120%;
+	font-size: 100%;
 	font-family: 'aggro';
 	src: url(/assets/fonts/SB-aggro-L.ttf);
 	color: #ffff;
 }
 
 .sidebar-header {
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .sidebar-nav {
@@ -237,7 +237,6 @@ article .share .gplus:hover {
 }
 
 article {
-	padding: 0 2% 0;
 	font-size: 17px;
 	margin-bottom: 100px;
 	line-height: 1.9;
@@ -284,6 +283,7 @@ article.home h4 a:hover {
 	color: #e74c3c;
 }
 
+
 header.post-header {
 	padding: 10px;
 	margin-bottom: 30px;
@@ -291,8 +291,8 @@ header.post-header {
 	background-color: #fdfdfd;
 	text-align: center;
 
-	position: fixed;
-	width: 70%;
+
+	width: 100%;
 	height: 60px;
 	max-width: 1050px;
 	top: 0;
@@ -302,6 +302,8 @@ header.post-header {
 
 	line-height: 60px;
 	max-width: 1050px;
+
+
 }
 
 header.home {
@@ -312,6 +314,10 @@ header.home {
 	font-size: 1.5em;
 	color: #111;
 	font-weight: bold;
+}
+
+.post-content {
+	top: 150px;
 }
 
 .post-date {
@@ -347,6 +353,7 @@ footer {
 
 @media (max-width: 600px) {
 	article {
+		padding: 0px 10px;
 		font-size: 0.9em;
 		line-height: 1.5;
 	}
@@ -357,10 +364,8 @@ footer {
 	}
 
 	.content {
-		padding: 0px;
-		
+		padding: 0px;	
 		position: relative;
-		top: 60px;
 		left: 0;
 		bottom: unset;
 		width: 100%;
@@ -369,6 +374,7 @@ footer {
 	}
 
 	header.post-header {
+		position: relative;
 		font-size: 1em;
 		left: 0;
 		top: 0;
@@ -383,7 +389,7 @@ footer {
 		flex: 0 0 100%;
 		flex-flow: row nowrap;
 		font-size: 0.7em;
-		padding-bottom: 25px;
+		padding: 5px;
 		position: fixed;
 		top: unset;
 		bottom: 0;
@@ -392,6 +398,10 @@ footer {
 		min-height: 80px;
 		max-width: unset;
 		z-index: 1000;
+	}
+
+	.post-content {
+		top: 80px;
 	}
 
 	.sidebar-nav {
@@ -406,12 +416,7 @@ footer {
 		margin-bottom: 0px;
 	}
 
-	.sidebar-footer { flex: 0 0 0px; visibility: hidden; display: none;	}
-	.sidebar-brand > a > img { visibility: hidden; display: none; width: 0%; height: 0%; }
-	.lead { visibility: hidden; display: none;	width: 0%; height: 0%; }
-	.sidebar-item .nav-title { visibility: hidden;display: none; width: 0%; height: 0%; padding: 0px; }
-	.sidebar-header { visibility: hidden; display: none; width: 0%; height: 0%; }
-
+	
 	.sidebar-nav > .nav {
 		display: inline-flex;
 		flex-direction: row;
@@ -424,4 +429,13 @@ footer {
 		width: 40px;
 		height: 40px;
 	}
+
+
+	/* hidden */
+	.sidebar-footer { flex: 0 0 0px; visibility: hidden; display: none;	}
+	.sidebar-brand > a > img { visibility: hidden; display: none; width: 0%; height: 0%; }
+	.lead { visibility: hidden; display: none;	width: 0%; height: 0%; }
+	.sidebar-item .nav-title { visibility: hidden;display: none; width: 0%; height: 0%; padding: 0px; }
+	.sidebar-header { visibility: hidden; display: none; width: 0%; height: 0%; }
+
 }
