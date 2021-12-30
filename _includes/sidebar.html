@@ -34,16 +34,37 @@
 
 <div class="sidebar-item sidebar-nav">
   	<ul class="nav">
-			<li class="nav-title">카테고리</li>
-	    {% for category in site.categories %}
-	    <li>
-	    	<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#{{ category | first }}">
-				<span class="nav-img"><img src="\assets\img\infos\{{ category | first }}.png" ></span>
-				<span class="name">{{ category | first }}</span>
-				<span class="badge">{{ category | last | size }}</span>
-	    	</a>
- 		</li>
-	    {% endfor %}
+		<li class="nav-title">카테고리</li>
+		<li>
+			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#about">
+				<span class="nav-img"><img src="\assets\img\infos\HomeImg.png" ></span>
+				<span class="name">홈으로</span>
+			</a>
+		</li>
+		<li>
+			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#Develop">
+				<span class="nav-img"><img src="\assets\img\infos\Develop.png" ></span>
+				<span class="name">개발 일기</span>
+			</a>
+		</li>
+		<li>
+			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#Bugs">
+				<span class="nav-img"><img src="\assets\img\infos\Bugs.png" ></span>
+				<span class="name">문제 해결</span>
+			</a>
+		</li>
+		<li>
+			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#Study">
+				<span class="nav-img"><img src="\assets\img\infos\Study.png" ></span>
+				<span class="name">개발 지식</span>
+			</a>
+		</li>
+		<li>
+			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#Links">
+				<span class="nav-img"><img src="\assets\img\infos\Links.png" ></span>
+				<span class="name">개발 링크</span>
+			</a>
+		</li>
 	  </nav>
 	</ul>
 </div>
