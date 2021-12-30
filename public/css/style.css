@@ -81,25 +81,35 @@ code {
 .container {
 	min-height: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: left;
 	flex-flow: row nowrap;
 }
+
 
 .content {
 	/*margin-left: 180px;*/
 	flex: 1 1 70%;
-	padding: 0px 30px;
+	padding: 0px 10px;
+
+	left : 30%;
+	position: relative;
+	max-width: 1050px;
 }
 
 .sidebar {
-	/*position: fixed;*/
 	display: flex;
 	flex-flow: column nowrap;
-	flex: 0 0 30%;
+	
 	padding: 15px;
 	z-index: 1;
 	background-color: #051628;
 	color: #fff;
+
+	left: 0;
+	width: 30%;
+	height: 100%;
+	position: fixed;
+	max-width: 450px;
 }
 
 .sidebar-item {
@@ -217,7 +227,7 @@ article .share .gplus:hover {
 }
 
 article {
-	padding: 0 5% 0;
+	padding: 0 2% 0;
 	font-size: 17px;
 	margin-bottom: 100px;
 	line-height: 1.9;
@@ -265,9 +275,10 @@ article.home h4 a:hover {
 }
 
 header.post-header {
-	padding: 50px 0px 10px 0px;
+	padding: 10px 0px 10px 0px;
 	margin-bottom: 30px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid rgb(139, 136, 136);
+	background-color: #fdfdfd;
 	text-align: center;
 }
 
@@ -312,32 +323,41 @@ footer {
 	color: #ccc;
 }
 
-@media only screen and (min-width: 1200px) {
-	.sidebar { flex: 0 0 400px;	}
-}
-
 @media (max-width: 600px) {
 	article {
 		font-size: 0.9em;
 		line-height: 1.5;
 	}
 
-	.content {
-		padding: 0px;
-		top: 0;
-		bottom: unset;
-	}
+	
 	.container {
 	    flex-direction: column;
 	}
 
+	.content {
+		padding: 0px;
+		
+		position: relative;
+		top: 0;
+		left: 0;
+		bottom: unset;
+		width: 100%;
+		height: 90%;
+		max-width: unset;
+	}
+
 	.sidebar {
 		font-size: 0.8em;
-		flex: 0 0 100px;
+		flex: 0 0 100%;
 		flex-flow: row nowrap;
-		height: auto;
+		
+		position: fixed;
 		top: unset;
 		bottom: 0;
+		width: 100%;
+		height: 10%;
+		max-width: unset;
+		z-index: 1000;
 	}
 
 	.sidebar-nav {
@@ -352,32 +372,16 @@ footer {
 		margin-bottom: 0px;
 	}
 
-	.sidebar-footer {
-		flex: 0 0 0px;
-		visibility: hidden;
-		display: none;
-	}
+	.sidebar-footer { flex: 0 0 0px; visibility: hidden; display: none;	}
+	.sidebar-brand > a > img { visibility: hidden; display: none; width: 0%; height: 0%; }
+	.lead { visibility: hidden; display: none;	width: 0%; height: 0%; }
+	.sidebar-item .nav-title { visibility: hidden;display: none; width: 0%; height: 0%; }
+	.sidebar-header { visibility: hidden; display: none; width: 0%; height: 0%; }
 
-	.sidebar-brand > a > img {
-		visibility: hidden;
-		width: 0%;
-		height: 0%;
-	}
-
-	.lead {
-		visibility: hidden;
-		width: 0%;
-		height: 0%;
-	}
-
-	.sidebar-item .nav-title {
-		visibility: hidden;
-		width: 0%;
-		height: 0%;
-	}
-	
 	.sidebar-nav > .nav {
-		display: inline-flex;flex-direction: row;justify-content: space-between;
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	a.nav-item > .nav-img > img {
