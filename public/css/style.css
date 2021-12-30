@@ -312,8 +312,11 @@ footer {
 	color: #ccc;
 }
 
+@media only screen and (min-width: 1200px) {
+	.sidebar { flex: 0 0 400px;	}
+}
 
-@media (max-width: 576px) {
+@media (max-width: 600px) {
 	article {
 		font-size: 0.9em;
 		line-height: 1.5;
