@@ -380,7 +380,6 @@ footer {
 		height: 50px;
 		line-height: 50px;
 		overflow: auto;
-		border-bottom: 1px solid #fff;
 	}
 
 	.sidebar {
@@ -392,9 +391,8 @@ footer {
 		bottom: 0;
 		width: 100%;
 		height: 10%;
-		min-height: 80px;
+		min-height: 75px;
 		max-width: unset;
-		border-top: 1px solid #fff;
 		z-index: 1000;
 	}
 
@@ -425,9 +423,10 @@ footer {
 	}
 
 	ul.nav {
+		margin : 0px;
 		width: 100%;
 	}
-	
+
 	a.nav-item > span {
 		display: flex;
 	}
