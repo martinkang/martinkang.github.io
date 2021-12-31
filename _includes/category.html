@@ -60,6 +60,7 @@
 	}
 
 	$(window).on('hashchange', () => {
+		$('.hidden').removeClass('hidden');
 		removeCategory();
 	});
 	$(document).ready(() => {
@@ -74,11 +75,7 @@
 
 	function filterByTagName(tagName) {
 		$('.hidden').removeClass('hidden');
-		if ( tagName == "all") {
-			$('.hidden').removeClass('hidden');
-		}
-		else
-		{
+		if ( tagName != "all") {
 			$('.post-wrapper').each((index, elem) => {
 				
 				if (!elem.hasAttribute(`data-${tagName}`)) {
