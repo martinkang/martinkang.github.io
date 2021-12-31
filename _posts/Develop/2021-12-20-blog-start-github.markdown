@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "GitHub 블로그 시작하기 - GitHub Page 만들기"
+description: "GitHub Page Repository 를 생성하고 블로그를 시작해보자."
 date:   2021-12-20 18:00:00 +0900
 categories: develop
-tags: [Blog, GitHub]
+tags: [blog, github]
 ---
 
 지금 이 GitHub 블로그를 만드는 과정을 남길 예정이다.  
