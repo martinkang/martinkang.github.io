@@ -3,6 +3,7 @@ layout: post
 title:  "Open Graph 를 설정해보자."
 date:   2021-12-20 21:10:00 +0900
 categories: develop
+tags: [blog]
 ---
 블로그를 꾸미기 앞서, 블로그의 깨알 디테일을 살려줄 수 있는 Open Graph 설정을 해본다.  
  

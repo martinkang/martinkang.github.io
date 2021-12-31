@@ -181,6 +181,29 @@ a.nav-item {
 	color: #aaa;
 }
 
+.post-content > .post-list-item {
+	display: inline;
+}
+
+.tag-box {
+	display: inline;
+	background-color: #7e7e7e;
+	border-radius: 10px;
+	margin: 2px;
+	align-items: center;
+	box-shadow: 2px 2px 2px rgb(94, 94, 94);
+}
+
+.tag-box:hover {
+	cursor:pointer;
+	transform: translate(100px, 100px);
+}
+
+.tag {
+	padding: 0 10px;
+	text-align: center;
+	color: #fff
+}
 
 a.nav-item:hover { color: #777; }
 
@@ -347,6 +370,10 @@ footer {
 
 .sidebar-footer a {
 	color: #ccc;
+}
+
+.hidden {
+	display: none;
 }
 
 @media (max-width: 600px) {

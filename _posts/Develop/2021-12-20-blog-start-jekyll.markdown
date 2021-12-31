@@ -3,6 +3,7 @@ layout: post
 title:  "GitHub 블로그 시작하기 - Jekyll 시작하기 1."
 date:   2021-12-20 18:10:00 +0900
 categories: develop
+tags: [Blog, Jekyll]
 ---
  
 # Jekyll 이란?
