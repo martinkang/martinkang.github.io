@@ -45,12 +45,17 @@ html {
 	height: 100%;
 }
 
+@font-face {
+	font-family: 'aggro';
+	src: url(/assets/fonts/SB-aggro-L.ttf);
+}
+
+
 body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
 	font-family: 'aggro';
-	src: url(/assets/fonts/SB-aggro-L.ttf);
 	color: #2c3e50;
 }
 
@@ -61,7 +66,8 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	cursor: pointer;
+	color: #0753a3;
 }
 
 pre {
@@ -187,16 +193,20 @@ a.nav-item {
 
 .tag-box {
 	display: inline;
-	background-color: #7e7e7e;
+	background-color: #17406b;
 	border-radius: 10px;
 	margin: 2px;
 	align-items: center;
 	box-shadow: 2px 2px 2px rgb(94, 94, 94);
+
+	transform:scale(1.0);        
+	transition-duration: 0.5s;
 }
 
 .tag-box:hover {
 	cursor:pointer;
-	transform: translate(100px, 100px);
+
+	transform:scale(1.05);
 }
 
 .tag {
@@ -217,7 +227,7 @@ a.nav-item:hover { color: #777; }
 .post-link {
 	margin-left: 10px;
 	font-size: 110%;
-	color: #333;
+	color: #444444;
 }
 
 #contact-list li .fa,
@@ -283,6 +293,7 @@ blockquote {
 p {
   margin-top: 0;
   margin-bottom: 0;
+  color: #444444;
 }
 
 article h1,
@@ -329,6 +340,70 @@ header.post-header {
 
 header.home {
 	text-align: left;
+}
+
+.post-list {
+	list-style:none;
+}
+
+.post-list .post-card {
+	border-bottom: 1px solid #cfcfcf;
+	height: 200px;
+	transform:scale(1.0);        
+	transition-duration: 0.5s;
+}
+
+.post-list .post-card:hover {
+	transform:scale(1.05);
+}
+
+.post-card .post-head {
+	align-items: center;
+}
+
+.post-card .post-head-img {
+	height: 60px;
+	width: 60px;
+	vertical-align: middle;
+	margin: 0 10px 0 0;
+}
+
+.post-card .post-head-img img {
+	width: 35px;
+	height: 35px;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.post-card .post-head-title {
+	width: 100%;
+	height: 100%;
+	font-size: 1.5em;
+	align-items: center;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.post-card .post-description {
+	width: 100%;
+	margin: 5px;
+	text-align: left;
+}
+
+.post-card .post-footer {
+	display: inline-flex;
+	width: 100%;
+	font-size: 0.7em;
+}
+.post-card .post-footer-tag-wrapper {
+	left: 0;
+	width: 70%;
+	text-align: left;
+}
+.post-card .post-footer-date {
+	right: 0;
+	width: 30%;
+	text-align: right;
 }
 
 .post-title {
@@ -397,7 +472,7 @@ footer {
 		left: 0;
 		bottom: unset;
 		width: 100%;
-		height: 90%;
+		height: 92%;
 		max-width: unset;
 	}
 
@@ -421,8 +496,8 @@ footer {
 		top: unset;
 		bottom: 0;
 		width: 100%;
-		height: 10%;
-		min-height: 75px;
+		height: 8%;
+		min-height: 60px;
 		max-width: unset;
 		z-index: 1000;
 	}
@@ -458,6 +533,10 @@ footer {
 		width: 100%;
 	}
 
+	.sidebar-nav > .nav > li {
+		padding: 0px;
+	}
+
 	a.nav-item > span {
 		display: flex;
 	}
@@ -471,11 +550,13 @@ footer {
 	
 	a.nav-item > .nav-img {
 		justify-content: center;
+		margin: 5px;
 	}
 
 	a.nav-item > .nav-img > img {
-		width: 35px;
-		height: 35px;
+		width: 24px;
+		height: 24px;
+		
 		justify-content: center;
 	}
 
