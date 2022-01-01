@@ -29,7 +29,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Roboto", "Nanum Gothic";
+  --font-family-sans-serif: "aggro", "Roboto", "Nanum Gothic";
   --font-family-serif: "Nanum Myeongjo";
 }
 
@@ -47,7 +47,9 @@ html {
 
 @font-face {
 	font-family: 'aggro';
-	src: url(/assets/fonts/SB-aggro-L.ttf) format('truetype');;
+	src: url(/assets/fonts/SB-aggro-L.ttf) format('truetype');
+	font-weight: normal;
+    font-style: normal;
 }
 
 
