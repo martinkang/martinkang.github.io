@@ -69,6 +69,28 @@
 	</ul>
 </div>
 
+<script>
+$("[data-tag]").click((e) => {
+	currentTag = e.target.dataset.tag;
+	filterByTagName(currentTag);
+})
+
+function filterByTagName(tagName) {
+	$('.hidden').removeClass('hidden');
+	$('.selected').removeClass('selected');
+	if ( tagName != "all") {
+		$('.post-wrapper').each((index, elem) => {
+			
+			if (!elem.hasAttribute(`data-${tagName}`)) {
+			$(elem).addClass('hidden');
+			}
+		});
+		$(`.tag`).removeClass('selected');
+		$(`.tag[data-tag=${tagName}]`).addClass('selected');
+	}
+}
+</script>
+
 <!-- <div class="sidebar-item sidebar-footer">
 	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
 </div> -->

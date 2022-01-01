@@ -376,6 +376,10 @@ footer {
 	display: none;
 }
 
+.selected {
+	opacity: 0.6;
+}
+
 @media (max-width: 600px) {
 	article {
 		padding: 0px 10px;

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Open Graph 를 설정해보자."
+description: "주소창 입력시 나오는 OpenGraph 를 설정하여 블로그 디테일을 높이자."
 date:   2021-12-20 21:10:00 +0900
 categories: develop
 tags: [blog]

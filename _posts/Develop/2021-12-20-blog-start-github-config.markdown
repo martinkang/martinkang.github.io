@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "GitHub 블로그 시작하기 - 기본 정보 설정하기."
+description: "Jekyll 의 _config.yml 을 수정하여 블로그 기본 정보를 설정해보자."
 date:   2021-12-20 19:20:00 +0900
 categories: develop
-tags: [Blog, Jekyll]
+tags: [blog, jekyll]
 ---
 
 
