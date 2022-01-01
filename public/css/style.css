@@ -47,7 +47,7 @@ html {
 
 @font-face {
 	font-family: 'aggro';
-	src: url(https://github.com/martinkang/martinkang.github.io/tree/main/assets/fonts/SB-aggro-L.ttf);
+	src: url(/assets/fonts/SB-aggro-L.ttf) format('truetype');;
 }
 
 
