@@ -5,6 +5,7 @@ description: "주소창 입력시 나오는 OpenGraph 를 설정하여 블로그
 date:   2021-12-20 21:10:00 +0900
 categories: develop
 tags: [blog]
+img-tag: config
 ---
 블로그를 꾸미기 앞서, 블로그의 깨알 디테일을 살려줄 수 있는 Open Graph 설정을 해본다.  
  

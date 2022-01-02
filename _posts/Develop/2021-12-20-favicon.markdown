@@ -5,6 +5,7 @@ description: "내 블로그 아이콘을 설정하여 블로그 디테일을 높
 date:   2021-12-20 20:00:00 +0900
 categories: develop
 tags: [blog]
+img-tag: config
 ---
 블로그를 꾸미기 앞서, 블로그의 깨알 디테일을 살려줄 수 있는 Favicon 을 설정 해본다.  
   

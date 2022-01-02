@@ -5,19 +5,23 @@
 
   <div class="post-content">
 		{%- if site.posts.size > 0 -%}	
-
+		
 		<!-- 각 카테고리의 태그 리스트 -->
-		<div class="tag-box">
-			<span class="tag" data-tag="all">All</span>
-		</div>
-
-		{%- for tag in site.data.tags -%}
+		<div class="content-tag-list">
 			<span class="tag-wrapper">
 				<div class="tag-box">
-					<span class="tag" data-tag="{{tag | downcase}}">{{tag}}</span>
+					<span class="tag" data-tag="all">All</span>
 				</div>
 			</span>
-		{%- endfor -%}
+
+			{%- for tag in site.data.tags -%}
+				<span class="tag-wrapper">
+					<div class="tag-box">
+						<span class="tag" data-tag="{{tag | downcase}}">{{tag}}</span>
+					</div>
+				</span>
+			{%- endfor -%}
+		</div>
 
 		<ul class="post-list">
 			{%- for post in site.posts -%}
@@ -34,7 +38,11 @@
 						<div class="post-card">
 							<a class="post-link" href="{{ post.url | relative_url }}">
 								<div class="post-head"><span class="post-head-img">
-									<img src="\assets\img\infos\post-{{ post.categories[0] | downcase }}.png" >
+									{%- if post.img-tag -%}
+										<img src="\assets\img\infos\tag-{{ post.img-tag | downcase }}.png" >
+									{%- else -%}
+										<img src="\assets\img\infos\tag-{{ post.categories[0] | downcase }}.png" >
+									{%- endif -%}
 								</span>
 									<span class="post-head-title">{{ post.title | escape }}</span>
 								</div>

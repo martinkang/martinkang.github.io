@@ -5,6 +5,7 @@ description: "정적 사이트 생성기 Jekyll 을 설치해보자."
 date:   2021-12-20 18:10:00 +0900
 categories: develop
 tags: [blog, jekyll]
+img-tag: jekyll
 ---
  
 # Jekyll 이란?

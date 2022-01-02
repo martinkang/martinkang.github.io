@@ -5,6 +5,7 @@ description: "Jekyll 을 이용하여 GitHub Blog 를 시작해보자."
 date:   2021-12-20 19:10:00 +0900
 categories: develop
 tags: [blog, jekyll]
+img-tag: jekyll
 ---
  
 # Jekyll 을 시작해보자.

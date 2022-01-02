@@ -5,6 +5,7 @@ description: "Jekyll 의 _config.yml 을 수정하여 블로그 기본 정보를
 date:   2021-12-20 19:20:00 +0900
 categories: develop
 tags: [blog, jekyll]
+img-tag: jekyll
 ---
 
 

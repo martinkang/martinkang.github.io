@@ -5,6 +5,7 @@ description: "GitHub Page Repository 를 생성하고 블로그를 시작해보�
 date:   2021-12-20 18:00:00 +0900
 categories: develop
 tags: [blog, github]
+img-tag: github
 ---
 
 지금 이 GitHub 블로그를 만드는 과정을 남길 예정이다.  

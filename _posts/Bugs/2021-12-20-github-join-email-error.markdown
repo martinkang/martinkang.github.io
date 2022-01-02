@@ -5,6 +5,7 @@ description: "GitHub 가입시 잘못된 메일을 썼을때 해결 방법"
 date:   2021-12-20 19:50:00 +0900
 categories: bugs
 tags: [github]
+img-tag: github
 ---
 
 # 원인  
