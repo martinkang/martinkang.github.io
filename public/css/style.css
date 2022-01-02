@@ -148,8 +148,24 @@ header {
 }
 
 .lead {
+	width: 100%;
 	font-size: 100%;
 	color: #ffff;
+	text-align: center;
+}
+
+.sidebar-counter {
+	height: 30px;
+	width: 100%;
+	align-items: right;
+	justify-content: right;
+	opacity: 40%;
+}
+
+.sidebar-counter > a > img {
+	width: 90px;
+	height: 20px;
+	right: 0;
 }
 
 .sidebar-header {
@@ -613,6 +629,7 @@ footer {
 	.sidebar-footer { flex: 0 0 0px; visibility: hidden; display: none;	}
 	.sidebar-brand > a > img { visibility: hidden; display: none; width: 0%; height: 0%; }
 	.lead { visibility: hidden; display: none;	width: 0%; height: 0%; }
+	.sidebar-counter { visibility: hidden; display: none;	width: 0%; height: 0%; }
 	.sidebar-item .nav-title { visibility: hidden;display: none; width: 0%; height: 0%; padding: 0px; }
 	.sidebar-header { visibility: hidden; display: none; width: 0%; height: 0%; }
 	a.nav-item > .badge { visibility: hidden;display: none; width: 0%; height: 0%; padding: 0px; }
