@@ -35,31 +35,31 @@
 <div class="sidebar-item sidebar-nav">
   	<ul class="nav">
 		<li class="nav-title">카테고리</li>
-		<li>
+		<li class="home">
 			<a class="nav-item" href="{{ root_url }}/">
 				<span class="nav-img"><img src="\assets\img\infos\HomeImg.png" ></span>
 				<span class="name">홈으로</span>
 			</a>
 		</li>
-		<li>
+		<li class="develop">
 			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#develop">
 				<span class="nav-img"><img src="\assets\img\infos\Develop.png" ></span>
 				<span class="name">개발 일기</span>
 			</a>
 		</li>
-		<li>
+		<li class="bugs">
 			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#bugs">
 				<span class="nav-img"><img src="\assets\img\infos\Bugs.png" ></span>
 				<span class="name">문제 해결</span>
 			</a>
 		</li>
-		<li>
+		<li class="study">
 			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#study">
 				<span class="nav-img"><img src="\assets\img\infos\Study.png" ></span>
 				<span class="name">개발 지식</span>
 			</a>
 		</li>
-		<li>
+		<li class="links">
 			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#links">
 				<span class="nav-img"><img src="\assets\img\infos\Links.png" ></span>
 				<span class="name">개발 링크</span>
@@ -76,26 +76,49 @@
 	</a>
 </div>
 
+<script src="/public/js/jquery-3.4.1.slim.min.js"></script>
 <script>
-$("[data-tag]").click((e) => {
-	currentTag = e.target.dataset.tag;
-	filterByTagName(currentTag);
-})
+	$(window).on('hashchange', () => {
+		selectMenu();
+	});
 
-function filterByTagName(tagName) {
-	$('.hidden').removeClass('hidden');
-	$('.selected').removeClass('selected');
-	if ( tagName != "all") {
-		$('.post-wrapper').each((index, elem) => {
-			
-			if (!elem.hasAttribute(`data-${tagName}`)) {
-			$(elem).addClass('hidden');
-			}
-		});
-		$(`.tag`).removeClass('selected');
-		$(`.tag[data-tag=${tagName}]`).addClass('selected');
+	$(document).ready(() => {
+		selectMenu();
+	});
+
+	function selectMenu() {
+		let sMenu = window.location.hash.substring(1).toLowerCase();
+		
+		switch ( sMenu) {
+			case 'develop': 
+				$('.sidebar-item > .nav > li').removeClass('menu-selected');
+				$('.sidebar-item > .nav > li.develop').addClass('menu-selected');
+				break;
+			case 'bugs': 
+				$('.sidebar-item > .nav > li').removeClass('menu-selected');
+				$('.sidebar-item > .nav > li.bugs').addClass('menu-selected');
+				break;
+			case 'study': 
+				$('.sidebar-item > .nav > li').removeClass('menu-selected');
+				$('.sidebar-item > .nav > li.study').addClass('menu-selected');
+				break;
+			case 'links': 
+				$('.sidebar-item > .nav > li').removeClass('menu-selected');
+				$('.sidebar-item > .nav > li.links').addClass('menu-selected');
+				break;
+			default:
+				if ( window.location.href.substr(-4) != "html" ) {
+					$('.sidebar-item > .nav > li').removeClass('menu-selected');
+					$('.sidebar-item > .nav > li.home').addClass('menu-selected');
+				}
+				else {
+
+					$('.sidebar-item > .nav > li').removeClass('menu-selected');
+					$('.sidebar-item > .nav > li.home').addClass('menu-selected' );
+				}
+				break;
+		}
 	}
-}
 </script>
 
 <!-- <div class="sidebar-item sidebar-footer">

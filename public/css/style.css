@@ -97,11 +97,12 @@ code {
 header {
 	padding: 10px;
 }
+
 .content {
 	/*margin-left: 180px;*/
-	width: 70%;
+	width: 75%;
 	padding: 0px 50px;
-	left : 30%;
+	left : 25%;
 	position: relative;
 	max-width: 1050px;
 }
@@ -116,7 +117,7 @@ header {
 	color: #fff;
 
 	left: 0;
-	width: 30%;
+	width: 25%;
 	height: 100%;
 	position: fixed;
 	max-width: 450px;
@@ -145,6 +146,11 @@ header {
 {
 	width: 100%;
 	height: auto;
+}
+
+.menu-selected
+{
+	opacity: 30%;
 }
 
 .lead {
