@@ -95,6 +95,9 @@
 		$(`.tag[data-tag="all"]`).addClass('selected');
 	});
 	$(document).ready(() => {
+		$('.hidden').removeClass('hidden');
+		$('.selected').removeClass('selected');
+		
 		removeCategory();	
 		$(`.tag[data-tag="all"]`).addClass('selected');
 	});
