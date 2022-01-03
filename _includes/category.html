@@ -111,6 +111,9 @@
 		if (event.originalEvent.persisted) {
 			$('.hidden').removeClass('hidden');
 			$('.selected').removeClass('selected');
+
+			removeCategory();	
+			$(`.tag[data-tag="all"]`).addClass('selected');
 		}
 	});
 
