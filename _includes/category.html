@@ -94,7 +94,8 @@
 		removeCategory();
 		$(`.tag[data-tag="all"]`).addClass('selected');
 	});
-	$(document).ready(() => {
+
+	$(function(){
 		$('.hidden').removeClass('hidden');
 		$('.selected').removeClass('selected');
 		
@@ -104,13 +105,14 @@
 	
 
 	$("[data-tag]").click((e) => {
+		$('.hidden').removeClass('hidden');
+		$('.selected').removeClass('selected');
+
 		currentTag = e.target.dataset.tag;
 		filterByTagName(currentTag);
 	})
 
 	function filterByTagName(tagName) {
-		$('.hidden').removeClass('hidden');
-		$('.selected').removeClass('selected');
 		if ( tagName != "all") {
 			$('.post-wrapper').each((index, elem) => {
 				if (!elem.hasAttribute(`data-${tagName}`)) {
