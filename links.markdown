@@ -15,7 +15,7 @@ permalink: /links/
 # 기타
 - [장재훈][장재훈-link] : 기타리스트. 그루브한 느낌이 가득한 연주자.
 - [신은비][신은비-link] : 기타리스트. 성실한 느낌이 가득한 연주자.
-
+- [DancingFingers][DF-link] : 기타독학 중인 열씸러. 실력은 아직...
 
 
 
@@ -26,3 +26,4 @@ permalink: /links/
 
 [장재훈-link]: https://www.youtube.com/channel/UCwk-TaC8rgj7BMzxY3Zu4UQ
 [신은비-link]: https://www.youtube.com/user/shinounbi
+[DF-link]: https://www.youtube.com/channel/UCBU0r-0Gu7gfDGntlHsqDzg
