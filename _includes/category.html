@@ -103,7 +103,10 @@
 		removeCategory();	
 		$(`.tag[data-tag="all"]`).addClass('selected');
 	});
-	
+
+	$(document).load(() => {
+		window.alert('test document.load()')
+	});
 
 	$("[data-tag]").click((e) => {
 		$('.hidden').removeClass('hidden');
