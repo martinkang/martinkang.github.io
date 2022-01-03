@@ -60,9 +60,9 @@
 			</a>
 		</li>
 		<li class="links">
-			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#links">
+			<a class="nav-item" href="{{ root_url }}/links/">
 				<span class="nav-img"><img src="\assets\img\infos\Links.png" ></span>
-				<span class="name">개발 링크</span>
+				<span class="name">링크</span>
 			</a>
 		</li>
 	  </nav>
@@ -88,35 +88,26 @@
 
 	function selectMenu() {
 		let sMenu = window.location.hash.substring(1).toLowerCase();
-		
-		switch ( sMenu) {
-			case 'develop': 
-				$('.sidebar-item > .nav > li').removeClass('menu-selected');
-				$('.sidebar-item > .nav > li.develop').addClass('menu-selected');
-				break;
-			case 'bugs': 
-				$('.sidebar-item > .nav > li').removeClass('menu-selected');
-				$('.sidebar-item > .nav > li.bugs').addClass('menu-selected');
-				break;
-			case 'study': 
-				$('.sidebar-item > .nav > li').removeClass('menu-selected');
-				$('.sidebar-item > .nav > li.study').addClass('menu-selected');
-				break;
-			case 'links': 
-				$('.sidebar-item > .nav > li').removeClass('menu-selected');
-				$('.sidebar-item > .nav > li.links').addClass('menu-selected');
-				break;
-			default:
-				if ( window.location.href.substr(-4) != "html" ) {
-					$('.sidebar-item > .nav > li').removeClass('menu-selected');
-					$('.sidebar-item > .nav > li.home').addClass('menu-selected');
-				}
-				else {
-					$('.sidebar-item > .nav > li').removeClass('menu-selected');
-					$('.sidebar-item > .nav > li.home').addClass('menu-selected' );
-				}
-				break;
+		let sSelectedMenu = '.sidebar-item > .nav > li.'
+	
+		$('.sidebar-item > .nav > li').removeClass('menu-selected');
+
+		if ( sMenu ) {
+			sSelectedMenu = sSelectedMenu + sMenu;
+			$( sSelectedMenu ).addClass('menu-selected');
 		}
+		else {
+			sCategory = window.location.pathname.split('/')[1];
+
+			if ( sCategory ) {
+				sSelectedMenu = sSelectedMenu  + sCategory;
+			}
+			else{
+				sSelectedMenu = sSelectedMenu + 'home';
+			}
+		}
+
+		$(sSelectedMenu).addClass('menu-selected' );
 	}
 </script>
 
