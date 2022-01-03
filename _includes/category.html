@@ -72,6 +72,9 @@
 <script src="/public/js/jquery-3.4.1.slim.min.js"></script>
 <script>
 	function removeCategory() {
+		$('.hidden').removeClass('hidden');
+		$('.selected').removeClass('selected');
+
 		if (window.location.hash) {
 			let hash = window.location.hash.substring(1);
 			/* id 가 category-name 인 클래스의 text 를 text() 로 설정한다 */
@@ -85,22 +88,16 @@
 				}
 			});
 		}
+
+		$(`.tag[data-tag="all"]`).addClass('selected');
 	}
 
 	$(window).on('hashchange', () => {
-		$('.hidden').removeClass('hidden');
-		$('.selected').removeClass('selected');
-		
-		removeCategory();
-		$(`.tag[data-tag="all"]`).addClass('selected');
+		removeCategory();	
 	});
 
-	$(document).ready(() => {
-		$('.hidden').removeClass('hidden');
-		$('.selected').removeClass('selected');
-		
+	$(document).ready(() => {		
 		removeCategory();	
-		$(`.tag[data-tag="all"]`).addClass('selected');
 	});
 
 	/* https://programmingsummaries.tistory.com/380 
@@ -109,11 +106,7 @@
 	$(window).on("pageshow", (event) => 
 	{
 		if (event.originalEvent.persisted) {
-			$('.hidden').removeClass('hidden');
-			$('.selected').removeClass('selected');
-
 			removeCategory();	
-			$(`.tag[data-tag="all"]`).addClass('selected');
 		}
 	});
 
