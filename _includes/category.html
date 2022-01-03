@@ -96,7 +96,6 @@
 	});
 
 	$(document).ready(() => {
-		window.alert('test document.ready()')
 		$('.hidden').removeClass('hidden');
 		$('.selected').removeClass('selected');
 		
@@ -104,8 +103,15 @@
 		$(`.tag[data-tag="all"]`).addClass('selected');
 	});
 
-	$(document).load(() => {
-		window.alert('test document.load()')
+	/*https://programmingsummaries.tistory.com/380*/
+	$(window).on("pageshow", (event) => 
+	{
+		if (event.originalEvent.persisted) {
+			alert('BF');
+			$('.hidden').removeClass('hidden');
+			$('.selected').removeClass('selected');
+		}
+		else{ alert('BFf');}
 	});
 
 	$("[data-tag]").click((e) => {
