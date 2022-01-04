@@ -3,16 +3,23 @@ layout: page
 title: 코딩독학
 permalink: /about/
 ---
+# 블로그를 만들며  
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+![logo](/assets/img/infos/open-graph.jpg)  
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+비전공자로 2014년부터 데이터 분산관리 개발자로 재직중.  
+지금 이 GitHub 블로그를 만드는 과정과 개인적인 공부 내용을 남길 예정이다.  
+비전공자 개발자로 전공자들은 이걸 모르진 않겠지? 하고 넘어가는 부분까지 여기 기록할 예정이다.  
+비전공자의 가장 큰 문제점은 뭘 모르는지 조차 모르기 때문에...  
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+<br>
+사실 블로그 만드는 과정이나 기타 개발 자료는 널렸는데,   
+이 글들을 남기는건 실패하는 과정을 기록하기 위해서이다.  
+글들 대부분은 만드는 과정이 위주이고 중간에 실패하거나,   
+때론 엉뚱하거나 어처구니 없어보이는 의문들 등을 해결하기 위해선 따로 찾아봐야 한다.  
+나 역시 아는게 별로 없기 때문에, 그리고 가끔씩 그런 의문을 갖고 있기에 여기에 모아두려고 한다.  
+<br>
+실패가 계속되서 느리더라도 멈추지 않고 꾸준히 계속 할 예정이다.  
+비전공자 또는 이제 시작하는 사람들에게 도움이 되었으면 좋겠다.  
 
 
-[jekyll-organization]: https://github.com/jekyll
