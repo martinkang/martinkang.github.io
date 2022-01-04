@@ -7,9 +7,10 @@ categories: develop
 tags: [blog]
 img-tag: config
 ---
+
+# Favicon  
 블로그를 꾸미기 앞서, 블로그의 깨알 디테일을 살려줄 수 있는 Favicon 을 설정 해본다.  
-  
-# Favicon
+
 
 ### Favicon 이란?
 아래와 같이 웹 브라우저의 주소창에 표시되는 웹사이트나 웹페이지를 대표하는 아이콘이다.  

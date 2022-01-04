@@ -7,10 +7,9 @@ categories: develop
 tags: [blog]
 img-tag: config
 ---
-블로그를 꾸미기 앞서, 블로그의 깨알 디테일을 살려줄 수 있는 Open Graph 설정을 해본다.  
- 
 
-# Open Graph 
+# Open Graph  
+블로그를 꾸미기 앞서, 블로그의 깨알 디테일을 살려줄 수 있는 Open Graph 설정을 해본다.  
 
 ### Open Graph 란?
 

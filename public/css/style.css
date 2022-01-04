@@ -219,6 +219,15 @@ a.nav-item {
 	display: inline;
 }
 
+.post-content > .tag-content {
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+.post-content > .content-tag-list {
+	margin-bottom: 10px;
+}
+
 .tag-wrapper .tag-box {
 	font-size: 0.9em;
 }
@@ -359,7 +368,7 @@ article.home h4 a:hover {
 
 header.post-header {
 	padding: 10px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	border-bottom: 1px solid rgb(139, 136, 136);
 	background-color: #fdfdfd;
 	vertical-align: middle;

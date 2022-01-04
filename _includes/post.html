@@ -8,10 +8,11 @@
 	<div class="post-content">
 		<div class="tag-content">
 			{% if page.tags %}
+			태그 : 
 				{% for tag in page.tags %}
 					{% if site.data.tags | downcase contains tag | downcase %}
 					<div class="tag-box">
-						<span class="tag">{{ tag }}</span>
+						<span class="tag">#{{ tag }}</span>
 					</div>
 					{% endif %}	
 				{% endfor %}
