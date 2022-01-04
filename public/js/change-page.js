@@ -19,12 +19,30 @@ function removeCategory() {
     $(`.tag[data-tag="all"]`).addClass('selected');
 }
 
+function removeTag() {
+    let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
+
+    if ( sCategory != '')
+    {
+        let sTags = $('.tag-wrapper > .tag-box').each((i, e) => {
+            if ( ( !e.hasAttribute('tag-category-all') ) 
+            && ( !e.hasAttribute(`tag-category-${sCategory}` ) )) {
+                $(e).hide();
+            } else {
+                $(e).show();
+            }
+        });
+    }
+}
+
 $(window).on('hashchange', () => {
     removeCategory();	
+    removeTag();
 });
 
 $(document).ready(() => {		
     removeCategory();	
+    removeTag();
 });
 
 /* https://programmingsummaries.tistory.com/380 
@@ -34,6 +52,7 @@ $(window).on("pageshow", (event) =>
 {
     if (event.originalEvent.persisted) {
         removeCategory();	
+        removeTag();
     }
 });
 

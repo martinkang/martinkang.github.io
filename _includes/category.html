@@ -3,69 +3,8 @@
 		<div class="post-title">카테고리 - <span id='category-name'></span></div>
 	</header>
 
-	<div class="post-content">
-		{%- if site.posts.size > 0 -%}	
-
-		<!-- 각 카테고리의 태그 리스트 -->
-		<div class="content-tag-list">
-			<span class="tag-wrapper">
-				<div class="tag-box">
-					<span class="tag" data-tag="all">All</span>
-				</div>
-			</span>
-
-			{%- for tag in site.data.tags -%}
-				<span class="tag-wrapper">
-					<div class="tag-box">
-						<span class="tag" data-tag="{{tag | downcase}}">{{tag}}</span>
-					</div>
-				</span>
-			{%- endfor -%}
-		</div>
-
-		<ul class="post-list">
-			{%- for post in site.posts -%}
-				<div class="post-wrapper"
-					{% if post.tags %}
-					{% for tag in post.tags %}
-						data-{{ tag | downcase }}
-					{% endfor %}
-					{% endif %}>
-			
-					<li class="post-list-item post-category-{{post.categories}}" data-tag="{{post.tags | downcase}}">
-						<!-- {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%} -->
-						{%- assign date_format = "%Y/%m/%d" -%}
-						<div class="post-card">
-							<a class="post-link" href="{{ post.url | relative_url }}">
-								<div class="post-head"><span class="post-head-img">
-									{%- if post.img-tag -%}
-										<img src="\assets\img\infos\tag-{{ post.img-tag | downcase }}.png" >
-									{%- else -%}
-										<img src="\assets\img\infos\tag-{{ post.categories[0] | downcase }}.png" >
-									{%- endif -%}
-								</span>
-									<span class="post-head-title">{{ post.title | escape }}</span>
-								</div>
-								<div class="post-description">{{ post.description | escape }}</div>
-								<div class="post-footer">
-									<div class="post-footer-tag-wrapper">
-										{%- for tag in post.tags -%}
-											<div class="tag-box">
-												<span class="tag" data-tag="{{tag | downcase}}">{{tag | capitalize }}</span>
-											</div>
-										{%- endfor -%}
-									</div>
-
-									<div class="post-footer-date">{{ post.date | date: date_format }}</div>
-							</div>
-							</a>
-						</div>
-						{%- if site.show_excerpts -%}{{ post.excerpt }}{%- endif -%}
-					</li>
-				</div>
-		  	{%- endfor -%}
-		</ul>
-	  	{%- endif -%}
+	<div class="post-list">
+		{%- include post-list.html -%}
 	</div>
 </article>
 
