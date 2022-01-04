@@ -3,7 +3,7 @@ function removeCategory() {
     $('.selected').removeClass('selected');
 
     if (window.location.hash) {
-        let hash = window.location.hash.substring(1);
+        let hash = window.location.hash.substring(1).toLocaleLowerCase();
         /* id 가 category-name 인 클래스의 text 를 text() 로 설정한다 */
         $('#category-name').text(hash.substring(0, 1).toUpperCase() + hash.substring(1));
 
