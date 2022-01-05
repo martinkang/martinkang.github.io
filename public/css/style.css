@@ -59,6 +59,8 @@ body {
 	padding: 0;
 	font-family: 'aggro';
 	color: #2c3e50;
+	letter-spacing: 0.5px;
+	word-spacing: 0.5px;
 }
 
 a {
@@ -137,8 +139,8 @@ header {
 }
 
 .sidebar-brand > a {
-	font-size: 300%;
-	font-family: 'Gelasio';
+	font-size: 50px;
+	font-family: 'aggro';
 	color: #fff;
 }
 
@@ -148,19 +150,14 @@ header {
 	height: auto;
 }
 
-.menu-selected
-{
-	opacity: 30%;
-}
-
 .lead {
 	width: 100%;
-	font-size: 100%;
+	font-size: 15px;
 	color: #ffff;
 	text-align: center;
 }
 
-.sidebar-counter {
+/* .sidebar-counter {
 	height: 30px;
 	width: 100%;
 	align-items: right;
@@ -172,7 +169,7 @@ header {
 	width: 90px;
 	height: 20px;
 	right: 0;
-}
+} */
 
 .sidebar-header {
 	margin-bottom: 20px;
@@ -184,10 +181,20 @@ header {
 
 .nav li {
 	padding: 7px;
+	opacity: 70%;
+}
+
+.nav li.nav-title {
+	opacity: 100%;
+}
+
+.nav li.menu-selected 
+{
+	opacity: 100%;
 }
 
 .nav-title {
-	font-size: 150%;
+	font-size: 25px;
 	/* text-transform: uppercase; */
 	border-bottom: 1px solid gray;
 	margin-bottom: 5px;
@@ -202,13 +209,13 @@ a.nav-item > .nav-img > img {
 }
 
 a.nav-item > .name {
+	color: #fff;
 	padding: 0 0 0 10px;
 }
 
 a.nav-item {
-	font-size: 120%;
+	font-size: 20px;
 	text-transform: capitalize;
-	color: #aaa;
 }
 
 .post-content > ul {
@@ -229,12 +236,11 @@ a.nav-item {
 }
 
 .tag-wrapper .tag-box {
-	font-size: 0.9em;
+	font-size: 15px;
 }
 
 .tag-box {
 	display: inline;
-
 }
 
 .tag {
