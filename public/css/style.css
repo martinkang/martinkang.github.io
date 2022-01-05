@@ -140,7 +140,7 @@ header {
 }
 
 .sidebar-brand > a {
-	font-size: 50px;
+	font-size: 2em;
 	font-family: 'aggro';
 	color: #fff;
 }
@@ -153,7 +153,7 @@ header {
 
 .lead {
 	width: 100%;
-	font-size: 15px;
+	font-size: 0.9em;
 	color: #ffff;
 	text-align: center;
 }
@@ -195,7 +195,7 @@ header {
 }
 
 .nav-title {
-	font-size: 25px;
+	font-size: 1.5em;
 	/* text-transform: uppercase; */
 	border-bottom: 1px solid gray;
 	margin-bottom: 5px;
@@ -215,7 +215,7 @@ a.nav-item > .name {
 }
 
 a.nav-item {
-	font-size: 20px;
+	font-size: 1.2em;
 	text-transform: capitalize;
 }
 
@@ -237,7 +237,7 @@ a.nav-item {
 }
 
 .tag-wrapper .tag-box {
-	font-size: 15px;
+	font-size: 0.8em;
 }
 
 .tag-box {
@@ -246,7 +246,7 @@ a.nav-item {
 
 .tag {
 	background-color: #17406b;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin: 2px;
 	align-items: center;
 	box-shadow: 2px 2px 2px rgb(94, 94, 94);
@@ -325,7 +325,7 @@ article .share .gplus:hover {
 }
 
 article {
-	font-size: 17px;
+	font-size: 1em;
 	margin-bottom: 100px;
 	line-height: 1.9;
 }
@@ -387,6 +387,7 @@ header.post-header {
 	left : 30%;
 	padding: 0px 10px;
 	max-width: 1050px;
+	line-height: 60px;
 }
 
 header.home {
@@ -396,7 +397,8 @@ header.home {
 .post-title {
 	width: 100%;
 	height: 100%;
-	font-size: 2em;
+	font-size: 1.5em;
+	
 	color: #111;
 	font-weight: bold;
 	vertical-align: middle;
@@ -445,7 +447,7 @@ header.home {
 .post-card .post-head-title {
 	width: 100%;
 	height: 100%;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	align-items: center;
 	font-weight: bold;
 	vertical-align: middle;
@@ -461,7 +463,7 @@ header.home {
 .post-card .post-footer {
 	display: inline-flex;
 	width: 100%;
-	font-size: 0.7em;
+	font-size: 0.6em;
 }
 .post-card .post-footer-tag-wrapper {
 	left: 0;
@@ -514,7 +516,7 @@ footer {
 	article {
 		padding: 0px 20px;
 		font-size: 0.9em;
-		line-height: 1.5;
+		line-height: 1.7;
 	}
 
 	.container {
@@ -546,6 +548,7 @@ footer {
 	}
 
 	.post-title {
+		font-size: 1.5em;
 		vertical-align: middle;
 		align-items: center;
 	}
@@ -636,11 +639,11 @@ footer {
 }
 
 	.post-card .post-head-title {
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 
 	.post-card .post-description {
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
 	.post-card .post-footer {
