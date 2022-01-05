@@ -1,12 +1,18 @@
+function setCategory() {
+    let hash = window.location.hash.substring(1).toLocaleLowerCase();
+    let sCategory = $(".nav ." + hash + " .nav-item > .name")
+
+     /* id 가 category-name 인 클래스의 text 를 text() 로 설정한다 */
+     $('#category-name').text($(sCategory).text());
+}
+
 function removeCategory() {
     $('.hidden').removeClass('hidden');
     $('.selected').removeClass('selected');
 
     if (window.location.hash) {
         let hash = window.location.hash.substring(1).toLocaleLowerCase();
-        /* id 가 category-name 인 클래스의 text 를 text() 로 설정한다 */
-        $('#category-name').text(hash.substring(0, 1).toUpperCase() + hash.substring(1));
-
+      
         let items = $('.post-list-item').each((i, e) => {
             if (!$(e).hasClass('post-category-' + hash)) {
                 $(e).hide();
@@ -18,6 +24,7 @@ function removeCategory() {
 
     $(`.tag[data-tag="all"]`).addClass('selected');
 }
+
 
 function removeTag() {
     let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
@@ -36,11 +43,13 @@ function removeTag() {
 }
 
 $(window).on('hashchange', () => {
+    setCategory();
     removeCategory();	
     removeTag();
 });
 
 $(document).ready(() => {		
+    setCategory();
     removeCategory();	
     removeTag();
 });
@@ -51,6 +60,7 @@ $(document).ready(() => {
 $(window).on("pageshow", (event) => 
 {
     if (event.originalEvent.persisted) {
+        setCategory();
         removeCategory();	
         removeTag();
     }
