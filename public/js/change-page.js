@@ -1,9 +1,14 @@
 function setCategory() {
     let hash = window.location.hash.substring(1).toLocaleLowerCase();
-    let sCategory = $(".nav ." + hash + " .nav-item > .name")
 
-     /* id 가 category-name 인 클래스의 text 를 text() 로 설정한다 */
-     $('#category-name').text($(sCategory).text());
+     if ( hash ) {
+        let sCategory = $(".nav ." + hash + " .nav-item > .name")
+        /* id 가 category-name 인 클래스의 text 를 text() 로 설정한다 */
+        $('#category-name').text($(sCategory).text());
+     }
+     else {
+        $('#category-name').text("전체 글 목록");
+     }
 }
 
 function removeCategory() {
