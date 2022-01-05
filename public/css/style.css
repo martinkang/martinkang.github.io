@@ -228,8 +228,14 @@ a.nav-item {
 }
 
 .post-content > .tag-content {
-	margin: 10px;
+	margin-top: 1em;
+	border-top: 1px solid #cfcfcf;
+}
+
+.post-content > .tag-content > .tag-content-tag {
+	margin: 5px;
 	margin-bottom: 20px;
+	font-size: 0.8em;
 }
 
 .post-content > .content-tag-list {
@@ -237,7 +243,7 @@ a.nav-item {
 }
 
 .tag-wrapper .tag-box {
-	font-size: 0.8em;
+	font-size: 0.9em;
 }
 
 .tag-box {
@@ -278,7 +284,6 @@ a.nav-item:hover { color: #777; }
 
 .post-link {
 	margin-left: 10px;
-	font-size: 110%;
 	color: #444444;
 }
 
@@ -375,7 +380,7 @@ article.home h4 a:hover {
 
 header.post-header {
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	border-bottom: 1px solid rgb(139, 136, 136);
 	background-color: #fdfdfd;
 	vertical-align: middle;
@@ -465,7 +470,9 @@ header.home {
 	display: inline-flex;
 	width: 100%;
 	font-size: 0.6em;
+	margin-bottom: 0.7em;
 }
+
 .post-card .post-footer-tag-wrapper {
 	left: 0;
 	width: 70%;
@@ -481,8 +488,6 @@ header.home {
 .post-date {
 	text-transform: uppercase;
 	color: #555;
-	letter-spacing: 1px;
-	font-size: 0.8em;
 	display: inline-block;
 	width: 80px;
 }
@@ -497,7 +502,7 @@ footer {
 	font-family: 'Ubuntu';
 }
 
-.sidebar-footer {
+/* .sidebar-footer {
 	margin-top: 80px;
 	font-size: 0.75em;
 	font-weight: lighter;
@@ -507,7 +512,7 @@ footer {
 
 .sidebar-footer a {
 	color: #ccc;
-}
+} */
 
 .hidden {
 	display: none;
@@ -537,7 +542,7 @@ footer {
 
 	header.post-header {
 		position: relative;
-		font-size: 0.8em;
+		font-size: 1em;
 		left: 0;
 		top: 0;
 		max-width: unset;
@@ -549,7 +554,7 @@ footer {
 	.sidebar {
 		flex-flow: row nowrap;
 		font-size: 0.6em;
-		padding: 2px;
+		padding: 1px;
 		position: fixed;
 		top: unset;
 		bottom: 0;
@@ -618,7 +623,7 @@ footer {
 	}
 
 	.tag-wrapper .tag-box .tag {
-		font-size: 0.8em;
+		font-size: 0.9em;
 	}
 
 	.post-card .post-head-img img {
@@ -635,11 +640,12 @@ footer {
 	}
 
 	.post-card .post-description {
-		font-size: 0.8em;
+		font-size: 0.85em;
 	}
 
-	.post-card .post-footer {
-		font-size: 0.5em;
+	.post-card .post-footer .tag {
+		padding: 2px 7px;
+		font-size: 5px;
 	}
 
 	/* hidden */
