@@ -14,7 +14,7 @@
 <div class="sidebar-item sidebar-nav">
   	<ul class="nav">
 		<li class="nav-title">카테고리</li>
-		<li class="home">
+		<li class="about">
 			<a class="nav-item" href="/about/">
 				<span class="nav-img"><img src="\assets\img\infos\HomeImg.png" ></span>
 				<span class="name">홈으로</span>
@@ -38,7 +38,7 @@
 				<span class="name">개발 지식</span>
 			</a>
 		</li>
-		<li class="links">
+		<li class="search">
 			<a class="nav-item" href="{{ root_url }}/search/">
 				<span class="nav-img"><img src="\assets\img\infos\Search.png" ></span>
 				<span class="name">검색</span>
@@ -56,39 +56,7 @@
 </div> -->
 
 <script src="/public/js/jquery-3.4.1.slim.min.js"></script>
-<script>
-	$(window).on('hashchange', () => {
-		selectMenu();
-	});
-
-	$(document).ready(() => {
-		selectMenu();
-	});
-
-	function selectMenu() {
-		let sMenu = window.location.hash.substring(1).toLowerCase();
-		let sSelectedMenu = '.sidebar-item > .nav > li.'
-	
-		$('.sidebar-item > .nav > li').removeClass('menu-selected');
-
-		if ( sMenu ) {
-			sSelectedMenu = sSelectedMenu + sMenu;
-			$( sSelectedMenu ).addClass('menu-selected');
-		}
-		else {
-			sCategory = window.location.pathname.split('/')[1];
-
-			if ( sCategory ) {
-				sSelectedMenu = sSelectedMenu  + sCategory;
-			}
-			else{
-				sSelectedMenu = sSelectedMenu + 'home';
-			}
-		}
-
-		$(sSelectedMenu).addClass('menu-selected' );
-	}
-</script>
+<script src="/public/js/sidebar-select.js"></script>
 
 <!-- <div class="sidebar-item sidebar-footer">
 	<p>Powered by <a href="https://github.com/jekyll/jekyll">Jekyll</a></p>
