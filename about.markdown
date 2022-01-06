@@ -5,7 +5,7 @@ permalink: /about/
 ---
 # 블로그를 만들며  
 
-![logo](/assets/img/infos/open-graph.jpg)  
+
 
 산업공학 학사/석사 전공 C++ 언어 하나만 배운 비전공자로,  
 어찌저찌 2014년부터 데이터 분산관리 개발자로 재직중.  
@@ -23,5 +23,7 @@ permalink: /about/
 <br>
 실패가 계속되서 느리더라도 멈추지 않고 꾸준히 계속 할 예정이다.  
 비전공자 또는 이제 시작하는 사람들에게 도움이 되었으면 좋겠다.  
+
+![logo](/assets/img/infos/open-graph.jpg)  
 
 

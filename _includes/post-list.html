@@ -19,7 +19,7 @@
                             tag-category-{{ post.categories[0] | downcase }}
                         {% endif %}
                     {% endfor %}>
-                    <span class="tag" data-tag="{{tag | downcase}}">{{tag}}</span>
+                    <span class="tag" data-tag="{{tag | downcase}}">{{tag | replace: "-", ' '}}</span>
                 </div>
             </span>
             {%- endfor -%}
@@ -54,7 +54,7 @@
                                 <div class="post-footer-tag-wrapper">
                                     {%- for tag in post.tags -%}
                                         <div class="tag-box">
-                                            <span class="tag" data-tag="{{tag | downcase}}">{{tag | capitalize }}</span>
+                                            <span class="tag" data-tag="{{tag | downcase}}">{{tag | capitalize | replace: "-", ' '}}</span>
                                         </div>
                                     {%- endfor -%}
                                 </div>
