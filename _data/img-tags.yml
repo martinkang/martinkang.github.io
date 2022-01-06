@@ -19,3 +19,6 @@ apple: fab fa-apple
 db: fas fa-database
 stream: fas fa-stream
 desktop: fas fa-desktop
+flask: fas fa-flask
+python: fab fa-python
+aws: fab fa-aws

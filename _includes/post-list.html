@@ -41,8 +41,8 @@
                     <div class="post-card">
                         <a class="post-link" href="{{ post.url | relative_url }}">
                             <div class="post-head"><span class="post-head-img">
-                                {%- if site.data.imgs contains post.img-tag -%}
-                                    <i class="{{site.data.imgs[post.img-tag]}}"></i>
+                                {%- if site.data.img-tags contains post.img-tag -%}
+                                    <i class="{{site.data.img-tags[post.img-tag]}}"></i>
                                 {%- else -%}    
                                     {%- if post.img-tag -%}
                                         <img src="\assets\img\infos\tag-{{ post.img-tag | downcase }}.png" >
