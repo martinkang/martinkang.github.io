@@ -41,10 +41,14 @@
                     <div class="post-card">
                         <a class="post-link" href="{{ post.url | relative_url }}">
                             <div class="post-head"><span class="post-head-img">
-                                {%- if post.img-tag -%}
-                                    <img src="\assets\img\infos\tag-{{ post.img-tag | downcase }}.png" >
-                                {%- else -%}
-                                    <img src="\assets\img\infos\tag-{{ post.categories[0] | downcase }}.png" >
+                                {%- if site.data.imgs contains post.img-tag -%}
+                                    <i class="{{site.data.imgs[post.img-tag]}}"></i>
+                                {%- else -%}    
+                                    {%- if post.img-tag -%}
+                                        <img src="\assets\img\infos\tag-{{ post.img-tag | downcase }}.png" >
+                                    {%- else -%}
+                                        <img src="\assets\img\infos\tag-{{ post.categories[0] | downcase }}.png" >
+                                    {%- endif -%}
                                 {%- endif -%}
                             </span>
                                 <span class="post-head-title">{{ post.title | escape }}</span>

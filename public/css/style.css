@@ -213,9 +213,9 @@ header {
 	margin-bottom: 5px;
 }
 
-a.nav-item > .nav-img > img {
-	width: 50px;
-	height: 50px;
+a.nav-item > .nav-img > i {
+	font-size: 40px;
+	line-height: 40px;
 
 	/* 그림 세로 가운데 정렬 */
 	vertical-align: middle;
@@ -446,9 +446,7 @@ header.home {
 	align-items: center;
 }
 
-.post-card .post-head-img {
-	height: 60px;
-	width: 60px;
+.post-card .post-head-img {	
 	vertical-align: middle;
 	margin: 0 10px 0 0;
 }
@@ -456,6 +454,15 @@ header.home {
 .post-card .post-head-img img {
 	width: 35px;
 	height: 35px;
+	max-width: 35px;
+	max-height: 35px;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.post-card .post-head-img i {
+	font-size: 35px;
+	color: #051628;
 	max-width: 35px;
 	max-height: 35px;
 	align-items: center;
@@ -627,9 +634,9 @@ footer {
 		margin: 5px;
 	}
 
-	a.nav-item > .nav-img > img {
-		width: 24px;
-		height: 24px;
+	a.nav-item > .nav-img > i {
+		font-size: 24px;
+		line-height: 24px;
 		
 		justify-content: center;
 	}
@@ -645,7 +652,15 @@ footer {
 		max-height: 24px;
 		align-items: center;
 		vertical-align: middle;
-}
+	}
+
+	.post-card .post-head-img i {
+		font-size: 24px;
+		max-width: 24px;
+		max-height: 24px;
+		align-items: center;
+		vertical-align: middle;
+	}
 
 	.post-card .post-head-title {
 		font-size: 1.1em;
