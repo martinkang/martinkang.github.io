@@ -183,6 +183,18 @@ header {
 .nav li {
 	padding: 14px 7px;
 	opacity: 70%;
+
+	transform:scale(1.0);        
+	transition-duration: 0.5s;
+}
+
+.nav li > a {
+	color: #fff;
+}
+
+.nav li:hover {
+	transform:scale(1.05);
+	opacity: 85%;
 }
 
 .nav li.nav-title {
@@ -569,7 +581,7 @@ footer {
 	}
 
 	.sidebar-nav {
-		margin: 0px 3px 0px 3px;
+		margin: 0em 2em 0em 2em;
 		width: 100%;
 		vertical-align: middle;
 	}

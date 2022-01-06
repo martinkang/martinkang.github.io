@@ -1,6 +1,6 @@
 <div class="sidebar-item sidebar-header">
 	<div class='sidebar-brand'>
-		<a href="{{ root_url }}/{{ site.category_dir }}"><img src="\assets\img\infos\open-graph.jpg" ></a>
+		<a href="{{ root_url }}/"><img src="\assets\img\infos\open-graph.jpg" ></a>
 	</div>
 	<p class="lead">{{ site.description }}</p>
 	{%- if social.github -%}
@@ -13,7 +13,7 @@
 
 <div class="sidebar-item sidebar-nav">
   	<ul class="nav">
-		<li class="nav-title">카테고리</li>
+		<li class="nav-title"><a href="{{ root_url }}/{{ site.category_dir }}">카테고리</a></li>
 		<li class="about">
 			<a class="nav-item" href="/about/">
 				<span class="nav-img"><img src="\assets\img\infos\HomeImg.png" ></span>
