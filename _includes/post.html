@@ -6,19 +6,16 @@
 	</header>
 
 	<div class="post-content">
+		{{ content }}
 		<div class="tag-content">
 			{% if page.tags %}
-			태그 : 
 				{% for tag in page.tags %}
 					{% if site.data.tags | downcase contains tag | downcase %}
-					<div class="tag-box">
-						<span class="tag">#{{ tag }}</span>
-					</div>
+					<span class="tag-content-tag">#{{ tag }}</span>
 					{% endif %}	
 				{% endfor %}
 			{% endif %}	
 		</div>
-		{{ content }}
 	</div>
 
 	<br>
