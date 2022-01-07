@@ -284,9 +284,6 @@ a.nav-item {
 	opacity: 100%;
 }
 
-
-a.nav-item:hover { color: #777; }
-
 .badge { font-size: 70%; }
 .badge::before { content: "("; }
 .badge::after { content: ")"; }
@@ -616,6 +613,11 @@ footer {
 
 	.sidebar-nav > .nav > li {
 		padding: 0px;
+	}
+	
+
+	.nav > li.menu-selected {
+		opacity: 100%;
 	}
 
 	a.nav-item > span {
