@@ -213,6 +213,14 @@ header {
 	margin-bottom: 5px;
 }
 
+a.nav-item > .nav-img {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
 a.nav-item > .nav-img > i {
 	font-size: 40px;
 	line-height: 40px;
@@ -613,6 +621,9 @@ footer {
 
 	.sidebar-nav > .nav > li {
 		padding: 0px;
+		align-items: center;
+		vertical-align: middle;
+		text-align: center;
 	}
 	
 
@@ -634,6 +645,10 @@ footer {
 	a.nav-item > .nav-img {
 		justify-content: center;
 		margin: 5px;
+		width: 27px;
+		height: 27px;
+		line-height: 27px;
+		text-align: center;
 	}
 
 	a.nav-item > .nav-img > i {
