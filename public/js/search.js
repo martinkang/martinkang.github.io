@@ -29,7 +29,16 @@ $(function () {
       );
     } else {
       for (var i = 0; i < searchResult.length; i++) {
+        var sTags = "";
+
+        for( var j = 0; j < searchResult[i].tags.length; j++ )
+        {
+          sTags = sTags + '<span class="tag" data-tag="' + searchResult[i].tags[j] + '">' + 
+          searchResult[i].tags[j] + '</span>'
+        }
+
         $('#search-result').append(
+          
            '<div class="post-card">' +
           '<a class="post-link" href="' + searchResult[i].url + '">' +
               '<div class="post-head"><span class="post-head-img">' +
@@ -40,8 +49,8 @@ $(function () {
               '<div class="post-description">' + searchResult[i].description + '</div>' +
               '<div class="post-footer">' +
                   '<div class="post-footer-tag-wrapper">' +
-                          '<div class="tag-box">' +
-                              '<span class="tag" data-tag="' + searchResult[i].tags + '">' + searchResult[i].tags + '</span>' +
+                          '<div class="tag-box">' + sTags +
+                              //'<span class="tag" data-tag="' + searchResult[i].tags + '">' + searchResult[i].tags + '</span>' +
                           '</div>' +
                   '</div>' +
                   '<div class="post-footer-date">' + searchResult[i].date + '</div>' +
