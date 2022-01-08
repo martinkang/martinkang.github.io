@@ -1,61 +1,79 @@
-$(function () {
-  var posts = [];
-  $.get('/search/data.json', function (data) {
-    posts = data;
-  });
-  $('#search').on('keyup', function () {
-    var keyword = this.value.toLowerCase();
-    var searchResult = [];
+function setTags( aTagCount, aTags )
+{
+  let sTags = "";
 
-    if (keyword.length > 0) {
+  for( let i = 0; i < aTagCount; i++ )
+  {
+    sTags = sTags + '<span class="tag" data-tag="' + aTags[i] + '">' + 
+    aTags[i] + '</span>'
+  }
+
+  return sTags;
+}
+
+function setPostCard( aSearchResult ) {
+  let sPostCard = '';
+  let sTags = "";
+
+  sTags = setTags( aSearchResult.tags.length, aSearchResult.tags );
+
+  sPostCard =  '<div class="post-card">' +
+                '<a class="post-link" href="' + aSearchResult.aUrl + '">' +
+                  '<div class="post-head">' +
+                    '<span class="post-head-img"><i class="'+ aSearchResult.imgtag + '"></i></span>' +
+                    '<span class="post-head-title">' + aSearchResult.title + ' </span>' +
+                  '</div>' +
+                  '<div class="post-description">' + aSearchResult.description + '</div>' +
+                  '<div class="post-footer">' +
+                    '<div class="post-footer-tag-wrapper">' +
+                      '<div class="tag-box">' + sTags + '</div>' +
+                    '</div>' +
+                    '<div class="post-footer-date">' + aSearchResult.date + '</div>' +
+                  '</div>' + 
+                '</a>' +
+               '</div>';
+
+  return sPostCard;
+}
+
+/* 즉시 실행 함수 https://beomy.tistory.com/9 */
+$(function () {
+  let sPosts = [];
+  $.get('/search/data.json', function (data) {
+    sPosts = data;
+  });
+  
+  $('#search').on('keyup', function () {
+    let sKeyword = this.value.toLowerCase();
+    let sSearchResult = [];
+
+    if (sKeyword.length > 0) {
       $('#search-result').show();
-    } else {
+      $('#search-result').text('');
+    } 
+    else {
       $('#search-result').hide();
     }
-    $('.result-item').remove();
 
-    for (var i = 0; i < posts.length; i++) {
-      var post = posts[i];
+    $('#search-result').text('');
+  
+    for (let i = 0; i < sPosts.length; i++) {
+      let sPost = sPosts[i];
       if (
-        post.title.toLowerCase().indexOf(keyword) >= 0 ||
-        post.description.toLowerCase().indexOf(keyword) >= 0
+        ( sPost.title.toLowerCase().indexOf(sKeyword) >= 0 ) ||
+        ( sPost.description.toLowerCase().indexOf(sKeyword) >= 0 )
       ) {
-        searchResult.push(post);
+        sSearchResult.push(sPost);
       }
     }
-    if (searchResult.length === 0) {
+    if (sSearchResult.length === 0) {
       $('#search-result').append(
-        '<div class="result-item"><div class="description">There is no search result.</div></div>'
+        '<div class="result-item"><div class="description">검색 결과가 없습니다.</div></div>'
       );
-    } else {
-      for (var i = 0; i < searchResult.length; i++) {
-        var sTags = "";
-
-        for( var j = 0; j < searchResult[i].tags.length; j++ )
-        {
-          sTags = sTags + '<span class="tag" data-tag="' + searchResult[i].tags[j] + '">' + 
-          searchResult[i].tags[j] + '</span>'
-        }
-
-        $('#search-result').append(
-          
-           '<div class="post-card">' +
-          '<a class="post-link" href="' + searchResult[i].url + '">' +
-              '<div class="post-head"><span class="post-head-img">' +
-                      '<i class="'+ searchResult[i].imgtag + '"></i>' +
-              '</span>' +
-                  '<span class="post-head-title">' + searchResult[i].title + ' </span>' +
-              '</div>' +
-              '<div class="post-description">' + searchResult[i].description + '</div>' +
-              '<div class="post-footer">' +
-                  '<div class="post-footer-tag-wrapper">' +
-                          '<div class="tag-box">' + sTags +
-                              //'<span class="tag" data-tag="' + searchResult[i].tags + '">' + searchResult[i].tags + '</span>' +
-                          '</div>' +
-                  '</div>' +
-                  '<div class="post-footer-date">' + searchResult[i].date + '</div>' +
-          '</div></a></div>'
-        );
+    } 
+    else {
+      for (let i = 0; i < sSearchResult.length; i++) {
+        $('#search-result').append( setPostCard(sSearchResult[i]) );
       }
     }
   });
