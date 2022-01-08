@@ -535,20 +535,22 @@ header.search-header {
 	line-height: 80px;
 	height: 60px;
 	width: 100%;
-	border-bottom: 2px solid #828283;
+	border-bottom: 2px solid #bebebe;
 	vertical-align: bottom;
 	text-align: left;
 }
 
 .search-bar:hover {
 	transition-duration: 1s;
-	border-bottom: 2px solid #090083;
+	border-bottom: 2px solid #051628;
 }
 
 .search-bar > #search {
 	border: unset;
+	font-size: 1em;
 	height: 35px;
 	width: 80%;
+	font-family: "aggro";
 	outline: none; /* input 창에 포커스 갔을때 아웃라인 생기는거 제거 */
 }
 
