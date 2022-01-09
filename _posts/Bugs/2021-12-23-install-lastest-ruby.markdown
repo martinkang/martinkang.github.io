@@ -27,12 +27,12 @@ bundle install
 ( Ruby3.2 의 기본 Bundler 버전은 2.3.x 이다. )  
 <span style="color:red">***<U>에러 메시지는 꼭 읽어보자.</U>***</span> 모든 문제 해결은 에러 메시지부터 시작한다.  
 
-![need-17](/assets/img/post-img/jekyll-start/need-bundle-17.png)  
+![need-17](/assets/img/post-img/jekyll-start/need-bundle-17.webp)  
 그래서 시키는대로 ***bundle update --bundler*** 후에 ***gem install bundler:1.17.2*** 를 수행해본다. 다행히 잘 깔린다.  
-![need-17](/assets/img/post-img/jekyll-start/install-bundle-172.png)   
+![need-17](/assets/img/post-img/jekyll-start/install-bundle-172.webp)   
 그럼 다시 ***bundle install*** 을 수행해 본다.  
 
-![removed-32](/assets/img/post-img/jekyll-start/removed-32.png)   
+![removed-32](/assets/img/post-img/jekyll-start/removed-32.webp)   
 테마마다 필요한 Gemfile 이 다르기 때문에 에러 메시지가 조금씩 다르겠지만   
 Ruby3.2 에는 내가 필요한 pathname#untaint 가 없다고 한다.  
 <br>
@@ -43,9 +43,9 @@ Ruby3.2 에는 내가 필요한 pathname#untaint 가 없다고 한다.
 <br>
 
 꼭 프로그램 추가 제거에서 Ruby 를 찾아 3.x 버전대를 지우고 나서 2.x 버전을 받아야 한다.   
-![removed-pro](/assets/img/post-img/jekyll-start/remove-prog.png)   
+![removed-pro](/assets/img/post-img/jekyll-start/remove-prog.webp)   
 프로그램 추가/제거 창을 열었으면, 찾기창에서  Ruby 를 찾아 제거한다.  
-![removed-ruby](/assets/img/post-img/jekyll-start/remove-ruby.png)   
+![removed-ruby](/assets/img/post-img/jekyll-start/remove-ruby.webp)   
 
 <br>
 보통 요즘 소프트웨어들은 독립적으로 만들지 않고, 배포된 많은 오픈 소스들을 필요로 한다.  
