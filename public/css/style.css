@@ -49,6 +49,10 @@ html {
 	src: url(/assets/fonts/SB-aggro-L.ttf) format('truetype');
 	font-weight: normal;
     font-style: normal;
+	
+	/* https://web.dev/font-display/?utm_source=lighthouse&utm_medium=lr 
+	The easiest way to avoid showing invisible text while custom fonts load is to temporarily show a system font.*/
+	font-display: swap; 	
 }
 
 
