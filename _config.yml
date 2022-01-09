@@ -31,7 +31,7 @@ svg:
 # Build settings
 # theme: minima
 # https://spsarolkar.github.io/rouge-theme-preview/
-highlighter-theme: monokai
+highlighter-theme: github
 date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed

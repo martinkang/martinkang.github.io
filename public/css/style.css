@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
-@import url(syntax/monokai.css);
+@import url(syntax/github.css);
 
 :root {
   --blue: #007bff;
