@@ -92,10 +92,7 @@ $(function () {
   $.get('/search/data.json', function (data) {
     sPosts = data;
   });
-  
-  $.get('/_data/img-tags.yml', function (data) {
-    sPosts = data;
-  });
+
 
   $('#search').on('keyup', function () {
     let sKeyword = this.value.toLowerCase();
