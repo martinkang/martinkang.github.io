@@ -7,7 +7,7 @@ function setCategory() {
         $('#category-name').text($(sCategory).text());
      }
      else {
-        $('#category-name').text("전체 글 목록");
+        $('#category-name').text("전체 글");
      }
 }
 

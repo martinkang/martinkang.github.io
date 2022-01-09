@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 코딩독학
-permalink: /about/
 ---
 <br>
 

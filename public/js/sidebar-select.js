@@ -18,13 +18,7 @@ function selectMenu() {
     }
     else {
         sCategory = window.location.pathname.split('/')[1];
-
-        if ( sCategory ) {
-            sSelectedMenu = sSelectedMenu  + sCategory;
-        }
-        else{
-            sSelectedMenu = sSelectedMenu + 'home';
-        }
+        sSelectedMenu = sSelectedMenu  + sCategory;
     }
 
     $(sSelectedMenu).addClass('menu-selected' );

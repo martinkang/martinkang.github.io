@@ -105,7 +105,9 @@ $(function () {
   $(window).on("pageshow", (event) => 
   {
     let sInputBox = document.getElementById('search');
-    sInputBox.value = null;
+    if ( sInputBox.value) {
+      searchKeyword( sPosts, sInputBox.value );
+    }
   });
 });
 
