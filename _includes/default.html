@@ -6,23 +6,20 @@
   <!-- <link href="/public/css/bootstrap.min.css" rel="stylesheet"> -->
 
   <link href="/public/css/style.css" rel="stylesheet">
+ 
   <body>
-  	<div class="container"> 
-		  
-		
-		
-		<div class="sidebar">
-			{% include sidebar.html %}
-		</div>
-		<div class="content">
-			{{ content }}
-		</div>
+   <div class="container"> 
+      <div class="sidebar">
+        {% include sidebar.html %}
+      </div>
+      <div class="content">
+        {{ content }}
+      </div>
 	</div>
   </body>
 
   <!-- https://fontawesome.com/ -->
   <script src="https://kit.fontawesome.com/d1a2641fbd.js" crossorigin="anonymous"></script>
-  <script src="/public/js/jquery-3.4.1.slim.min.js"></script>
   <script src="/public/js/sidebar.js"></script>
   <script src="/public/js/change-page.js"></script>
 </html>
