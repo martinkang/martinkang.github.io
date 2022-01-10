@@ -1,5 +1,5 @@
 /* global variable */
-const MIN_SCROLL_SHIFT = 10;
+const MIN_SCROLL_SHIFT = 5;
 let gScrolled = false;
 let gLastScrollTop = 0;
 let gNavBarHeight = $('.sidebar').clientHeight;
