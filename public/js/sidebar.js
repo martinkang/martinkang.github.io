@@ -1,3 +1,9 @@
+/* global variable */
+const MIN_SCROLL_SHIFT = 10;
+let gScrolled = false;
+let gLastScrollTop = 0;
+let gNavBarHeight = $('.sidebar').clientHeight;
+
 $(window).on('hashchange', () => {
     selectMenu();
 });
@@ -5,6 +11,33 @@ $(window).on('hashchange', () => {
 $(document).ready(() => {
     selectMenu();
 });
+
+$(window).scroll(function(event){
+    gScrolled = true;
+})
+
+/* ms 초 마다 실행 */
+setInterval( function() {
+    if ( gScrolled ) {
+        hasScrolled();
+        gScrolled = false;
+    }
+    else{ 
+        $('.sidebar').removeClass('nav-down').addClass('nav-up'); 
+    }
+}, 250);
+
+function hasScrolled() {
+    var sCurrentScrollTop = $(this).scrollTop(); 
+ 
+    if ( Math.abs( gLastScrollTop - sCurrentScrollTop ) <= MIN_SCROLL_SHIFT ) 
+        return; 
+    
+    $('.sidebar').removeClass('nav-up').addClass('nav-down');
+    
+    gLastScrollTop = sCurrentScrollTop;
+}
+
 
 function selectMenu() {
     let sMenu = window.location.hash.substring(1).toLowerCase();

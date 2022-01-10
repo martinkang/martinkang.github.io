@@ -154,6 +154,7 @@ header {
 	height: auto;
 }
 
+
 .lead {
 	width: 100%;
 	font-size: 0.9em;
@@ -639,7 +640,16 @@ footer {
 		height: 60px;
 		min-height: 60px;
 		max-width: unset;
+
+		transition: bottom 0.3s ease-in-out;
 	}
+
+			
+	/* 이동시 사이드바 사라지게 */
+	.sidebar.nav-down {
+		bottom: -60px;
+	}
+
 
 	.post-content {
 		top: 80px;
@@ -678,7 +688,6 @@ footer {
 		vertical-align: middle;
 		text-align: center;
 	}
-	
 
 	.nav > li.menu-selected {
 		opacity: 100%;
