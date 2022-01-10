@@ -11,6 +11,6 @@ title: 코딩독학
 
 <br>
 실패가 계속되서 느리더라도 멈추지 않고 꾸준히 계속 할 예정.
-![logo](/assets/img/infos/open-graph.jpg)  
+![logo](/assets/img/infos/open-graph.webp)  
 
 
