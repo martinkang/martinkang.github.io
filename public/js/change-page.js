@@ -52,14 +52,17 @@ function removeTag() {
 
     if ( sCategory != '')
     {
-        let sTags = $('.tag-wrapper > .tag-box').each((i, e) => {
-            if ( ( !e.hasAttribute('tag-category-all') ) 
-            && ( !e.hasAttribute(`tag-category-${sCategory}` ) )) {
-                $(e).hide();
-            } else {
-                $(e).show();
+        let sTags = document.querySelectorAll( '.tag-wrapper > .tag-box' );
+        for ( let i = 0; i < sTags.length; i++ ) {
+            if ( ( sTags.item(i).getAttribute( `tag-category-all` ) == null )  &&
+                 ( sTags.item(i).getAttribute( `tag-category-${sCategory}` ) == null ) )
+            {
+                sTags.item(i).classList.add('hidden');
             }
-        });
+            else {
+                sTags.item(i).classList.remove('hidden');
+            }
+        }
     }
 }
 
@@ -125,8 +128,6 @@ function filterByTagName( aTagName ) {
                 sAllPostCards.item(i).classList.remove( 'hidden' );
                 sAllPostCards.item(i).classList.add( 'selected' );
             }
-        }
-
-       
+        }       
     }
 }

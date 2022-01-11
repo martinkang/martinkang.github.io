@@ -50,7 +50,6 @@ function selectMenu() {
     let sMenu = window.location.hash.substring(1).toLowerCase();
     let sSelectedMenu = document.getElementsByClassName( 'sidebar-item-list' );
     let sSelectedMenuName = '';
-    let sSelected = false;
 
     for ( let i = 0; i < sSelectedMenu.length; i++ ) {
         sSelectedMenu.item(i).classList.remove('menu-selected');
@@ -58,24 +57,24 @@ function selectMenu() {
 
     if ( sMenu ) {
         sSelectedMenuName = sMenu;
-        sSelected = true;
     }
     else {
         sCategory = window.location.pathname.split('/')[1];
 
         if ( sCategory ) {
             sSelectedMenuName = sCategory;
-            sSelected = true;
+        }
+        else {
+            sSelectedMenuName = "home";
+        }
+    }
+  
+    for ( let i = 0; i < sSelectedMenu.length; i++ ) {
+        if ( document.getElementsByClassName( 'sidebar-item-list' ).item(i).classList[1] == sSelectedMenuName )
+        {
+            document.getElementsByClassName( 'sidebar-item-list' ).item(i).classList.add( 'menu-selected' );
+            break;
         }
     }
 
-    if ( sSelected ) {
-        for ( let i = 0; i < sSelectedMenu.length; i++ ) {
-            if ( document.getElementsByClassName( 'sidebar-item-list' ).item(i).classList[1] == sSelectedMenuName )
-            {
-                document.getElementsByClassName( 'sidebar-item-list' ).item(i).classList.add( 'menu-selected' );
-                break;
-            }
-        }
-    }
 }
