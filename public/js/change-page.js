@@ -90,22 +90,26 @@ window.addEventListener( "pageshow", (event) =>
     // }
 });
 
+function clearClass( aTag ) {
+    let sHiddenElems = document.getElementsByClassName( 'hidden' );
+    let sSelectedElems = document.getElementsByClassName( 'selected' );
+    for ( let i = 0; i < sHiddenElems.length; i++ ) {
+        sHiddenElems.item(i).classList.remove( 'hidden' );
+    }
+
+    for ( let i = 0; i < sSelectedElems.length; i++ ) {
+        sSelectedElems.item(i).classList.remove( 'selected' );
+    }
+}
+
 window.addEventListener( 'click', (event) =>
 {
     sCurrentTag = event.target.dataset.tag;
 
     if ( sCurrentTag ) {
-        let sHiddenElems = document.getElementsByClassName( 'hidden' );
-        let sSelectedElems = document.getElementsByClassName( 'selected' );
-        for ( let i = 0; i < sHiddenElems.length; i++ ) {
-            sHiddenElems.item(i).classList.remove( 'hidden' );
-        }
-
-        for ( let i = 0; i < sSelectedElems.length; i++ ) {
-            sSelectedElems.item(i).classList.remove( 'selected' );
-        }
-
-        filterByTagName( sCurrentTag );
+        clearClass( sCurrentTag );
+        filterPostCardsByTagName( sCurrentTag );
+        removeTag();
 
         sSelectedTags = document.querySelectorAll(`[data-tag="${sCurrentTag}"]`);
         for ( let i = 0; i < sSelectedTags.length; i++ ) {
@@ -114,11 +118,10 @@ window.addEventListener( 'click', (event) =>
     }
 });
 
-function filterByTagName( aTagName ) {
+function filterPostCardsByTagName( aTagName ) {
     if ( aTagName != "all") {
         let sAllPostCards = document.getElementsByClassName( 'post-wrapper' );
 
-        
         for ( let i = 0; i < sAllPostCards.length; i++ ) {
             if ( sAllPostCards.item(i).getAttribute( `data-${aTagName}` ) == null ) {
                 sAllPostCards.item(i).classList.add('hidden');
@@ -129,5 +132,12 @@ function filterByTagName( aTagName ) {
                 sAllPostCards.item(i).classList.add( 'selected' );
             }
         }       
+    }
+    else {
+        let sAllPostCards = document.getElementsByClassName( 'post-wrapper' );
+        for ( let i = 0; i < sAllPostCards.length; i++ ) {
+            sAllPostCards.item(i).classList.remove( 'hidden' );
+            sAllPostCards.item(i).classList.remove( 'selected' );
+        }
     }
 }
