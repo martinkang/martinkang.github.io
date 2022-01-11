@@ -35,7 +35,7 @@
                 {% endfor %}
                 {% endif %}>
         
-                <li class="post-list-item post-category-{{post.categories[0] | downcase}}" data-tag="{{post.tags | downcase}}">
+                <li class="post-list-item post-category-{{post.categories[0] | downcase}}" data-tag="{{post.tags | downcase}}" hidden=true>
                     <!-- {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%} -->
                     {%- assign date_format = "%Y/%m/%d" -%}
                     <div class="post-card">

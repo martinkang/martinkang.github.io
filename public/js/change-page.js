@@ -23,9 +23,10 @@ function removeCategory() {
     }
 
 
+    let sItems = document.getElementsByClassName('post-list-item');
     if (window.location.hash) {
         let sHash = window.location.hash.substring(1).toLocaleLowerCase();
-        let sItems = document.getElementsByClassName('post-list-item');
+        
       
         for ( let i = 0; i < sItems.length; i++ ) {
             if ( !(sItems.item(i).classList[1] == 'post-category-' + sHash) ) {
@@ -34,6 +35,11 @@ function removeCategory() {
             else {
                 sItems.item(i).hidden = false;
             }
+        }
+    }
+    else {
+        for ( let i = 0; i < sItems.length; i++ ) {
+            sItems.item(i).hidden = false;
         }
     }
 
