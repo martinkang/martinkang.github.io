@@ -14,41 +14,40 @@
 <div class="sidebar-item sidebar-nav">
   	<ul class="nav">
 		<li class="nav-title">카테고리</li>
-		<li class="category">
+		<li class="sidebar-item-list category">
 			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}">
 				<div class="nav-img"><i class="fas fa-list"></i></div>
-				<span class="name">전체 글</span>
+				<span id="nav-item-name-category" class="name">전체 글</span>
 			</a>
 		</li>
-		<li class="develop">
+		<li class="sidebar-item-list develop">
 			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#develop">
 				<div  class="nav-img"><i class="fas fa-code"></i></div>
-				<span class="name">개발 일기</span>
+				<span id="nav-item-name-develop" class="name">개발 일기</span>
 			</a>
 		</li>
-		<li class="bugs">
+		<li class="sidebar-item-list bugs">
 			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#bugs">
 				<div  class="nav-img"><i class="fas fa-bug"></i></div>
-				<span class="name">문제 해결</span>
+				<span id="nav-item-name-bugs" class="name">문제 해결</span>
 			</a>
 		</li>
-		<li class="study">
+		<li class="sidebar-item-list study">
 			<a class="nav-item" href="{{ root_url }}/{{ site.category_dir }}#study">
 				<div  class="nav-img"><i class="fas fa-book-reader"></i></div >
-				<span class="name">개발 지식</span>
+				<span id="nav-item-name-study" class="name">개발 지식</span>
 			</a>
 		</li>
-		<li class="search">
+		<li class="sidebar-item-list search">
 			<a class="nav-item" href="{{ root_url }}/search/">
 				<div  class="nav-img"><i class="fas fa-search"></i></div>
-				<span class="name">검색</span>
+				<span id="nav-item-name-search" class="name">검색</span>
 			</a>
 		</li>
 	  </nav>
 	</ul>
 </div>
 
-<script src="/public/js/jquery-3.4.1.slim.min.js"></script>
 <script src="/public/js/sidebar.js"></script>
 
 <!-- 방문자 카운터

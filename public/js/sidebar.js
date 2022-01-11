@@ -1,18 +1,23 @@
 /* global variable */
 const MIN_SCROLL_SHIFT = 5;
+const SIDEBAR = document.getElementById('sidebar-id');
 let gScrolled = false;
 let gLastScrollTop = 0;
-let gNavBarHeight = $('.sidebar').clientHeight;
+let gNavBarHeight = SIDEBAR.clientHeight;
 
-$(window).on('hashchange', () => {
+window.addEventListener( 'hashchange', () => {
     selectMenu();
 });
 
-$(document).ready(() => {
+document.onload = function() {
+    selectMenu();
+}
+
+window.addEventListener( "pageshow", (event) => {
     selectMenu();
 });
 
-$(window).scroll(function(event){
+window.addEventListener ('scroll', function(){
     gScrolled = true;
 })
 
@@ -23,17 +28,19 @@ setInterval( function() {
         gScrolled = false;
     }
     else{ 
-        $('.sidebar').removeClass('nav-down').addClass('nav-up'); 
+        SIDEBAR.classList.remove('nav-down');
+        SIDEBAR.classList.add('nav-up'); 
     }
 }, 250);
 
 function hasScrolled() {
-    var sCurrentScrollTop = $(this).scrollTop(); 
+    var sCurrentScrollTop = window.scrollY;
  
     if ( Math.abs( gLastScrollTop - sCurrentScrollTop ) <= MIN_SCROLL_SHIFT ) 
         return; 
-    
-    $('.sidebar').removeClass('nav-up').addClass('nav-down');
+       
+    SIDEBAR.classList.remove('nav-up');
+    SIDEBAR.classList.add('nav-down'); 
     
     gLastScrollTop = sCurrentScrollTop;
 }
@@ -41,26 +48,34 @@ function hasScrolled() {
 
 function selectMenu() {
     let sMenu = window.location.hash.substring(1).toLowerCase();
-    let sSelectedMenu = '.sidebar-item > .nav > li.'
+    let sSelectedMenu = document.getElementsByClassName( 'sidebar-item-list' );
+    let sSelectedMenuName = '';
     let sSelected = false;
 
-    $('.sidebar-item > .nav > li').removeClass('menu-selected');
+    for ( let i = 0; i < sSelectedMenu.length; i++ ) {
+        sSelectedMenu.item(i).classList.remove('menu-selected');
+    }
 
     if ( sMenu ) {
-        sSelectedMenu = sSelectedMenu + sMenu;
-        $( sSelectedMenu ).addClass('menu-selected');
+        sSelectedMenuName = sMenu;
         sSelected = true;
     }
     else {
         sCategory = window.location.pathname.split('/')[1];
 
         if ( sCategory ) {
-            sSelectedMenu = sSelectedMenu  + sCategory;
+            sSelectedMenuName = sCategory;
             sSelected = true;
         }
     }
 
     if ( sSelected ) {
-        $(sSelectedMenu).addClass('menu-selected' );
+        for ( let i = 0; i < sSelectedMenu.length; i++ ) {
+            if ( document.getElementsByClassName( 'sidebar-item-list' ).item(i).classList[1] == sSelectedMenuName )
+            {
+                document.getElementsByClassName( 'sidebar-item-list' ).item(i).classList.add( 'menu-selected' );
+                break;
+            }
+        }
     }
 }
