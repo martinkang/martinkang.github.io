@@ -154,6 +154,9 @@ header {
 	height: auto;
 }
 
+svg::before{
+    font-size: 40px;
+}
 
 .lead {
 	width: 100%;

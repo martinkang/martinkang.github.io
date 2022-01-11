@@ -42,7 +42,7 @@
                         <a class="post-link" href="{{ post.url | relative_url }}">
                             <div class="post-head"><span class="post-head-img">
                                 {%- if site.data.img-tags contains post.img-tag -%}
-                                    <i class="{{site.data.img-tags[post.img-tag]}}"></i>
+                                    <i class="{{site.data.img-tags[post.img-tag]}} fa-2x"></i>
                                 {%- else -%}    
                                     {%- if post.img-tag -%}
                                         <img src="\assets\img\infos\tag-{{ post.img-tag | downcase }}.webp" >
