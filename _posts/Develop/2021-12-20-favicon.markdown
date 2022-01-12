@@ -14,14 +14,14 @@ img-tag: config
 
 ### Favicon 이란?
 아래와 같이 웹 브라우저의 주소창에 표시되는 웹사이트나 웹페이지를 대표하는 아이콘이다.  
-![favicon-def](/assets/img/post-img/favicon/favicon.webp)  
+![favicon-def](/assets/img/post-img/favicon/favicon.png)  
 스마트 폰에서는 웹 페이지를 홈화면에 추가하면 아래와 같이 나타난다.  
-![favicon-home](/assets/img/post-img/favicon/favicon-home.webp)
+![favicon-home](/assets/img/post-img/favicon/favicon-home.png)
 
 
 ### Favicon 설정 Before ###  
 보통 Favicon 을 따로 설정하지 않으면 (크롬 기준으로) 아래와 같이 `(Favicon)Title` 로 표기가 된다.  
-![before-favicon](/assets/img/post-img//favicon/before-favicon.webp)  
+![before-favicon](/assets/img/post-img//favicon/before-favicon.png)  
 
 
 ### Favicon 설정하기  

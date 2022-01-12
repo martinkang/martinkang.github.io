@@ -1,6 +1,7 @@
 <div class="post-content">
   
     {%- if site.posts.size > 0 -%}	
+    
     <!-- 각 카테고리의 태그 리스트 -->
     <div class="content-tag-list">
         <span class="tag-wrapper">
@@ -22,7 +23,7 @@
                     <span class="tag" data-tag="{{tag | downcase}}">{{tag | replace: "-", ' '}}</span>
                 </div>
             </span>
-            {%- endfor -%}
+        {%- endfor -%}
         <br>
     </div>
 
@@ -45,9 +46,9 @@
                                     <i class="{{site.data.img-tags[post.img-tag]}} fa-2x"></i>
                                 {%- else -%}    
                                     {%- if post.img-tag -%}
-                                        <img src="\assets\img\infos\tag-{{ post.img-tag | downcase }}.webp" >
+                                        <img src="\assets\img\infos\tag-{{ post.img-tag | downcase }}.png" >
                                     {%- else -%}
-                                        <img src="\assets\img\infos\tag-{{ post.categories[0] | downcase }}.webp" >
+                                        <img src="\assets\img\infos\tag-{{ post.categories[0] | downcase }}.png" >
                                     {%- endif -%}
                                 {%- endif -%}
                             </span>
@@ -72,7 +73,8 @@
             </div>
           {%- endfor -%}
     </ul>
-      {%- endif -%}
+
+    {%- endif -%}
 </div>
 
-<script src="/public/js/change-page.js"></script>
+

@@ -20,7 +20,7 @@ function setImg( aImgTag )
     sImgPath = '<i class="'+ aImgTag + '"></i>';
   }
   else {
-    sImgPath = '<img src="\\assets\\img\\infos\\tag-' + aImgTag.toLowerCase() + '.webp" >';
+    sImgPath = '<img src="\\assets\\img\\infos\\tag-' + aImgTag.toLowerCase() + '.png" >';
   }
 
   return sImgPath;

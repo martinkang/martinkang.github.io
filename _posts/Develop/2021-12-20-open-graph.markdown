@@ -13,7 +13,7 @@ img-tag: config
 
 ### Open Graph 란?
 
-![open-graph-detail](https://ourcodeworld.com/public-media/articles/articleocw-56d1a6901b773.webp) 
+![open-graph-detail](https://ourcodeworld.com/public-media/articles/articleocw-56d1a6901b773.png) 
    
 
 *** Open Graph Size ***  
@@ -23,22 +23,22 @@ img-tag: config
   
 
 *** Open Graph 설정 Before ***  
-![before-OG](/assets/img/post-img/open-graph/before-OG.webp)  
+![before-OG](/assets/img/post-img/open-graph/before-OG.png)  
 
   
 *** Open Graph 설정 After ***  
-![after-OG](/assets/img/post-img/open-graph/after-OG.webp)   
+![after-OG](/assets/img/post-img/open-graph/after-OG.png)   
 
 
 ### Jinja 를 이용한 Open Graph 동적 Description 설정  
 
   
 *** Open Graph 동적 Description 설정 Before ***   
-![after-OG2-1](/assets/img/post-img/open-graph/after-OG2-1.webp)   
+![after-OG2-1](/assets/img/post-img/open-graph/after-OG2-1.png)   
 주소에 상관없이 Description 에 정해진 문구만 나온다.
 
 *** Open Graph 동적 Description 설정 After ***  
-![after-OG2-2](/assets/img/post-img/open-graph/after-OG2-2.webp)   
+![after-OG2-2](/assets/img/post-img/open-graph/after-OG2-2.png)   
 이제 Description 에 해당 페이지의 제목이 나온다!  
 
  

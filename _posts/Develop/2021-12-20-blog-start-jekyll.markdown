@@ -33,7 +33,7 @@ Jekyll 은 Ruby([용어5](#용어)) 의 패키지 매니저인 Gem 을 사용해
 Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.  
 여기서 <span style="color:red">***<U>꼭!꼭!꼭! Ruby-Devkit 2.6.6-1</U>***</span> 를 추천한다.  
 이제 구 버전이라 해당 페이지에서 안보이는데, 상단에 Archives 를 누르고 버전을 찾으면 나온다.   
-![ruby-archive](/assets/img/post-img/jekyll-start/ruby-archive.webp)    
+![ruby-archive](/assets/img/post-img/jekyll-start/ruby-archive.png)    
 참고로 <span style="color:red">***<U>Ruby-Devkit 3.x 버전은 절대 받지 말자.</U>***</span>
 ([ Ruby 3.x 버전을 받으면 어떻게 될까? ][install-lastest-ruby-link])
 <br>
@@ -41,7 +41,7 @@ Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.
 다운받고 평소와 같이 next 를 누르다 보면 다음과 같이 MSYS2([용어6](#용어)) 를 설치하는 화면이 뜬다.  
 ***주의할점*** : 윈도우 ID 가 한글로 되어 있으면 문제 발생의 여지가 크다.  
 한글 계정일 경우 영문으로 ID 를 바꾸고 해야 한다.  
-![MSYS2설치](/assets/img/post-img/jekyll-start/msys2-install.webp)  
+![MSYS2설치](/assets/img/post-img/jekyll-start/msys2-install.png)  
 
 이 창에서 설치할 경우 MSYS2 를 직접 받아 설치하는 것과 두가지가 다른데
 1. 원하는 Path 에 설치가 불가능하다.
@@ -54,7 +54,7 @@ Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.
 
 ### Jekyll 과 Bundler 설치
 Ruby 와 MSYS2 를 다 설치하였다면, 윈도우 좌하단에 검색창에서 Ruby 를 검색해보자.  
-![ruby](/assets/img/post-img/jekyll-start/cmd-ruby.webp)  
+![ruby](/assets/img/post-img/jekyll-start/cmd-ruby.png)  
 혹시 안나오면 검색창에 cmd 라 검색하면 cmd 또는  명령 프롬프트 라고도 나온다.  
 ```
 gem install jekyll bundler
@@ -78,10 +78,10 @@ Bundler version 2.3.1
 Blog 페이지를 추가/수정 하려면, 내가 작업할 장비의 로컬에 Blog Repository 를 받아야 한다.    
 ( GitHub 홈페이지 내에서 Repository 에 추가/수정이 가능하지만, 추천하지 않는다. )   
 GitHub 를 로그인 한 뒤 좌 상단을 보면 다음과 같은 Repository 목록이 있다.  
-![repo-list](/assets/img/post-img/jekyll-start/github-repository.webp)  
+![repo-list](/assets/img/post-img/jekyll-start/github-repository.png)  
 여기 들어가면 아래와 같은 Code 버튼을 눌러 Download 를 하자.  
 다운로드 방법은 참 다양한데, 윈도우 환경이고 GitHub 첫 사용이면 간단하게 Download 를 추천한다.   
-![repo-list](/assets/img/post-img/jekyll-start/down-repo.webp)  
+![repo-list](/assets/img/post-img/jekyll-start/down-repo.png)  
 다운을 다 받았으면 압축을 풀어본다.  
 <br>
 
