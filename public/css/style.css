@@ -6,7 +6,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "aggro", "Roboto", "Nanum Gothic";
+  --font-family-sans-serif: "SBAggroL", "Roboto", "Nanum Gothic";
   --font-family-serif: "Nanum Myeongjo";
 }
 
@@ -23,14 +23,23 @@ html {
 }
 
 @font-face {
-	font-family: 'aggro';
-	src: url(/assets/fonts/SB-aggro-L.ttf) format('truetype');
-	font-weight: normal;
+	font-family: 'SBAggroL';
+    src: local('SBAggroL'), /* 시스템에 있다면 시스템을 씀 */
+	url('/assets/fonts/SBAggroL.woff') format('woff'),
+	url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
+	font-display: swap;
+
+	/* font-family: 'aggro';
+	src: local('aggro'),
+	url(/assets/fonts/SB-aggro-L.ttf) format('truetype');
+	font-weight: normal;
+    font-style: normal; */
 	
 	/* https://web.dev/font-display/?utm_source=lighthouse&utm_medium=lr 
 	The easiest way to avoid showing invisible text while custom fonts load is to temporarily show a system font.*/
-	/* font-display: swap; 	 */
+	
 }
 
 
@@ -38,7 +47,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'aggro';
+	font-family: 'SBAggroL';
 	color: #2c3e50;
 
 	letter-spacing: 0.5px;
@@ -497,7 +506,7 @@ header.search-header {
 	font-size: 1em;
 	height: 35px;
 	width: 80%;
-	font-family: "aggro";
+	font-family: "SBAggroL";
 	outline: none; /* input 창에 포커스 갔을때 아웃라인 생기는거 제거 */
 }
 
