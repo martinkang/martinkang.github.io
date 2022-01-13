@@ -139,7 +139,5 @@ window.addEventListener( 'click', (event) =>
         for ( let i = 0; i < sSelectedTags.length; i++ ) {
             sSelectedTags.item(i).classList.add('selected');
         }
-
-        alert( "click")
     }
 });
