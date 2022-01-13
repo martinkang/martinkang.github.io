@@ -55,7 +55,6 @@
       color: #0753a3;
   }
 
-  
 .container {
 	min-height: 100%;
 	display: flex;
@@ -95,11 +94,6 @@ header {
 	overflow: auto;
 }
 
-.sidebar-item {
-	padding: 10px;
-	display: block;
-}
-
 .sidebar ul {
 	list-style-type: none;
 	padding-inline-start: 0px;
@@ -118,14 +112,6 @@ header {
 	text-align: center;
 	word-spacing: 5px;
 	line-height: 1.5em;
-}
-
-.sidebar-header {
-	margin-bottom: 20px;
-}
-
-.sidebar-nav {
-	margin-top: 20px;
 }
 
 .nav li {
