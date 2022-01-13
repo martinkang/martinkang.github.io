@@ -2,27 +2,6 @@
 @import url(syntax/github.css);
 
 :root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #6c757d;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -52,7 +31,7 @@ html {
 	
 	/* https://web.dev/font-display/?utm_source=lighthouse&utm_medium=lr 
 	The easiest way to avoid showing invisible text while custom fonts load is to temporarily show a system font.*/
-	font-display: swap; 	
+	/* font-display: swap; 	 */
 }
 
 
@@ -76,15 +55,6 @@ a {
 a:hover {
 	cursor: pointer;
 	color: #0753a3;
-}
-
-pre {
-	display: block;
-	overflow: auto;
-	margin-bottom: 15px;
-	padding-bottom: 10px;
-	padding: 5px;
-	line-height: 1.2;
 }
 
 code {
@@ -142,20 +112,10 @@ header {
 	padding-inline-start: 0px;
 }
 
-.sidebar-brand > a {
-	font-size: 2em;
-	font-family: 'aggro';
-	color: #fff;
-}
-
 .sidebar-brand > a > img
 {
 	width: 100%;
 	height: auto;
-}
-
-svg::before{
-    font-size: 40px;
 }
 
 .lead {
@@ -164,20 +124,6 @@ svg::before{
 	color: #ffff;
 	text-align: center;
 }
-
-/* .sidebar-counter {
-	height: 30px;
-	width: 100%;
-	align-items: right;
-	justify-content: right;
-	opacity: 40%;
-}
-
-.sidebar-counter > a > img {
-	width: 90px;
-	height: 20px;
-	right: 0;
-} */
 
 .sidebar-header {
 	margin-bottom: 20px;
@@ -229,9 +175,6 @@ a.nav-item > .nav-img {
 }
 
 a.nav-item > .nav-img > i {
-	font-size: 40px;
-	line-height: 40px;
-
 	/* 그림 세로 가운데 정렬 */
 	vertical-align: middle;
 }
@@ -250,6 +193,7 @@ a.nav-item {
 	margin: 0;
 	padding-inline-start: 0;
 }
+
 .post-content > .post-list-item {
 	display: inline;
 }
@@ -289,7 +233,6 @@ a.nav-item {
 	color: #fff
 }
 
-
 .tag-wrapper .tag:hover {
 	cursor:pointer;
 	opacity: 100%;
@@ -303,8 +246,6 @@ a.nav-item {
 .badge::before { content: "("; }
 .badge::after { content: ")"; }
 
-.post-list > li {
-}
 
 .post-link {
 	margin-left: 10px;
@@ -583,17 +524,6 @@ footer {
 	font-family: 'Ubuntu';
 }
 
-/* .sidebar-footer {
-	margin-top: 80px;
-	font-size: 0.75em;
-	font-weight: lighter;
-	font-family: "Roboto";
-	line-height: 1.5;
-}
-
-.sidebar-footer a {
-	color: #ccc;
-} */
 
 .hidden {
 	display: none;

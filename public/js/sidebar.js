@@ -5,49 +5,9 @@ let gScrolled = false;
 let gLastScrollTop = 0;
 let gNavBarHeight = SIDEBAR.clientHeight;
 
-window.addEventListener( 'hashchange', () => {
-    selectMenu();
-});
-
-document.onload = function() {
-    selectMenu();
-}
-
-window.addEventListener( "pageshow", (event) => {
-    selectMenu();
-});
-
-window.addEventListener ('scroll', function(){
-    gScrolled = true;
-})
-
-/* ms 초 마다 실행 */
-setInterval( function() {
-    if ( gScrolled ) {
-        hasScrolled();
-        gScrolled = false;
-    }
-    else{ 
-        SIDEBAR.classList.remove('nav-down');
-        SIDEBAR.classList.add('nav-up'); 
-    }
-}, 250);
-
-function hasScrolled() {
-    var sCurrentScrollTop = window.scrollY;
- 
-    if ( Math.abs( gLastScrollTop - sCurrentScrollTop ) <= MIN_SCROLL_SHIFT ) 
-        return; 
-       
-    SIDEBAR.classList.remove('nav-up');
-    SIDEBAR.classList.add('nav-down'); 
-    
-    gLastScrollTop = sCurrentScrollTop;
-}
-
 
 function selectMenu() {
-    let sMenu = window.location.hash.substring(1).toLowerCase();
+    let sMenu = window.location.hash.substring(1).toLocaleLowerCase();
     let sSelectedMenu = document.getElementsByClassName( 'sidebar-item-list' );
     let sSelectedMenuName = '';
 
@@ -59,7 +19,7 @@ function selectMenu() {
         sSelectedMenuName = sMenu;
     }
     else {
-        sCategory = window.location.pathname.split('/')[1];
+        let sCategory = window.location.pathname.split('/')[1];
 
         if ( sCategory ) {
             sSelectedMenuName = sCategory;
@@ -78,3 +38,53 @@ function selectMenu() {
     }
 
 }
+
+function hasScrolled() {
+    var sCurrentScrollTop = window.scrollY;
+ 
+    if ( Math.abs( gLastScrollTop - sCurrentScrollTop ) <= MIN_SCROLL_SHIFT ) 
+        return; 
+       
+    SIDEBAR.classList.remove('nav-up');
+    SIDEBAR.classList.add('nav-down'); 
+    
+    gLastScrollTop = sCurrentScrollTop;
+}
+
+/* ms 초 마다 실행 */
+setInterval( function() {
+    if ( gScrolled ) {
+        hasScrolled();
+        gScrolled = false;
+    }
+    else{ 
+        SIDEBAR.classList.remove('nav-down');
+        SIDEBAR.classList.add('nav-up'); 
+    }
+}, 250);
+
+
+window.addEventListener ('scroll', function(){
+    gScrolled = true;
+});
+
+
+window.addEventListener( 'hashchange', () => {
+    selectMenu();
+});
+
+window.addEventListener( "pageshow", (event) => {
+    /* 왜인지 캐시 관련해서 동작 안함. 무조건 새페이지로 뜨는데 살펴볼것 
+    if ( event.persisted ) {
+        alert( "캐시복원");
+    }
+    else {
+        alert( "새페이지");
+    }*/
+
+    selectMenu();
+});
+
+document.onload = function() {		
+    selectMenu();
+};
