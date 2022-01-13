@@ -126,9 +126,11 @@ header {
 
 .lead {
 	width: 100%;
-	font-size: 0.9em;
+	font-size: 1.2em;
 	color: #ffff;
 	text-align: center;
+	word-spacing: 5px;
+	line-height: 1.5em;
 }
 
 .sidebar-header {
