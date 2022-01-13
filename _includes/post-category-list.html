@@ -1,0 +1,25 @@
+<div class="post-content">
+    {%- if site.posts.size > 0 -%}	
+
+    <div class="category-list" id="category-develop" hidden=true>
+        {%- assign tag-array = "" | split: ',' -%}
+        {%- assign posts = site.categories.develop -%}
+        {%- include post-list.html -%}
+    </div>
+
+    <div class="category-list" id="category-bugs" hidden=true>
+        {%- assign tag-array = "" | split: ',' -%}
+        {%- assign posts = site.categories.bugs -%}
+        {%- include post-list.html -%}
+    </div>
+
+    <div class="category-list" id="category-study" hidden=true>
+        {%- assign tag-array = "" | split: ',' -%}
+        {%- assign posts = site.categories.study -%}
+        {%- include post-list.html -%}
+    </div>
+
+    {%- endif -%}
+</div>
+
+

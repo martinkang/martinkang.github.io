@@ -1,9 +1,8 @@
 <div class="post-content">
-  
-    {%- if site.posts.size > 0 -%}	
-    
+    {%- if posts.size > 0 -%}	
+
     <!-- 각 카테고리의 태그 리스트 -->
-    <div class="content-tag-list">
+    <div class="content-tag-list" id="content-tag-list-id-{{posts[0].categories[0]}}" hidden=true>
         <span class="tag-wrapper">
             <div class="tag-box" tag-category-all >
                 <span class="tag" data-tag="all">All</span>
@@ -12,7 +11,7 @@
 
         {%- for tag in site.data.tags -%}
             <span class="tag-wrapper">
-                <div class="tag-box" 
+                <div class="tag-box hidden" 
                     {%- for post in site.posts -%}
                         {% assign p-tags = post.tags | downcase %}
                         {% assign s-tag = tag | downcase %}
@@ -28,7 +27,7 @@
     </div>
 
     <ul class="post-list">
-        {%- for post in site.posts -%}
+        {%- for post in posts -%}
             <div class="post-wrapper"
                 {% if post.tags %}
                 {% for tag in post.tags %}
@@ -36,7 +35,7 @@
                 {% endfor %}
                 {% endif %}>
         
-                <li class="post-list-item post-category-{{post.categories[0] | downcase}}" data-tag="{{post.tags | downcase}}" hidden=true>
+                <li class="post-list-item post-category-{{post.categories[0] | downcase}}" data-tag="{{post.tags | downcase}}">
                     <!-- {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%} -->
                     {%- assign date_format = "%Y/%m/%d" -%}
                     <div class="post-card">
