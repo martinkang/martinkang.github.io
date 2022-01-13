@@ -8,7 +8,7 @@ let gNavBarHeight = SIDEBAR.clientHeight;
 
 function selectMenu() {
     let sMenu = window.location.hash.substring(1).toLocaleLowerCase();
-    let sSelectedMenu = document.getElementsByClassName( 'sidebar-item-list' );
+    let sSelectedMenu = document.querySelectorAll( '.sidebar-item .sidebar-item-list' );
     let sSelectedMenuName = '';
 
     for ( let i = 0; i < sSelectedMenu.length; i++ ) {
@@ -30,9 +30,9 @@ function selectMenu() {
     }
   
     for ( let i = 0; i < sSelectedMenu.length; i++ ) {
-        if ( document.getElementsByClassName( 'sidebar-item-list' ).item(i).classList[1] == sSelectedMenuName )
+        if ( sSelectedMenu.item(i).classList[1] == sSelectedMenuName )
         {
-            document.getElementsByClassName( 'sidebar-item-list' ).item(i).classList.add( 'menu-selected' );
+            sSelectedMenu.item(i).classList.add( 'menu-selected' );
             break;
         }
     }
