@@ -73,14 +73,15 @@ window.addEventListener( 'hashchange', () => {
     selectMenu();
 });
 
+
 window.addEventListener( "pageshow", (event) => {
-    /* 왜인지 캐시 관련해서 동작 안함. 무조건 새페이지로 뜨는데 살펴볼것 
-    if ( event.persisted ) {
-        alert( "캐시복원");
-    }
-    else {
-        alert( "새페이지");
-    }*/
+    /* 왜인지 캐시 관련해서 동작 안함. 무조건 새페이지로 뜨는데 살펴볼것 */
+    // if ( event.persisted ) {
+    //     alert( "캐시복원");
+    // }
+    // else {
+    //     alert( "새페이지");
+    // }
 
     selectMenu();
 });

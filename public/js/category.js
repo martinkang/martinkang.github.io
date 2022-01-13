@@ -12,8 +12,11 @@ function showCategory( aCategory ) {
 }
 
 function initHiddenClass() {
+    /* querySelectorAll = sanpshot list
+       getElementsByClassName = live list */
+
     let sAllTagBoxs = document.querySelectorAll( '.tag-wrapper > .tag-box' );
-    let sAllPostCards = document.getElementsByClassName( 'post-wrapper' );
+    let sAllPostCards = document.querySelectorAll( '.post-list > .post-wrapper' );
 
     for ( let i = 0; i < sAllTagBoxs.length; i++ ) {
         sAllTagBoxs.item(i).classList.remove( 'hidden' );
@@ -54,11 +57,12 @@ function showTagByCategory( aCategory ) {
 }
 
 function initSelected() {
-    let sSelectedElems = document.getElementsByClassName( 'selected' );
-
-    for ( let i = 0; i < sSelectedElems.length; i++ ) {
-        sSelectedElems.item(i).classList.remove( 'selected' );
+    let sSelectedElems = document.getElementsByClassName( `selected` );
+    
+    while( sSelectedElems.length ) {
+        sSelectedElems.item(0).classList.remove( `selected` );
     }
+
 }
 
 function setTags( aCategory ) { 
@@ -72,11 +76,10 @@ function setTags( aCategory ) {
     }
 }
 
-
 function showPostCardsByTagName( aTagName ) {
-    if ( aTagName != "all") {
-        let sAllPostCards = document.getElementsByClassName( 'post-wrapper' );
+    let sAllPostCards = document.querySelectorAll( '.post-list > .post-wrapper' );
 
+    if ( aTagName != "all") {
         for ( let i = 0; i < sAllPostCards.length; i++ ) {
             if ( sAllPostCards.item(i).getAttribute( `data-${aTagName}` ) == null ) {
                 sAllPostCards.item(i).classList.add('hidden');
@@ -89,7 +92,6 @@ function showPostCardsByTagName( aTagName ) {
         }       
     }
     else {
-        let sAllPostCards = document.getElementsByClassName( 'post-wrapper' );
         for ( let i = 0; i < sAllPostCards.length; i++ ) {
             sAllPostCards.item(i).classList.remove( 'hidden' );
             sAllPostCards.item(i).classList.remove( 'selected' );
