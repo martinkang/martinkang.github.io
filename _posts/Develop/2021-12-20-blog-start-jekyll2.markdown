@@ -19,10 +19,10 @@ img-tag: jekyll
 ```
 VS Code 를 깔았다면 폴더 열기로 열면 된다.  
 그리고 아래에 터미널 창을 누르거나 상단에 터미널 메뉴에서 새 터미널 메뉴를 누르자.  
-![new-ter-menu](/assets/img/post-img/jekyll-start/new-ter.png)  
+![new-ter-menu](/assets/img/post-img/jekyll-start/new-ter.png){: class="lazyload" }   
 
 위에서 실행시킨 명령창과 동일한 창이 아래와 같이 생긴다.  
-![new-ter2](/assets/img/post-img/jekyll-start/new-ter2.png)  
+![new-ter2](/assets/img/post-img/jekyll-start/new-ter2.png){: class="lazyload" }   
 
 
 이제 여기에 아래와 같은 명령어를 수행한다.
@@ -53,10 +53,10 @@ jekyll 을 이용하여, 지금 이 프로젝트의 웹 사이틀을 내 로컬�
 아래와 같은 로그가 나오면 성공적으로 정적 웹 페이지가 127.0.0.1:4000 이란 주소에 올라간 것을 뜻한다. ( 해당 주소는 내 로컬 컴퓨터를 뜻한다. )  
 인터넷 주소창에 127.0.0.1:4000([용어1](#용어)) 라 치면 내 페이지에 접근할 수 있다.  
 
-![jekyll-run](/assets/img/post-img/jekyll-start/jekyll-run.png)  
+![jekyll-run](/assets/img/post-img/jekyll-start/jekyll-run.png){: class="lazyload" }    
 
 접속하면 다음과 같은 화면이 나올 것이다.  
-![first-page](/assets/img/post-img/jekyll-start/first-page.png)  
+![first-page](/assets/img/post-img/jekyll-start/first-page.png){: class="lazyload" }     
 
 <br>
 명령어는 bundle exec jekyll serve 와 jekyll serve 둘다 가능하다.  
@@ -73,16 +73,16 @@ jekyll 엔 정말 많은 테마가 존재한다.
 
 <br>
 반응형인지 알기 제일 쉬운 방법은 아래 Demo 버튼을 누르고 창 크기를 줄여보자.  
-![jekyll-list](/assets/img/post-img/jekyll-start/jekyll-theme.png)  
+![jekyll-list](/assets/img/post-img/jekyll-start/jekyll-theme.png){: class="lazyload" }  
 
 일반적으로 PC 에서의 화면이다.  
-![jekyll-list](/assets/img/post-img/jekyll-start/theme-h.png)  
+![jekyll-list](/assets/img/post-img/jekyll-start/theme-h.png){: class="lazyload" }  
 
 <br>
 
 가로를 극단적으로 줄여보자. 어느순간 화면이 바뀌는걸 볼 수 있다.  
 반응형이 아니면, 사이즈에 상관없이 같은 디자인을 가진다.  
-![jekyll-list](/assets/img/post-img/jekyll-start/theme-v.png)  
+![jekyll-list](/assets/img/post-img/jekyll-start/theme-v.png){: class="lazyload" }  
 
 
 이 블로그는 Monos 를 선택하였다.  
@@ -100,7 +100,7 @@ bundle install
 bundle exec jekyll serve
 ```  
 다시 수행하면 테마가 이쁘게 입혀진걸 볼 수 있다.  
-![jekyll-start](/assets/img/post-img/jekyll-start/jekyl-start-theme.png)   
+![jekyll-start](/assets/img/post-img/jekyll-start/jekyl-start-theme.png){: class="lazyload" }   
 하지만 웹 페이지 주소를 보면 127.0.0.1:4000 이다.  
 즉 내 로컬 서버에서만 동작하는 블로그이다.  
 내 로컬에서 홈페이지가 잘 구동하는걸 봣으니 진짜로 GitHub 에 올려보자.  
@@ -113,13 +113,13 @@ bundle exec jekyll serve
 실제 https://username.github.io 에 블로그가 올라가게 된다.  
 <br>
 이전에 다운받은 GitHub Desktop 을 찾아서 실행시켜 보자.  
-![github-desk](/assets/img/post-img/jekyll-start/github-desktop.png)   
+![github-desk](/assets/img/post-img/jekyll-start/github-desktop.png){: class="lazyload" }   
 아래와 같이 add repository 를 선택하자. ( new 가 아니다. )  
-![add-repo](/assets/img/post-img/jekyll-start/add-repo.png)   
+![add-repo](/assets/img/post-img/jekyll-start/add-repo.png){: class="lazyload" }   
 <br>
 
 그리고 여태것 작업한 폴더를 선택한다. 그러면 다음과 같은 화면이 나온다.  
-![github-page](/assets/img/post-img/jekyll-start/github-page.png)    
+![github-page](/assets/img/post-img/jekyll-start/github-page.png){: class="lazyload" }    
 
 좌측 창은 추가/변경 된 파일 리스트이고 오른쪽은 파일에서 추가/변경 된 내용이다.  
 
@@ -135,27 +135,27 @@ GitHub 를 사용하려면 간단하게 몇가지 명령어에 대해선 알아�
 ( 개발자라면 GitHub 사용법을 꼭 숙지하는걸 추천한다. )  
 이 사이트에서 매우 자세히 설명한다. - [Git 문서][git-scm-link]
 
-![github-page](/assets/img/post-img/jekyll-start/commit.png)    
+![github-page](/assets/img/post-img/jekyll-start/commit.png){: class="lazyload" }    
 아래 Commit 버튼이 있는데 여기에 메시지를 적고 Commit 하자.  
 
 ***Commit 은 내 로컬 저장소에 Repository 추가/변경 사항을 기록하는 것이다.***  
 이 Commit 메시지는 의미있는게 좋다.  
 혹시 이전 시점으로 소스를 돌려야 할때, 과거의 Commit 시점으로 되돌릴 수 있는데 이 메시지를 보고 돌려야 한다.  
-![github-page](/assets/img/post-img/jekyll-start/commit-history.png)    
+![github-page](/assets/img/post-img/jekyll-start/commit-history.png){: class="lazyload" }    
 
 ABCD 이런식으로 Commit 하면 나중에 찾기 곤란하다.  
 <br>
 
 참고로 Commit 후 파일을 변경했는데, 변경한걸 마지막 Commit 으로 되돌리고 싶다면 Discard 시키면 된다.  
-![github-page](/assets/img/post-img/jekyll-start/discard.png)   
+![github-page](/assets/img/post-img/jekyll-start/discard.png){: class="lazyload" }   
 
 
 Commit 을 다했으면 상단에 Push 를 누르자.  
-![github-page](/assets/img/post-img/jekyll-start/push.png)   
+![github-page](/assets/img/post-img/jekyll-start/push.png){: class="lazyload" }   
 ***push 는 내 로컬에 Commit 된 것을 GitHub 서버의 내 Repository 에 반영해준다.***  
 GitHub 서버의 내 Repository 에 반영을 해야 실제 웹에 올라가게 된다.  
 
-![github-page](/assets/img/post-img/jekyll-start/start-web.png) 
+![github-page](/assets/img/post-img/jekyll-start/start-web.png){: class="lazyload" } 
 
 
 진짜로 웹에 블로그 올리기 성공!.   
