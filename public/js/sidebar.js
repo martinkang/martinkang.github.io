@@ -1,5 +1,5 @@
 /* global variable */
-const MIN_SCROLL_SHIFT = 5;
+const MIN_SCROLL_SHIFT = 100;
 const SIDEBAR = document.getElementById('sidebar-id');
 let gScrolled = false;
 let gLastScrollTop = 0;
@@ -58,10 +58,13 @@ setInterval( function() {
         gScrolled = false;
     }
     else{ 
+        gLastScrollTop = window.scrollY;
+        gScrolled = false;
+        
         SIDEBAR.classList.remove('nav-down');
         SIDEBAR.classList.add('nav-up'); 
     }
-}, 250);
+}, 300);
 
 
 window.addEventListener ('scroll', function(){
