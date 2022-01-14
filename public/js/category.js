@@ -3,28 +3,22 @@ function showCategory( aCategory ) {
         let sCategory = document.getElementById( 'nav-item-name-' + aCategory );
         /* id 가 category-name 인 클래스의 text 를 변경해준다 */
         document.getElementById('category-name').textContent  = sCategory.textContent;
+        document.getElementById('category-' + aCategory).hidden = false;
      }
      else {
         document.getElementById('category-name').textContent = "전체 글";
+        document.getElementById('category-all').hidden = false;
      }
 
-     document.getElementById('category-' + aCategory).hidden = false;
+     
 }
 
 function initHiddenClass() {
-    /* querySelectorAll = sanpshot list
-       getElementsByClassName = live list */
-
-    let sAllTagBoxs = document.querySelectorAll( '.tag-wrapper > .tag-box' );
-    let sAllPostCards = document.querySelectorAll( '.post-list > .post-wrapper' );
-
-    for ( let i = 0; i < sAllTagBoxs.length; i++ ) {
-        sAllTagBoxs.item(i).classList.remove( 'hidden' );
+    let allHiddenClassObj = document.getElementsByClassName( 'hidden');
+    while( allHiddenClassObj.length ) {
+        allHiddenClassObj.item(0).classList.remove( 'hidden' );
     }
 
-    for ( let i = 0; i < sAllPostCards.length; i++ ) {
-        sAllPostCards.item(i).classList.remove( 'hidden' );
-    }
 }
 
 function initHiddenAttribute() {
@@ -32,6 +26,7 @@ function initHiddenAttribute() {
     document.getElementById( 'content-tag-list-id-bugs' ).hidden = true;
     document.getElementById( 'content-tag-list-id-develop' ).hidden = true;
 
+    document.getElementById('category-all').hidden = true;
     document.getElementById('category-develop').hidden = true;
     document.getElementById('category-bugs').hidden = true;
     document.getElementById('category-study').hidden = true;
@@ -53,6 +48,18 @@ function showTagByCategory( aCategory ) {
         }
 
         document.getElementById( 'content-tag-list-id-' + aCategory ).hidden = false;
+    }
+    else {
+        let sTags = document.querySelectorAll( '.tag-wrapper > .tag-box' );
+        let sTagLists = document.getElementsByClassName( 'content-tag-list');
+        for ( let i = 0; i < sTags.length; i++ ) {
+            sTags.item(i).classList.remove('hidden');
+        }
+
+        for ( let i = 0; i < sTagLists.length; i++ ) {
+            sTagLists.item(i).hidden = false;
+        }
+        
     }
 }
 
