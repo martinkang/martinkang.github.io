@@ -56,11 +56,11 @@ function searchKeyword( aPosts, aKeyword )
   let sSearchResult = [];
 
   if (aKeyword.length > 0) {
-    $('#search-result').show();
-    $('#search-result').text('');
+    document.getElementById('search-result').hidden = false;
+    document.getElementById('search-result').textContent = '';
   } 
   else {
-    $('#search-result').hide();
+    document.getElementById('search-result').hidden = true;
   }
 
   for (let i = 0; i < aPosts.length; i++) {
@@ -99,7 +99,8 @@ $(function () {
     searchKeyword( sPosts, sKeyword );
   });
 
-  $(window).on("pageshow", (event) => 
+
+  window.addEventListener( "pageshow", (event) => 
   {
     let sInputBox = document.getElementById('search');
     if ( sInputBox.value) {
