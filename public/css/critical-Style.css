@@ -142,6 +142,12 @@ max-width: 450px;
 overflow: auto;
 }
 
+
+.sidebar-header {
+	margin-bottom: 4em;
+}
+
+
 .sidebar ul {
 list-style-type: none;
 padding-inline-start: 0px;
@@ -163,11 +169,11 @@ line-height: 1.5em;
 }
 
 .nav li {
-padding: 14px 7px;
+padding: 1em 0.5em 1em 1em;
 opacity: 70%;
 
 transform:scale(1.0);        
-transition-duration: 0.5s;
+transition-duration: 0.2s;
 }
 
 .nav li > a {
@@ -291,7 +297,7 @@ text-align: left;
 		min-height: 60px;
 		max-width: unset;
 
-		transition: bottom 0.3s ease-in-out;
+		transition: bottom 0.2s ease-in-out;
 	}
 
 			
@@ -314,11 +320,6 @@ text-align: left;
 	.sidebar-item {
 		padding: 5px;
 	}
-
-	.sidebar-header {
-		margin-bottom: 0px;
-	}
-
 
 	.sidebar-nav > .nav {
 		display: inline-flex;
