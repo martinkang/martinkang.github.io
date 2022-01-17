@@ -24,6 +24,10 @@
 	margin-bottom: 10px;
 }
 
+.tag-wrapper {
+	cursor: pointer;
+}
+
 .tag-wrapper .tag-box .tag {
 	font-size: 0.9em;
 	cursor: pointer;
