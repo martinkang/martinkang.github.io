@@ -5,7 +5,6 @@ let gScrolled = false;
 let gLastScrollTop = 0;
 let gNavBarHeight = SIDEBAR.clientHeight;
 
-
 function selectMenu() {
     let sMenu = window.location.hash.substring(1).toLocaleLowerCase();
     let sSelectedMenu = document.querySelectorAll( '.sidebar-item .sidebar-item-list' );
@@ -76,7 +75,6 @@ window.addEventListener( 'hashchange', () => {
     selectMenu();
 });
 
-
 window.addEventListener( "pageshow", (event) => {
     /* https://ifuwanna.tistory.com/63 */
     // if ( event.persisted || (window.performance && window.performance.navigation.type == 2 ) ) {
@@ -84,6 +82,3 @@ window.addEventListener( "pageshow", (event) => {
     selectMenu();
 });
 
-document.onload = function() {		
-    selectMenu();
-};
