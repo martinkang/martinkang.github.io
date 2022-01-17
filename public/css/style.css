@@ -24,7 +24,7 @@
 	margin-bottom: 10px;
 }
 
-.tag-wrapper .tag-box {
+.tag-wrapper .tag-box .tag {
 	font-size: 0.9em;
 	cursor: pointer;
 }
