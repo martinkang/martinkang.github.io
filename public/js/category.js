@@ -114,56 +114,40 @@ let gClickEvent = (function() {
     }
 })();
 
-function isNeedCategorySet()
-{
-    sCategoryPath = window.location.pathname.split('/')[1].toLocaleLowerCase();
-
-    if ( !sCategoryPath || sCategoryPath == 'category' ) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
 window.addEventListener( 'hashchange', () => {
-    if ( isNeedCategorySet() ) {
-        let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
+    let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
 
-        initHiddenAttribute();
-        showCategory( sCategory );
-        setTags( sCategory );
-    }
+    initHiddenAttribute();
+    showCategory( sCategory );
+    setTags( sCategory );
 });
 
 /* https://programmingsummaries.tistory.com/380 
+   https://ifuwanna.tistory.com/63 
 뒤로 가기 버튼으로 돌아가면 BFCache 를 사용하기 때문에 $(document).ready 호출이 발생하지 않는다.
 이 캐쉬에 상관없이 pageshow 이벤트가 발생하기 때문에 이 이벤트를 사용한다. */
 window.addEventListener( "pageshow", (event) => 
 {
     if ( event.persisted || (window.performance && window.performance.navigation.type == 2 ) ) {
+        /* BFCache 이용시 */
         window.location.reload();
     }
     else
     {
-        if ( isNeedCategorySet() ) {
-            let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
-
-            initHiddenAttribute();
-            showCategory( sCategory );
-            setTags( sCategory );
-        }
-    }
-});
-
-document.onload = function() {	
-    if ( isNeedCategorySet() ) {
         let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
 
         initHiddenAttribute();
         showCategory( sCategory );
-        setTags( sCategory );	
-    }
+        setTags( sCategory );
+}
+});
+
+document.onload = function() {	
+    let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
+
+    initHiddenAttribute();
+    showCategory( sCategory );
+    setTags( sCategory );	
 };
 
 
