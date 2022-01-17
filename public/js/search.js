@@ -97,6 +97,11 @@ function getDataFromJson()
 
   sHttpRequest.onload = function() {
     gPosts = sHttpRequest.response;
+
+    let sInputBox = document.getElementById('search');
+    if ( sInputBox.value ) {
+      searchKeyword( gPosts, sInputBox.value );
+    }
   }
 }
 
@@ -108,12 +113,7 @@ gSearchBar.onkeyup =  function () {
 
 window.addEventListener( "pageshow", (event) => 
 {
-    getDataFromJson();
-
-    let sInputBox = document.getElementById('search');
-    if ( sInputBox.value ) {
-      searchKeyword( gPosts, sInputBox.value );
-    }
+  getDataFromJson();
 });
 
 
