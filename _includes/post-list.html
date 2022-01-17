@@ -4,13 +4,13 @@
     <!-- 각 카테고리의 태그 리스트 -->
     <div class="content-tag-list" id="content-tag-list-id-{{posts[0].categories[0]}}" hidden=true>
         <span class="tag-wrapper">
-            <div class="tag-box" tag-category-all >
+            <a class="tag-box" tag-category-all >
                 <span class="tag" data-tag="all">All</span>
-            </div>
+            </a>
         </span>
 
         {%- for tag in site.data.tags -%}
-            <span class="tag-wrapper">
+            <a class="tag-wrapper">
                 <div class="tag-box hidden" 
                     {%- for post in site.posts -%}
                         {% assign p-tags = post.tags | downcase %}
@@ -21,7 +21,7 @@
                     {% endfor %}>
                     <span class="tag" data-tag="{{tag | downcase}}">{{tag | replace: "-", ' '}}</span>
                 </div>
-            </span>
+            </a>
         {%- endfor -%}
         <br>
     </div>
