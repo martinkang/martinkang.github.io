@@ -25,8 +25,7 @@ function initHiddenAttribute() {
     document.getElementById( 'content-tag-list-id-develop' ).hidden = true;
     document.getElementById( 'content-tag-list-id-bugs' ).hidden = true;
     document.getElementById( 'content-tag-list-id-study' ).hidden = true;
-
-    document.getElementById('category-all').hidden = true;
+    
     document.getElementById('category-develop').hidden = true;
     document.getElementById('category-bugs').hidden = true;
     document.getElementById('category-study').hidden = true;
