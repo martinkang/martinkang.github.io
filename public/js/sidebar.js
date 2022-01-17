@@ -76,9 +76,6 @@ window.addEventListener( 'hashchange', () => {
 });
 
 window.addEventListener( "pageshow", (event) => {
-    /* https://ifuwanna.tistory.com/63 */
-    // if ( event.persisted || (window.performance && window.performance.navigation.type == 2 ) ) {
-    // }
     selectMenu();
 });
 
