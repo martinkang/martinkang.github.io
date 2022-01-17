@@ -1,3 +1,6 @@
+let gPosts = [];
+const gSearchBar = document.getElementById('search');
+
 function setTags( aTagCount, aTags )
 {
   let sTags = "";
@@ -84,28 +87,33 @@ function searchKeyword( aPosts, aKeyword )
   }
 }
 
-/* 즉시 실행 함수 https://beomy.tistory.com/9 */
-$(function () {
-  let sPosts = [];
-  let sImgTags = [];
 
-  $.get('/search/data.json', function (data) {
-    sPosts = data;
-  });
+function getDataFromJson()
+{
+  let sHttpRequest = new XMLHttpRequest();
+  sHttpRequest.open( 'GET', '/search/data.json' );
+  sHttpRequest.responseType = 'json';
+  sHttpRequest.send();
 
+  sHttpRequest.onload = function() {
+    gPosts = sHttpRequest.response;
+  }
+}
 
-  $('#search').on('keyup', function () {
+gSearchBar.onkeyup =  function () {
     let sKeyword = this.value.toLowerCase();
-    searchKeyword( sPosts, sKeyword );
-  });
+    searchKeyword( gPosts, sKeyword );
+};
 
 
-  window.addEventListener( "pageshow", (event) => 
-  {
+window.addEventListener( "pageshow", (event) => 
+{
+    getDataFromJson();
+
     let sInputBox = document.getElementById('search');
-    if ( sInputBox.value) {
-      searchKeyword( sPosts, sInputBox.value );
+    if ( sInputBox.value ) {
+      searchKeyword( gPosts, sInputBox.value );
     }
-  });
 });
+
 

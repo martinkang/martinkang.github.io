@@ -114,13 +114,26 @@ let gClickEvent = (function() {
     }
 })();
 
+function isNeedCategorySet()
+{
+    sCategoryPath = window.location.pathname.split('/')[1].toLocaleLowerCase();
+
+    if ( !sCategoryPath || sCategoryPath == 'category' ) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
 window.addEventListener( 'hashchange', () => {
-    let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
+    if ( isNeedCategorySet() ) {
+        let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
 
-    initHiddenAttribute();
-    showCategory( sCategory );
-    setTags( sCategory );
+        initHiddenAttribute();
+        showCategory( sCategory );
+        setTags( sCategory );
+    }
 });
 
 /* https://programmingsummaries.tistory.com/380 
@@ -128,21 +141,29 @@ window.addEventListener( 'hashchange', () => {
 이 캐쉬에 상관없이 pageshow 이벤트가 발생하기 때문에 이 이벤트를 사용한다. */
 window.addEventListener( "pageshow", (event) => 
 {
-    // if (event.originalEvent.persisted) {
+    if ( event.persisted || (window.performance && window.performance.navigation.type == 2 ) ) {
+        window.location.reload();
+    }
+    else
+    {
+        if ( isNeedCategorySet() ) {
+            let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
+
+            initHiddenAttribute();
+            showCategory( sCategory );
+            setTags( sCategory );
+        }
+    }
+});
+
+document.onload = function() {	
+    if ( isNeedCategorySet() ) {
         let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
 
         initHiddenAttribute();
         showCategory( sCategory );
-        setTags( sCategory );
-    // }
-});
-
-document.onload = function() {	
-    let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
-
-    initHiddenAttribute();
-    showCategory( sCategory );
-    setTags( sCategory );	
+        setTags( sCategory );	
+    }
 };
 
 
