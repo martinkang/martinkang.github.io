@@ -186,6 +186,7 @@ header.search-header {
 .search-bar:hover {
 	transition-duration: 1s;
 	border-bottom: 2px solid #051628;
+	z-index: 1000;
 }
 
 .search-bar > #search {
@@ -194,7 +195,7 @@ header.search-header {
 	height: 35px;
 	width: 80%;
 	font-family: "SBAggroL";
-	outline: none; /* input 창에 포커스 갔을때 아웃라인 생기는거 제거 */
+	/* outline: none; input 창에 포커스 갔을때 아웃라인 생기는거 제거 */
 	-webkit-tap-highlight-color: transparent; /* ios outline color */
 }
 
