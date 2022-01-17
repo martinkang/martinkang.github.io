@@ -173,7 +173,6 @@ padding: 1em 0.5em 1em 1em;
 opacity: 70%;
 
 transform:scale(1.0);        
-transition-duration: 0.2s;
 }
 
 .nav li > a {
