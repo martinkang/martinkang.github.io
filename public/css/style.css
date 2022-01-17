@@ -195,6 +195,7 @@ header.search-header {
 	width: 80%;
 	font-family: "SBAggroL";
 	outline: none; /* input 창에 포커스 갔을때 아웃라인 생기는거 제거 */
+	-webkit-tap-highlight-color: transparent; /* ios outline color */
 }
 
 .search-bar > .search-img-box {
@@ -258,12 +259,6 @@ footer {
 		font-size: 0.55em;
 	}
 
-	.search-bar > #search {
-		border: unset;
-		height: 35px;
-		outline: none; /* input 창에 포커스 갔을때 아웃라인 생기는거 제거 */
-	}
-	
 	.search-bar > .search-img-box {
 		padding: 1px;
 		height: 30px;
