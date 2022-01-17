@@ -1,4 +1,4 @@
-@import url(syntax/github.css);
+
 
 .post-content > ul {
 	margin: 0;
@@ -26,6 +26,7 @@
 
 .tag-wrapper .tag-box {
 	font-size: 0.9em;
+	cursor: pointer;
 }
 
 .tag-box {
