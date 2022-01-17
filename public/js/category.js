@@ -25,7 +25,7 @@ function initHiddenAttribute() {
     document.getElementById( 'content-tag-list-id-develop' ).hidden = true;
     document.getElementById( 'content-tag-list-id-bugs' ).hidden = true;
     document.getElementById( 'content-tag-list-id-study' ).hidden = true;
-    
+
     document.getElementById('category-develop').hidden = true;
     document.getElementById('category-bugs').hidden = true;
     document.getElementById('category-study').hidden = true;
@@ -105,6 +105,16 @@ function showPostCardsByTagName( aTagName ) {
     }
 }
 
+/* https://velog.io/@awesomelon/IOS-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B8%B0%EA%B8%B0%EC%97%90%EC%84%9C-click-event-%EC%82%AC%EC%9A%A9%EC%8B%9C-%EB%AC%B8%EC%A0%9C%EC%A0%90JS */
+let gClickEvent = (function() {
+    if ('ontouchstart' in document.documentElement === true) {
+      return 'touchstart'; /* for IOS */
+    } else {
+      return 'click';
+    }
+})();
+
+
 window.addEventListener( 'hashchange', () => {
     let sCategory = window.location.hash.substring(1).toLocaleLowerCase();
 
@@ -135,7 +145,9 @@ document.onload = function() {
     setTags( sCategory );	
 };
 
-window.addEventListener( 'click', (event) =>
+
+
+window.addEventListener( gClickEvent, (event) =>
 {
     sCurrentTag = event.target.dataset.tag;
 
@@ -149,3 +161,6 @@ window.addEventListener( 'click', (event) =>
         }
     }
 });
+
+
+ 
