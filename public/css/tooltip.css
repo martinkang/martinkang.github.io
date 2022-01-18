@@ -1,0 +1,44 @@
+.tooltip {
+    position: relative;
+    display: inline;
+    color: #007bff;
+  }
+  
+  .tooltip-description {
+    font-size: 0.8em;
+    color: #444444;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;       /* 이벤트가 없으면 툴팁 영역을 숨김 */
+    background-color: #051628;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px 0px 5px 10px;
+    font-size: 0.8em;
+    overflow: auto;
+    position: absolute;       /* 절대 위치를 사용 */
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;      /* hover 이벤트 발생시 영역을 보여줌 */
+  }
+
+  .tooltip .tooltip-top {
+    width: 500px;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  @media (max-width: 600px) {
+    .tooltip .tooltiptext {
+        font-size: 0.7em;
+    }
+
+    .tooltip-description {
+      font-size: 0.7em;
+    }
+  }

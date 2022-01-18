@@ -9,13 +9,13 @@ img-tag: jekyll
 ---
  
 # Jekyll 이란?
-Ruby 로 만들어진 정적 사이트([용어1](#용어)) 생성기이다. 보통 지킬 이라고 읽는다.  
+Ruby 로 만들어진 <span class="tooltip" id="id-1">정적 사이트</span> 생성기이다. 보통 지킬 이라고 읽는다.  
 참고로 Jekyll 을 설치하지 않아도 GitHub Blog 는 만들 수 있다.  
 
 
 ### Jekyll 은 왜 설치할까?  
 웹 페이지를 수정하고 GitHub 에 Commit/Push 를 하면 바로 웹 사이트에 올라가게 된다.  
-일반적으로 프로그래밍 언어나 Markdown([용어3](#용어)) 문법을 이용하여 수정된 내용을 확인하기 위해선   
+일반적으로 프로그래밍 언어나 <span class="tooltip" id="id-2">Markdown</span> 문법을 이용하여 수정된 내용을 확인하기 위해선   
 GitHub 에 Commit/Push 를 하고 웹 사이트에 들어가야만 확인이 가능하다.  
 그래서 수정한 내용을 웹 사이트에 올리기 전 Jekyll 을 깔아 의도한 대로 페이지가 작성됬는지 확인하는 작업이 필요하다.  
 즉 ***실제 웹 페이지에 올리기전에 내 로컬 컴퓨터에서 확인하기 위해*** 설치한다.
@@ -27,7 +27,7 @@ GitHub 에 Commit/Push 를 하고 웹 사이트에 들어가야만 확인이 가
 
 ### Ruby 설치
 이 글을 보는사람이 대부분 비전공자 또는 초보 개발자일것이므로... 윈도우를 기준으로 쓴다.  
-Jekyll 은 Ruby([용어5](#용어)) 의 패키지 매니저인 Gem 을 사용해서 설치할 수 있다.  
+Jekyll 은 <span class="tooltip" id="id-3">Ruby</span> 의 패키지 매니저인 Gem 을 사용해서 설치할 수 있다.  
 그리고 이 Gem 을 사용하기 위해선 Ruby 를 우선 설치해야 한다.  
 <br>
 Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.  
@@ -38,7 +38,7 @@ Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.
 ([ Ruby 3.x 버전을 받으면 어떻게 될까? ][install-lastest-ruby-link])
 <br>
 
-다운받고 평소와 같이 next 를 누르다 보면 다음과 같이 MSYS2([용어6](#용어)) 를 설치하는 화면이 뜬다.  
+다운받고 평소와 같이 next 를 누르다 보면 다음과 같이 <span class="tooltip" id="id-4">MSYS2</span> 를 설치하는 화면이 뜬다.  
 ***주의할점*** : 윈도우 ID 가 한글로 되어 있으면 문제 발생의 여지가 크다.  
 한글 계정일 경우 영문으로 ID 를 바꾸고 해야 한다.  
 ![MSYS2설치](/assets/img/post-img/jekyll-start/msys2-install.png)  
@@ -49,7 +49,7 @@ Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.
 
 이게 싫다면 MSYS2 를 개별적으로 찾아 설치해야 한다.  
 나는 그냥 여기서 3번을 눌러 설치했다.  
-( 1번을 선택하고, jekyll 실행시 MinGW([용어7](#용어)) 버전이 안맞다고 하면 그때 3번 해도 된다. )  
+( 1번을 선택하고, jekyll 실행시 <span class="tooltip" id="id-5">MinGW</span> 버전이 안맞다고 하면 그때 3번 해도 된다. )  
 <br>
 
 ### Jekyll 과 Bundler 설치
@@ -60,7 +60,7 @@ Ruby 와 MSYS2 를 다 설치하였다면, 윈도우 좌하단에 검색창에�
 gem install jekyll bundler
 jekyll -v
 ```
- gem 패키지 매니저를 이용하여 jekyll 과 bundler([용어9](#용어)) 를 install 하는 명령이다.  
+ gem 패키지 매니저를 이용하여 jekyll 과 <span class="tooltip" id="id-6">bundler</span>를 install 하는 명령이다.  
 jekyll -v 는 jekyll 버전을 확인하는 명령어인데 아래와 같이 나오면 jekyll 과 bundler 설치에 성공한 것이다.  
 ```
 > jekyll -v
@@ -119,23 +119,6 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
 
 
 
-
-# 용어
-1. ***정적 웹페이지*** : 서버에서 미리 저장된 파일을 그대로 웹 페이지로 전달.  
-    - GitHub Pages 는 ***정적 웹 페이지만을 지원***한다.  
-    - 동적 웹 페이지를 지원하고 싶으면, 호스팅을 추가로 해야한다.  
-2. ***동적 웹페이지*** : 서버에 있는 데이터들을 가공처리한 후 웹페이지로 전달.  
-3. ***Markdown*** :  일반 텍스트 기반 경량 마크업 언어. 
-4. ***Markup 언어*** : 태그 등을 이용해서 문서나 데이터 구조를 표기하는 언어의 한 종류.
-5. ***RUBY*** : 단순함과 생산성에 초점을 둔 동적 오픈 소스 프로그래밍 언어  
-6. ***MSYS2*** : Windows 소프트웨어를 구축, 설치 및 실행하기 위하여 사용하기 쉬운 환경을 제공하는 도구 및 라이브러리 모음
-    - Window 에서 MinGW, Ruby 등이 사용 가능한 환경을 제공.
-7. ***MinGW*** 는 GNU 소프트웨어 도구 모음이다.  
-    - MSYS2 환경에서 여러 오픈 소스들이 윈도우에서 실행할 수 있는 소프트웨어 도구 모음을 제공.
-8. ***GNU*** : 리처드 스톨먼의 자유 소프트웨어 재단(Free Software Foundation)에서 진행하며 유지 중인 OS 프로젝트.  
-9. ***Bundler*** :  Bundler는 정확히 필요한 gem과 그 gem의 버전을 설치하고, 추적하는 것으로 일관성 있는 Ruby 프로젝트를 제공하는 도구.
-
-
 # 참고
 1. 두-번째저장소 : [GitHub Pages에 포트폴리오 호스팅하기][github-page-link]
 2. IT Technical Training : [Jekyll 기반의 GitHub Page 생성][it-tech-link]
@@ -147,7 +130,25 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
 8. GNU 공식: [GNU 공식][GNU-link]
 9. 이수재 블로그: [Jekyll 이란?][이수재-link]
 
-
+<hr>
+<div class="tooltip-desc">
+    <div class="tooltip-description" id="desc-1">
+        서버에서 미리 저장된 파일을 그대로 웹 페이지로 전달.
+        GitHub Pages 는 정적 웹 페이지만을 지원한다.
+        동적 웹 페이지를 지원하고 싶으면, 호스팅을 추가로 해야한다.
+    </div> 
+    <div class="tooltip-description" id="desc-2">일반 텍스트 기반 경량 마크업 언어.</div> 
+    <div class="tooltip-description" id="desc-3">단순함과 생산성에 초점을 둔 동적 오픈 소스 프로그래밍 언어</div>  
+    <div class="tooltip-description" id="desc-4">
+        Windows 소프트웨어를 구축, 설치 및 실행하기 위하여 사용하기 쉬운 환경을 제공하는 도구 및 라이브러리 모음
+        Window 에서 MinGW, Ruby 등이 사용 가능한 환경을 제공.
+        </div>
+    <div class="tooltip-description" id="desc-5">
+        GNU 소프트웨어 도구 모음이다. 
+        MSYS2 환경에서 여러 오픈 소스들이 윈도우에서 실행할 수 있는 소프트웨어 도구 모음을 제공.
+    </div> 
+    <div class="tooltip-description" id="desc-6">Bundler는 정확히 필요한 gem과 그 gem의 버전을 설치하고, 추적하는 것으로 일관성 있는 Ruby 프로젝트를 제공하는 도구.</div>
+</div>
 
 
 [github-page-link]: https://shxrecord.tistory.com/203
