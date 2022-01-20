@@ -8,8 +8,13 @@ function setFootNotes()
         let sToolTipID = sToolTip.id.substr(3).toString();
         let sDesc = document.getElementById( 'desc-' + sToolTipID );
 
+        let sToolTipNo = document.createElement('span');
         let sToolTipDesc = document.createElement('span');
-        sToolTipDesc.innerHTML = '<span class="tooltiptext tooltip-top">' +
+
+        sToolTipNo.innerHTML = '<span class="tooltip-no">[' + sToolTipID + ']</span>';
+        sToolTip.appendChild(sToolTipNo);
+        
+        sToolTipDesc.innerHTML = '<span class="tooltiptext tooltip-top">[' + sToolTipID + '] ' + 
                                 sDesc.textContent + '</span>';
                         
         sToolTip.appendChild( sToolTipDesc );

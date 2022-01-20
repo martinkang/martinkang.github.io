@@ -21,6 +21,13 @@
     position: absolute;       /* 절대 위치를 사용 */
     z-index: 1;
   }
+  .tooltip .tooltip-no {
+    top: -0.5em;
+    line-height: 0;
+    font-size: 75%;
+    position: relative;
+    vertical-align: baseline;
+  }
   
   .tooltip:hover .tooltiptext {
     visibility: visible;      /* hover 이벤트 발생시 영역을 보여줌 */
