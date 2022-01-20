@@ -42,3 +42,16 @@
       font-size: 0.7em;
     }
   }
+
+  @media (prefers-color-scheme: dark) {
+    /* 다크 모드에 적용할 스타일 정의 */
+
+    .tooltip-description {
+      color: #c7c7c7;
+    }
+
+    .tooltip .tooltiptext {
+      background-color: #555454;
+      color: #c7c7c7;
+    }
+  }
