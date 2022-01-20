@@ -21,6 +21,7 @@
     position: absolute;       /* 절대 위치를 사용 */
     z-index: 1;
   }
+
   .tooltip .tooltip-no {
     top: -0.5em;
     line-height: 0;
@@ -34,11 +35,14 @@
   }
 
   .tooltip .tooltip-top {
-    width: 500px;
+    padding: 1px 5px;
+    max-width: 800px;
+    width: max-content;
     bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
+    border: solid #c7c7c7;
+    z-index: 9999;
   }
+
 
   @media (max-width: 600px) {
     .tooltip .tooltiptext {
@@ -47,6 +51,10 @@
 
     .tooltip-description {
       font-size: 0.7em;
+    }
+
+    .tooltip .tooltip-top {
+      max-width: 300px;
     }
   }
 
