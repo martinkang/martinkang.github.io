@@ -57,9 +57,9 @@
       max-width: 300px;
     }
   }
-
-  @media (prefers-color-scheme: dark) {
-    /* 다크 모드에 적용할 스타일 정의 */
+   /* 다크 모드에 적용할 스타일 정의 */
+  /* @media (prefers-color-scheme: dark) {
+ 
 
     .tooltip-description {
       color: #c7c7c7;
@@ -69,4 +69,4 @@
       background-color: #555454;
       color: #c7c7c7;
     }
-  }
+  } */
