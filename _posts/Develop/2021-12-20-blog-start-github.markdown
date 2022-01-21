@@ -4,7 +4,7 @@ title:  "GitHub 블로그 시작하기 - GitHub Page 만들기"
 description: "GitHub Page Repository 를 생성하고 블로그를 시작해보자."
 date:   2021-12-20 18:00:00 +0900
 categories: develop
-tags: [blog, github]
+tags: [blog, github, Front-End]
 img-tag: github
 ---
 
@@ -32,7 +32,8 @@ img-tag: github
   <span class="tooltip" id="id-2">호스팅</span> 은 Public 에서만 가능하며, ***무료 Private 는 호스팅을 지원하지 않는다.***
 - Add a README file
   - README 파일을 추가할지 여부.
-  - GitHub 에서 오픈 소스들을 찾아보면 README File 을 가장 먼저 볼 수 있는데, 보통 프로젝트나의 사용법이나 내용에 대해 적어둔다.
+  - GitHub 에서 오픈 소스들을 찾아보면 README File 을 가장 먼저 볼 수 있는데,   
+   보통 프로젝트나의 사용법이나 내용에 대해 적어둔다.
 - Add .gitgnore
   - Git
   <span class="tooltip" id="id-3">버전 관리</span> 에서 제외할 파일 목록을 지정하는 파일이다.
@@ -40,7 +41,7 @@ img-tag: github
     - 일반적으로 Git 은 프로젝트 내에 추가된 모든 파일을 추적하는데, .gitgnore 에 추가하면 파일 추적에서 제외된다.
 - Choose a license
   - 내 Repository 에 License 를 추가한다.
-  - 더 자세한 내용은 아래 참고링크.  
+  - 더 자세한 내용은 [참고링크.][git-license-link]  
 
 # GitHub Page 확인하기
 Repository 생성이 성공하면, 나의 새로운 GitHub Blog 의 주소는 https://username.github.io 가 된다.  
