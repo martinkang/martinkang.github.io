@@ -1,6 +1,11 @@
 
-let gWindowXSize = window.innerWidth;
-let gWindowYSize = window.innerHeight;
+let gWindowXSize = 0;
+let gWindowYSize = 0;
+
+const DEFAULT_TOOLTIP_X_MARGIN   = "20px";
+const DEFAULT_TOOLTIP_X_WIDTH    = "max-content";
+const DEFAULT_TOOLTIP_Y_POSITION = "150%";
+const DEFAULT_TOOLTIP_Y_MARGIN   = 30; /* px */
 
 function getWindowSize()
 {
@@ -8,41 +13,56 @@ function getWindowSize()
   gWindowYSize = window.innerHeight;
 }
 
-function setToolTipSizeNPosition( aToolTip )
+function isInViewPort( aToolTip )
 {
-  let sSideBarWidth = document.getElementsByClassName( 'sidebar' ).item(0).offsetWidth;
-  let sToolTipTop = aToolTip.getElementsByClassName( 'tooltip-top' ).item(0);
-  let sToolTipXPositon = aToolTip.offsetLeft;
-  let sToolTipTopWidth = sToolTipTop.offsetWidth;
-  let sSizeDiff = '';
-  let sSize = '';
+  if ( ( aToolTip.getBoundingClientRect().top < 0 ) ||
+       ( aToolTip.getBoundingClientRect().top > gWindowYSize ) ) {
+         return false;
+       }
+       else {
+         return true;
+       }
+}
 
-  if ( gWindowXSize <= 600 ) {
-    sSideBarWidth = 0;
-  }
-
-  if ( sToolTipXPositon + sToolTipTopWidth > (gWindowXSize - sSideBarWidth) * 0.9 ) {
-    let sOriginSize = sToolTipTopWidth;
-    let sChangeSize = (gWindowXSize - sSideBarWidth) * 0.7;
-
-    sSizeDiff = ( (gWindowXSize - sSideBarWidth) * 0.9 - (sToolTipXPositon + sToolTipTopWidth) ).toString() + 'px';
-
-    if ( sOriginSize > sChangeSize ) {
-      sSize = sChangeSize.toString() + 'px';
-      sSizeDiff = ( (gWindowXSize - sSideBarWidth) * 0.9 - (sToolTipXPositon + sChangeSize) ).toString() + 'px';
-    }
-    else {
-      sSize = sOriginSize.toString() + 'px';
-      sSizeDiff = ( (gWindowXSize - sSideBarWidth) * 0.9 - (sToolTipXPositon + sOriginSize) ).toString() + 'px';
-    }
+function setYPosition( aToolTip, aToolTipTop )
+{
+  if ( aToolTip.getBoundingClientRect().top - aToolTipTop.offsetHeight < DEFAULT_TOOLTIP_Y_MARGIN ) {
+    aToolTipTop.style.top    = DEFAULT_TOOLTIP_Y_POSITION;
+    aToolTipTop.style.bottom = '';
   }
   else {
-    sSize = "max-content";
-    sSizeDiff = '20px';
+    aToolTipTop.style.top    = '';
+    aToolTipTop.style.bottom = DEFAULT_TOOLTIP_Y_POSITION;
+  }
+}
+
+function setWidthNXPosition( aToolTip, aToolTipTop )
+{
+  let sLeft = '';
+  let sWidth = '';
+
+  if ( aToolTip.getBoundingClientRect().left + aToolTipTop.offsetWidth > (gWindowXSize * 0.9) ) {
+    let sChangeSize = (gWindowXSize) * 0.7;
+    let sSize = ( aToolTipTop.offsetWidth > sChangeSize ) ? sChangeSize : aToolTipTop.offsetWidth;
+
+    sWidth = sSize.toString() + 'px';
+    sLeft  = ( (gWindowXSize * 0.9) - (aToolTip.getBoundingClientRect().left + sSize) ).toString() + 'px';
+  }
+  else {
+    sWidth = DEFAULT_TOOLTIP_X_WIDTH;
+    sLeft  = DEFAULT_TOOLTIP_X_MARGIN;
   }
   
-  sToolTipTop.style.width = sSize;
-  sToolTipTop.style.left = sSizeDiff;
+  aToolTipTop.style.width = sWidth;
+  aToolTipTop.style.left  = sLeft;
+}
+
+function setToolTipSizeNPosition( aToolTip )
+{
+  let sToolTipTop = aToolTip.getElementsByClassName( 'tooltip-top' ).item(0);
+
+  setWidthNXPosition( aToolTip, sToolTipTop );
+  setYPosition( aToolTip, sToolTipTop );
 }
 
 function getToolTipNo( aToolTipID )
@@ -75,19 +95,34 @@ function setFootNotes()
         sToolTip.appendChild( getToolTipNo( sToolTipID ) );
         sToolTip.appendChild( getToolTipDesc( sDesc.textContent ) );
 
-        setToolTipSizeNPosition( sToolTip );
+        if ( isInViewPort( sToolTip ) ) {
+          setToolTipSizeNPosition( sToolTip );
+        }
     }
 }
 
-window.addEventListener( "resize", (event) => {
+function setToolTipSizeNPositions()
+{
   let sToolTips = document.getElementsByClassName( 'tooltip' );
 
   getWindowSize();
 
   for (let i = 0; i < sToolTips.length; i++) {
     let sToolTip = sToolTips.item(i);
-    setToolTipSizeNPosition( sToolTip );
+
+    if ( isInViewPort( sToolTip ) ) {
+      setToolTipSizeNPosition( sToolTip );
+    }
   }
+}
+
+window.addEventListener ('scroll', function(){
+  setToolTipSizeNPositions();
+});
+
+
+window.addEventListener( "resize", (event) => {
+  setToolTipSizeNPositions();
 });
 
 window.onload = function() {
