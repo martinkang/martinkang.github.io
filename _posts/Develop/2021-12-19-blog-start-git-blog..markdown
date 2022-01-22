@@ -106,6 +106,8 @@ Git 버전 관리를 윈도우에서 쉽게 사용하기 위한 툴.
 
 # 참고
  - 나무위키 - [GitHub][github-namu]
+ <br>
+ <hr>
 
 [start-github]: /develop/2021/12/20/blog-start-github.html
 [github-namu]: https://namu.wiki/w/GitHub
