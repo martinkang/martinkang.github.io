@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "GitHub 블로그 시작하기 - 기본 정보 설정하기."
+title:  "[GitHub Blog - 4] - 기본 정보 설정하기."
 description: "Jekyll 의 _config.yml 을 수정하여 블로그 기본 정보를 설정해보자."
 date:   2021-12-20 19:20:00 +0900
 categories: develop
-tags: [blog, jekyll]
+tags: [blog, jekyll, Front-End]
 img-tag: jekyll
 ---
 
@@ -32,7 +32,7 @@ img-tag: jekyll
 그런데 현재 주소창 페이지 이름, 사이드바에 Monos 그리고 카테고리 등이 테마 초기값이다.  
 이 값들을 내가 원하는 이름과 구성으로 바꿀 예정이다.  
 
-![github-page](/assets/img/post-img/start-config/first-theme.png)  
+![github-page](/assets/img/post-img/start-config/first-theme.png){:class="lazyload" .img-w550}    
 
 
 ### _config.yml    

@@ -16,7 +16,9 @@ img-tag: github
 
 
 그럼 다음과 같이 Repository Name 을 정할 수 있는데,   
-이 Name 은 ***예외없이 username.github.io*** 로 정해야 한다.(이유는 부록에)  
+이 Name 은 ***예외없이 username.github.io*** 로 정해야 한다.   
+([GitHub Blog Repository 는 왜 지정되어 있는가?][repository-link])  
+<br>
 즉 username 이 martinmk63 라면 Repository 이름은 martinmk63.github.io 가 된다.  
 그 외 아래 선택 옵션은 ***Public / Private*** 를 제외하곤 당장은 신경쓰지 않아도 된다.  
 ![create-new-repo](/assets/img/post-img/start-github-github/create-new-repo.png){:class="lazyload" .img-w550}  
@@ -53,7 +55,7 @@ GitHub Blog 스타트 성공!.
 
 
 # 다음 주제
-- [GitHub 블로그 시작하기 - Jekyll 시작하기.][jekyll-link]  
+- [[GitHub Blog - 3] Jekyll 시작하기 1][jekyll-link]  
 <hr>
 <br>
 
@@ -116,5 +118,5 @@ GitHub Blog 스타트 성공!.
 [github-page-link]: https://shxrecord.tistory.com/203
 [webhosting-link]: https://www.dotname.co.kr/hosting/web/guide
 
-[jekyll-link]: /develop/2021/12/20/blog-start-jekyll.html
+[jekyll-link]: /develop/2021/12/21/blog-start-jekyll.html
 [repository-link]: /study/2021/12/20/github-repository.html

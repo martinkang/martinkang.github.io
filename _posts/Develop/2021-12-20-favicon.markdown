@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Favicon 을 설정해보자."
+title:  "[GitHub Blog - 5] Favicon 을 설정해보자."
 description: "내 블로그 아이콘을 설정하여 블로그 디테일을 높이자."
 date:   2021-12-20 20:00:00 +0900
 categories: develop

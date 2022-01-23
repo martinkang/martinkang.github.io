@@ -7,6 +7,9 @@ categories: bugs
 tags: [ruby]
 img-tag: ruby
 ---
+# 원인  
+Ruby 버전을 잘못 받음.
+
 
 # Ruby 3.x 버전을 받으면 어떻게 될까?  
 
