@@ -48,16 +48,19 @@ GitHub Pages 기본적으로 https://username.github.io 형태의
 예를들어 username 이 martinmk63 인 유저가  
  martinmk633.github.io 로 Repository 이름을 만들었다면   
 아래 사진과 같이  
- ***https://martinmk63.github.io/martinmk633.github.io/***   
- 로 접근이 가능하다!.  
+```
+https://martinmk63.github.io/martinmk633.github.io/
+```
+로 접근이 가능하다!.  
 즉 사실은 username.github.io 로 Repository 를 만들지 않아도   
 GitHub Blog 만드는건 가능하다!. ( 하지만 불편하다 )   
 <br>
 위에서 언급하듯이 Root 주소(http://martinmk63.github.io) 는   
 username.github.io 인 Repository 를 가르키기 때문에,  
-그 외 주소는    
-
-***https://username.github.io/Repository/***  
+그 외 Repository 의 주소는    
+```
+https://username.github.io/Repository/
+```
 와 같이 호스팅이 된다.  
 이 역시 시스템상 설정값이며, 개인 서버를 가질경우 마음대로 지정 가능하다.  
 (참고로 해당 주소에 접근 가능한 웹 페이지가 없다면 저 주소로 들어가도 아무것도 없다.)  
