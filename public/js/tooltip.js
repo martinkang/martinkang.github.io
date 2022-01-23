@@ -36,6 +36,13 @@ function setYPosition( aToolTip, aToolTipTop )
   }
 }
 
+function setNone( aToolTip )
+{
+  let sToolTipTop = aToolTip.getElementsByClassName( 'tooltip-top' ).item(0);
+  
+  sToolTipTop.style.display = "none";
+}
+
 function setWidthNXPosition( aToolTip, aToolTipTop )
 {
   let sLeft = '';
@@ -60,7 +67,7 @@ function setWidthNXPosition( aToolTip, aToolTipTop )
 function setToolTipSizeNPosition( aToolTip )
 {
   let sToolTipTop = aToolTip.getElementsByClassName( 'tooltip-top' ).item(0);
-
+  sToolTipTop.style.display = "inline";
   setWidthNXPosition( aToolTip, sToolTipTop );
   setYPosition( aToolTip, sToolTipTop );
 }
@@ -98,6 +105,9 @@ function setFootNotes()
         if ( isInViewPort( sToolTip ) ) {
           setToolTipSizeNPosition( sToolTip );
         }
+        else {
+          setNone( sToolTip );
+        }
     }
 }
 
@@ -112,6 +122,9 @@ function setToolTipSizeNPositions()
 
     if ( isInViewPort( sToolTip ) ) {
       setToolTipSizeNPosition( sToolTip );
+    }
+    else {
+      setNone( sToolTip );
     }
   }
 }

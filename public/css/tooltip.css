@@ -10,6 +10,7 @@
   }
 
   .tooltip .tooltiptext {
+    display: none;
     visibility: hidden;       /* 이벤트가 없으면 툴팁 영역을 숨김 */
     background-color: #051628;
     color: #fff;
