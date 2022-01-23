@@ -99,12 +99,12 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
 Blog 페이지를 추가/수정 하려면, 내가 작업할 로컬 장비에 Blog Repository 를 받아야 한다.    
 ( GitHub 홈페이지 내에서 Repository 에 추가/수정이 가능하지만, 추천하지 않는다. )   
 위에서 다운받은 GitHub Desktop 을 실행시킨 후 로그인을 하자.  
-그리고 나서 상단의 File 메뉴에서 Clone Repository 를 선택하자.  
+그리고 나서 상단의 File 메뉴에서 Clone Repository 를 선택하자.   
+![repo-list](/assets/img/post-img/jekyll-start/clone-repo.png){:class="lazyload" .img-w300}        
 
-GitHub 를 로그인 한 뒤 좌 상단을 보면 다음과 같은 Repository 목록이 있다.  
-![repo-list](/assets/img/post-img/jekyll-start/clone-repo.png){:class="lazyload" .img-w300}      
+<br>
 
-
+GitHub 를 로그인 한 뒤 좌 상단을 보면 아래와 같은 Repository 목록이 있다.  
 그리고 내려받을 위치를 고른 뒤 Clone 을 누르자.  
 그럼 내 블로그 코드가 내 로컬 장비에 다운로드 된다.  
 ![repo-list](/assets/img/post-img/jekyll-start/clone-repo2.png){:class="lazyload" .img-w500}  
