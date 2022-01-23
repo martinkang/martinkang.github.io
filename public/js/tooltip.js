@@ -125,7 +125,7 @@ window.addEventListener( "resize", (event) => {
   setToolTipSizeNPositions();
 });
 
-window.onload = function() {
+document.onload = function() {
   getWindowSize();
   setFootNotes();
 }
