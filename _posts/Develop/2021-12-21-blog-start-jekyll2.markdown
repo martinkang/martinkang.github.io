@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "GitHub 블로그 시작하기 - Jekyll 시작하기 2."
+title:  "[GitHub Blog - 3] Jekyll 시작하기 2"
 description: "Jekyll 을 이용하여 GitHub Blog 를 시작해보자."
-date:   2021-12-20 19:10:00 +0900
+date:   2021-12-21 19:10:00 +0900
 categories: develop
-tags: [blog, jekyll]
+tags: [blog, jekyll, Front-End]
 img-tag: jekyll
 ---
  
@@ -170,7 +170,7 @@ GitHub 서버의 내 Repository 에 반영을 해야 실제 웹에 올라가게 
 <br>
 
 # 다음 주제
-- [GitHub 블로그 시작하기 - 기본 설정하기.][config-link]
+- [[GitHub Blog - 4] - 기본 정보 설정하기][config-link]
 
 
 <br>
@@ -263,5 +263,5 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 [git-scm-link]: https://git-scm.com/book/ko/v2
 [jekyll-docu-link]: https://jekyllrb-ko.github.io/docs/structure/
 
-[config-link]: /git-blog/2021/12/20/blog-start-github-config.html
+[config-link]: /develop/2021/12/22/blog-start-github-config.html
 [install-lastest-ruby-link]: /bugs/2021/12/23/install-lastest-ruby.html

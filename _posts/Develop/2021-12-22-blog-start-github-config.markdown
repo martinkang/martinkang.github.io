@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "[GitHub Blog - 4] - 기본 정보 설정하기."
+title:  "[GitHub Blog - 4] - 기본 정보 설정하기"
 description: "Jekyll 의 _config.yml 을 수정하여 블로그 기본 정보를 설정해보자."
-date:   2021-12-20 19:20:00 +0900
+date:   2021-12-22 19:20:00 +0900
 categories: develop
 tags: [blog, jekyll, Front-End]
 img-tag: jekyll
@@ -32,7 +32,7 @@ img-tag: jekyll
 그런데 현재 주소창 페이지 이름, 사이드바에 Monos 그리고 카테고리 등이 테마 초기값이다.  
 이 값들을 내가 원하는 이름과 구성으로 바꿀 예정이다.  
 
-![github-page](/assets/img/post-img/start-config/first-theme.png){:class="lazyload" .img-w550}    
+![github-page](/assets/img/post-img/start-config/first-theme.png)  
 
 
 ### _config.yml    
@@ -117,7 +117,9 @@ site.title 값만 바꿔주면 알아서 모든 페이지의 title 이 변경된
 
  코드블럭 테마를 설정할 수 있다. - [미리보기 사이트][theme-view-link]
 
-- [favicon 을 설정해보자][favicon-link]
+
+# 다음 주제
+- [[GitHub Blog - 5] Favicon 을 설정해보자][favicon-link]
 
 
 <br> 
@@ -127,10 +129,10 @@ site.title 값만 바꿔주면 알아서 모든 페이지의 title 이 변경된
 - spsarolkar.github.io : [블로그 Theme 미리보기][theme-view-link]
  
 
-[favicon-link]: /git-blog/2021/12/20/favicon.html
 [github-config-link]: https://devinlife.com/howto%20github%20pages/blog-config/
 jekyll-var-link]: https://jekyllrb-ko.github.io/
 [jekyll-var-link]: https://jekyllrb-ko.github.io/docs/variables/
 [jekyll-config-link]:https://jekyllrb-ko.github.io/docs/configuration/
 [theme-view-link]: https://spsarolkar.github.io/rouge-theme-preview/
-[favicon-link]: /git-blog/2021/12/20/favicon.html
+
+[favicon-link]: /develop/2022/01/02/favicon.html

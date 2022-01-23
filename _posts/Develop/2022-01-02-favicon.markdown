@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "[GitHub Blog - 5] Favicon 을 설정해보자."
+title:  "[GitHub Blog - 5] Favicon 을 설정해보자"
 description: "내 블로그 아이콘을 설정하여 블로그 디테일을 높이자."
-date:   2021-12-20 20:00:00 +0900
+date:   2022-01-02 20:00:00 +0900
 categories: develop
 tags: [blog, Front-End]
 img-tag: config
@@ -52,7 +52,7 @@ Favicon 은 정사각형 이며, 일반 이미지 ( jpg, png 등 ) 도 가능하
 
 
 # 다음 주제
-- [Open Graph 를 설정해보자][og-link]
+- [[GitHub Blog - 6] Open Graph 를 설정해보자][og-link]
 
 
 # 참조
@@ -69,4 +69,4 @@ Favicon 은 정사각형 이며, 일반 이미지 ( jpg, png 등 ) 도 가능하
 [파피콘만드는방법-link]: https://ux.stories.pe.kr/106
 [홈바로가기-link]: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=nainside&logNo=221504373274
 [ico vs png-link]: https://simigeum.tistory.com/18
-[og-link]: /git-blog/2021/12/20/open-graph.html
+[og-link]: /develop/2022/01/03/open-graph.html

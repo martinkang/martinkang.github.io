@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "GitHub 블로그 시작하기 - Jekyll 시작하기 1."
-description: "정적 사이트 생성기 Jekyll 을 설치해보자."
-date:   2021-12-20 18:10:00 +0900
+title:  "[GitHub Blog - 3] Jekyll 시작하기 1"
+description: "정적 사이트 생성기 Jekyll 을 설치하고, 내 Repository 를 다운받아 보자."
+date:   2021-12-21 18:10:00 +0900
 categories: develop
-tags: [blog, jekyll]
+tags: [blog, jekyll, Front-End]
 img-tag: jekyll
 ---
  
@@ -14,9 +14,9 @@ Ruby 로 만들어진 <span class="tooltip" id="id-1">정적 사이트</span> �
 
 
 ### Jekyll 은 왜 설치할까?  
-웹 페이지를 수정하고 GitHub 에 Commit/Push 를 하면 바로 웹 사이트에 올라가게 된다.  
-일반적으로 프로그래밍 언어나 <span class="tooltip" id="id-2">Markdown</span> 문법을 이용하여 수정된 내용을 확인하기 위해선   
-GitHub 에 Commit/Push 를 하고 웹 사이트에 들어가야만 확인이 가능하다.  
+웹 페이지를 수정하고 GitHub 에 <span class="tooltip" id="id-2">Commit</span>/<span class="tooltip" id="id-3">Push</span> 를 하면 GitHub Blog 에 반영이 된다.  
+따라서 GitHub Blog 의 페이지를 수정하고 이 수정된 내용을 확인하기 위해선,    
+GitHub 에 Push 후 해당 도메인에 들어가야만 확인이 가능하다.  
 그래서 수정한 내용을 웹 사이트에 올리기 전 Jekyll 을 깔아 의도한 대로 페이지가 작성됬는지 확인하는 작업이 필요하다.  
 즉 ***실제 웹 페이지에 올리기전에 내 로컬 컴퓨터에서 확인하기 위해*** 설치한다.
 
@@ -26,41 +26,46 @@ GitHub 에 Commit/Push 를 하고 웹 사이트에 들어가야만 확인이 가
 # Jekyll 설치  
 
 ### Ruby 설치
-이 글을 보는사람이 대부분 비전공자 또는 초보 개발자일것이므로... 윈도우를 기준으로 쓴다.  
-Jekyll 은 <span class="tooltip" id="id-3">Ruby</span> 의 패키지 매니저인 Gem 을 사용해서 설치할 수 있다.  
+윈도우를 기준으로 쓴다.  
+Jekyll 은 <span class="tooltip" id="id-4">Ruby</span> 의 패키지 매니저인 Gem 을 사용해서 설치할 수 있다.  
 그리고 이 Gem 을 사용하기 위해선 Ruby 를 우선 설치해야 한다.  
+
 <br>
+
 Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.  
 여기서 <span style="color:red">***<U>꼭!꼭!꼭! Ruby-Devkit 2.6.6-1</U>***</span> 를 추천한다.  
 이제 구 버전이라 해당 페이지에서 안보이는데, 상단에 Archives 를 누르고 버전을 찾으면 나온다.   
 ![ruby-archive](/assets/img/post-img/jekyll-start/ruby-archive.png)    
 참고로 <span style="color:red">***<U>Ruby-Devkit 3.x 버전은 절대 받지 말자.</U>***</span>
-([ Ruby 3.x 버전을 받으면 어떻게 될까? ][install-lastest-ruby-link])
+([ Ruby 3.x 버전을 받으면 어떻게 될까? ][install-lastest-ruby-link]){:class="lazyload" .img-w550}  
 <br>
 
-다운받고 평소와 같이 next 를 누르다 보면 다음과 같이 <span class="tooltip" id="id-4">MSYS2</span> 를 설치하는 화면이 뜬다.  
+다운받고 평소와 같이 next 를 누르다 보면 다음과 같이 
+<span class="tooltip" id="id-5">MSYS2</span> 를 설치하는 화면이 뜬다.  
+
 ***주의할점*** : 윈도우 ID 가 한글로 되어 있으면 문제 발생의 여지가 크다.  
 한글 계정일 경우 영문으로 ID 를 바꾸고 해야 한다.  
-![MSYS2설치](/assets/img/post-img/jekyll-start/msys2-install.png)  
+![MSYS2설치](/assets/img/post-img/jekyll-start/msys2-install.png){:class="lazyload" .img-w600}    
 
 이 창에서 설치할 경우 MSYS2 를 직접 받아 설치하는 것과 두가지가 다른데
 1. 원하는 Path 에 설치가 불가능하다.
 2. 제어판->프로그램 및 기능 에서 찾을 수 없다.
 
-이게 싫다면 MSYS2 를 개별적으로 찾아 설치해야 한다.  
+<br>
+이게 싫다면 MSYS2 를 인터넷서 개별적으로 찾아 설치해야 한다.  
 나는 그냥 여기서 3번을 눌러 설치했다.  
-( 1번을 선택하고, jekyll 실행시 <span class="tooltip" id="id-5">MinGW</span> 버전이 안맞다고 하면 그때 3번 해도 된다. )  
+( 1번을 선택하고, jekyll 실행시 <span class="tooltip" id="id-6">MinGW</span> 버전이 안맞다고 하면 그때 3번 해도 된다. )  
 <br>
 
 ### Jekyll 과 Bundler 설치
 Ruby 와 MSYS2 를 다 설치하였다면, 윈도우 좌하단에 검색창에서 Ruby 를 검색해보자.  
-![ruby](/assets/img/post-img/jekyll-start/cmd-ruby.png)  
+![ruby](/assets/img/post-img/jekyll-start/cmd-ruby.png){:class="lazyload" .img-w300}    
 혹시 안나오면 검색창에 cmd 라 검색하면 cmd 또는  명령 프롬프트 라고도 나온다.  
 ```
 gem install jekyll bundler
 jekyll -v
 ```
- gem 패키지 매니저를 이용하여 jekyll 과 <span class="tooltip" id="id-6">bundler</span>를 install 하는 명령이다.  
+ gem 패키지 매니저를 이용하여 jekyll 과 <span class="tooltip" id="id-7">bundler</span>를 install 하는 명령이다.  
 jekyll -v 는 jekyll 버전을 확인하는 명령어인데 아래와 같이 나오면 jekyll 과 bundler 설치에 성공한 것이다.  
 ```
 > jekyll -v
@@ -78,10 +83,10 @@ Bundler version 2.3.1
 Blog 페이지를 추가/수정 하려면, 내가 작업할 장비의 로컬에 Blog Repository 를 받아야 한다.    
 ( GitHub 홈페이지 내에서 Repository 에 추가/수정이 가능하지만, 추천하지 않는다. )   
 GitHub 를 로그인 한 뒤 좌 상단을 보면 다음과 같은 Repository 목록이 있다.  
-![repo-list](/assets/img/post-img/jekyll-start/github-repository.png)  
+![repo-list](/assets/img/post-img/jekyll-start/github-repository.png){:class="lazyload" .img-w600}    
 여기 들어가면 아래와 같은 Code 버튼을 눌러 Download 를 하자.  
 다운로드 방법은 참 다양한데, 윈도우 환경이고 GitHub 첫 사용이면 간단하게 Download 를 추천한다.   
-![repo-list](/assets/img/post-img/jekyll-start/down-repo.png)  
+![repo-list](/assets/img/post-img/jekyll-start/down-repo.png){:class="lazyload" .img-w600}    
 다운을 다 받았으면 압축을 풀어본다.  
 <br>
 
@@ -105,7 +110,7 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
 <br>
 
 # 다음 주제
-- [GitHub 블로그 시작하기 - Jekyll 시작하기 2.][jekyll-link2]
+- [[GitHub Blog - 3] Jekyll 시작하기 2][jekyll-link2]
 
 
 <br>
@@ -137,17 +142,22 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
         GitHub Pages 는 정적 웹 페이지만을 지원한다.
         동적 웹 페이지를 지원하고 싶으면, 호스팅을 추가로 해야한다.
     </div> 
-    <div class="tooltip-description" id="desc-2">일반 텍스트 기반 경량 마크업 언어.</div> 
-    <div class="tooltip-description" id="desc-3">단순함과 생산성에 초점을 둔 동적 오픈 소스 프로그래밍 언어</div>  
-    <div class="tooltip-description" id="desc-4">
+    <div class="tooltip-description" id="desc-2">
+    내 로컬 장비상에 의미있는 버전을 추가하는 작업. Commit 을 하면 버전이 변경되며, 이전 버전과의 차이를 기록하게 된다. 언제든 이런 Commit 순간 (버전) 으로 돌아올 수 있다.
+    </div>
+    <div class="tooltip-description" id="desc-3">
+    내 로컬 장비의 Commit 된 변경분을 원격 저장소 (GitHub) 에 반영하는 작업.
+    </div>
+    <div class="tooltip-description" id="desc-4">단순함과 생산성에 초점을 둔 동적 오픈 소스 프로그래밍 언어</div>  
+    <div class="tooltip-description" id="desc-5">
         Windows 소프트웨어를 구축, 설치 및 실행하기 위하여 사용하기 쉬운 환경을 제공하는 도구 및 라이브러리 모음
         Window 에서 MinGW, Ruby 등이 사용 가능한 환경을 제공.
         </div>
-    <div class="tooltip-description" id="desc-5">
+    <div class="tooltip-description" id="desc-6">
         GNU 소프트웨어 도구 모음이다. 
         MSYS2 환경에서 여러 오픈 소스들이 윈도우에서 실행할 수 있는 소프트웨어 도구 모음을 제공.
     </div> 
-    <div class="tooltip-description" id="desc-6">Bundler는 정확히 필요한 gem과 그 gem의 버전을 설치하고, 추적하는 것으로 일관성 있는 Ruby 프로젝트를 제공하는 도구.</div>
+    <div class="tooltip-description" id="desc-7">Bundler는 정확히 필요한 gem과 그 gem의 버전을 설치하고, 추적하는 것으로 일관성 있는 Ruby 프로젝트를 제공하는 도구.</div>
 </div>
 
 
@@ -164,5 +174,5 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
 [msys2-link]: https://www.msys2.org/
 [GNU-link]: http://korea.gnu.org/
 
-[jekyll-link2]: /git-blog/2021/12/20/blog-start-jekyll2.html
+[jekyll-link2]: /develop/2021/12/21/blog-start-jekyll2.html
 [install-lastest-ruby-link]: /bugs/2021/12/23/install-lastest-ruby.html
