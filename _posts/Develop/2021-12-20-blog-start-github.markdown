@@ -21,11 +21,11 @@ img-tag: github
 <br>
 즉 username 이 martinmk63 라면 Repository 이름은 martinmk63.github.io 가 된다.  
 그 외 아래 선택 옵션은 ***Public / Private*** 를 제외하곤 당장은 신경쓰지 않아도 된다.  
-![create-new-repo](/assets/img/post-img/start-github-github/create-new-repo.png){:class="lazyload" .img-w550}  
+![create-new-repo](/assets/img/post-img/start-github-github/create-new-repo.png){:class="lazyload" .img-w600}  
 
 
 ### 생성 옵션들 ###
-![create-repo2](/assets/img/post-img/start-github-github/create-repo2.png){:class="lazyload" .img-w750}  
+![create-repo2](/assets/img/post-img/start-github-github/create-repo2.png){:class="lazyload" .img-w600}  
 
 - ***Public / Private***
   - Repository 의 공개여부이다. ***나중에도 변경 가능하다.***
@@ -57,7 +57,6 @@ GitHub Blog 스타트 성공!.
 # 다음 주제
 - [[GitHub Blog - 3] Jekyll 시작하기 1][jekyll-link]  
 <hr>
-<br>
 
 # 부록
 

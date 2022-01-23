@@ -69,4 +69,5 @@ Favicon 은 정사각형 이며, 일반 이미지 ( jpg, png 등 ) 도 가능하
 [파피콘만드는방법-link]: https://ux.stories.pe.kr/106
 [홈바로가기-link]: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=nainside&logNo=221504373274
 [ico vs png-link]: https://simigeum.tistory.com/18
+
 [og-link]: /develop/2022/01/03/open-graph.html
