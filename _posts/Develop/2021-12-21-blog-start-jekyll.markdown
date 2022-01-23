@@ -45,7 +45,7 @@ Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.
 
 ***주의할점*** : 윈도우 ID 가 한글로 되어 있으면 문제 발생의 여지가 크다.  
 한글 계정일 경우 영문으로 ID 를 바꾸고 해야 한다.  
-![MSYS2설치](/assets/img/post-img/jekyll-start/msys2-install.png){:class="lazyload" .img-w600}    
+![MSYS2설치](/assets/img/post-img/jekyll-start/msys2-install.png){:class="lazyload" .img-w550}    
 
 이 창에서 설치할 경우 MSYS2 를 직접 받아 설치하는 것과 두가지가 다른데
 1. 원하는 Path 에 설치가 불가능하다.
@@ -79,19 +79,8 @@ Bundler version 2.3.1
 
 # GitHub Page 시작을 위한 준비.
 
-### GitHub 에서 내 Repository 를 다운받자
-Blog 페이지를 추가/수정 하려면, 내가 작업할 장비의 로컬에 Blog Repository 를 받아야 한다.    
-( GitHub 홈페이지 내에서 Repository 에 추가/수정이 가능하지만, 추천하지 않는다. )   
-GitHub 를 로그인 한 뒤 좌 상단을 보면 다음과 같은 Repository 목록이 있다.  
-![repo-list](/assets/img/post-img/jekyll-start/github-repository.png){:class="lazyload" .img-w600}    
-여기 들어가면 아래와 같은 Code 버튼을 눌러 Download 를 하자.  
-다운로드 방법은 참 다양한데, 윈도우 환경이고 GitHub 첫 사용이면 간단하게 Download 를 추천한다.   
-![repo-list](/assets/img/post-img/jekyll-start/down-repo.png){:class="lazyload" .img-w600}    
-다운을 다 받았으면 압축을 풀어본다.  
-<br>
-
 ### GitHub Desktop 을 다운받자  
-역시 GitHub 를 제대로 사용하려면 Git 버전관리와 다양한 명령어에 대해서 알아야 한다.  
+GitHub 를 제대로 사용하려면 Git 버전관리와 다양한 명령어에 대해서 알아야 한다.  
 하지만 이 글의 중점 소재가 아니고, 일단 시작하는 사람들을 위한 글이라 Git 버전 관리에 대해서 깊게 알 필요는 없다고 생각한다.  
 Git 버전 관리를 윈도우에서 쉽게 사용하기 위해서 GitHub Desktop 이라는 프로그램이 존재하고, 일단 이걸 깔고 써보자. 사용법은 아래에.   
 [GitHub Desktop 설치 및 사용][GitHub-Desktop-link]    
@@ -105,24 +94,40 @@ Jekyll 을 깔고 나면 본격적으로 페이지를 수정해야 하는데, �
 VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [스타트코딩 작업실][스타트코딩 작업실-link]   
 <br>
 
+
+### GitHub 에서 내 Repository 를 다운받자
+Blog 페이지를 추가/수정 하려면, 내가 작업할 로컬 장비에 Blog Repository 를 받아야 한다.    
+( GitHub 홈페이지 내에서 Repository 에 추가/수정이 가능하지만, 추천하지 않는다. )   
+위에서 다운받은 GitHub Desktop 을 실행시킨 후 로그인을 하자.  
+그리고 나서 상단의 File 메뉴에서 Clone Repository 를 선택하자.  
+
+GitHub 를 로그인 한 뒤 좌 상단을 보면 다음과 같은 Repository 목록이 있다.  
+![repo-list](/assets/img/post-img/jekyll-start/clone-repo.png){:class="lazyload" .img-w300}      
+
+
+그리고 내려받을 위치를 고른 뒤 Clone 을 누르자.  
+그럼 내 블로그 코드가 내 로컬 장비에 다운로드 된다.  
+![repo-list](/assets/img/post-img/jekyll-start/clone-repo2.png){:class="lazyload" .img-w500}  
+
+앞으로 이 폴더에서 작업을 하면 된다.  
+ 
+<br>
+
+
 다음장에서 본격적으로 시작해보자.  
 
 <br>
 
 # 다음 주제
 - [[GitHub Blog - 3] Jekyll 시작하기 2][jekyll-link2]
+<hr>
 
 
-<br>
-<br>
-<br>
-<br>
-
-# 문제 해결
+# 부록
 - [ Ruby 3.x 버전을 받으면 어떻게 될까? ][install-lastest-ruby-link]
   - Ruby3.2 를 받고 겪은 삽질 이야기.  
 
-
+<br>
 
 # 참고
 1. 두-번째저장소 : [GitHub Pages에 포트폴리오 호스팅하기][github-page-link]
@@ -148,7 +153,9 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
     <div class="tooltip-description" id="desc-3">
     내 로컬 장비의 Commit 된 변경분을 원격 저장소 (GitHub) 에 반영하는 작업.
     </div>
-    <div class="tooltip-description" id="desc-4">단순함과 생산성에 초점을 둔 동적 오픈 소스 프로그래밍 언어</div>  
+    <div class="tooltip-description" id="desc-4">
+    단순함과 생산성에 초점을 둔 동적 오픈 소스 프로그래밍 언어
+    </div>  
     <div class="tooltip-description" id="desc-5">
         Windows 소프트웨어를 구축, 설치 및 실행하기 위하여 사용하기 쉬운 환경을 제공하는 도구 및 라이브러리 모음
         Window 에서 MinGW, Ruby 등이 사용 가능한 환경을 제공.
@@ -157,7 +164,9 @@ VS Code 설치 및 시작은 이 링크를 참고하면 좋을 것 같다. : [�
         GNU 소프트웨어 도구 모음이다. 
         MSYS2 환경에서 여러 오픈 소스들이 윈도우에서 실행할 수 있는 소프트웨어 도구 모음을 제공.
     </div> 
-    <div class="tooltip-description" id="desc-7">Bundler는 정확히 필요한 gem과 그 gem의 버전을 설치하고, 추적하는 것으로 일관성 있는 Ruby 프로젝트를 제공하는 도구.</div>
+    <div class="tooltip-description" id="desc-7">
+    정확히 필요한 gem과 그 gem의 버전을 설치하고, 추적하는 것으로 일관성 있는 Ruby 프로젝트를 제공하는 도구.
+    </div>
 </div>
 
 
