@@ -60,7 +60,7 @@ username.github.io 인 Repository 를 가르키기 때문에,
 그 외 Repository 의 주소는    
 ```
 https://username.github.io/Repository/
-```
+``` 
 와 같이 호스팅이 된다.  
 이 역시 시스템상 설정값이며, 개인 서버를 가질경우 마음대로 지정 가능하다.  
 (참고로 해당 주소에 접근 가능한 웹 페이지가 없다면 저 주소로 들어가도 아무것도 없다.)  

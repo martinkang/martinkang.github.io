@@ -8,7 +8,7 @@ tags: [github]
 img-tag: github
 ---
 
-# 원인  
+# 문제  
 GitHub 회원가입시 잘못된 Email 주소로 생성을 함.
 
 # 발단
