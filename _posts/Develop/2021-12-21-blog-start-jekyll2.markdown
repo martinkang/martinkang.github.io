@@ -107,8 +107,24 @@ bundle 을 사용하여 다시 install 해야 한다.
 ```
 bundle install
 ```  
+  
 
-<span style="color:red">***Ruby 버전에 따라 여기서 에러가 날 수도 있다.***</span> 
+***Jekyll 테마와 Ruby 버전에 따라*** 여기서 아래와 같은 에러가 날 수도 있다.
+```
+ffi-1.11.3-x64-mingw32 requires ruby version < 2.7.dev, >= 2.2, which is
+incompatible with the current version, ruby 3.0.3p157
+```
+이럴땐 저기 에러메시지 말대로 2.7 미만 버전을 받아야 한다.  
+Jekyll 은 2.5 이상을 받아야 하니 기존 Ruby 를 지우고 조건에 맞게 다시 깔자.
+
+<br>
+
+Ruby 3.0 버전이 나온지 얼마 안됬기 때문에,   
+3.0 을 지원하지 않는 테마가 더 많을 수 있다.    
+Jekyll 테마를 적용하기 위해서 처음부터 2.6 버전을 받는 것도 추천한다.  
+
+<br>
+
 ```
 bundle exec jekyll serve
 ```  
