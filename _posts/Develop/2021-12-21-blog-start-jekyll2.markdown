@@ -128,7 +128,7 @@ Jekyll 테마를 적용하기 위해서 처음부터 2.6 버전을 받는 것도
 ```
 bundle exec jekyll serve
 ```  
-다시 수행하면 테마가 이쁘게 입혀진걸 볼 수 있다.  
+다시 수행하면 테마가 적용된걸 볼 수 있다.  
 ![jekyll-start](/assets/img/post-img/jekyll-start/jekyl-start-theme.png){:class="lazyload" .img-w700}   
 하지만 웹 페이지 주소를 보면 127.0.0.1:4000 이다.  
 즉 내 로컬 서버에서만 동작하는 블로그이다.  
@@ -252,7 +252,7 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 9. Negabaro`s Blog : [Rails I18n에 대해서]: [I18-link]
 10. jekyll 테마 사이트 : [jekyll themes]:[jekyll-themes-link]
 11. Git : [Git-Ebook]:[git-scm-link]
-12. jekyll 도뷰먼트 : [jekyll structure][jekyll-docu-link]
+12. jekyll 문서 : [jekyll structure][jekyll-docu-link]
 <hr>
 
 
@@ -290,4 +290,4 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 [git-scm-link]: https://git-scm.com/book/ko/v2
 [jekyll-docu-link]: https://jekyllrb-ko.github.io/docs/structure/
 
-[config-link]: /develop/2021/12/22/blog-start-github-config.html
+[config-link]: /develop/2021/12/27/blog-start-github-config.html
