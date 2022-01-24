@@ -33,11 +33,8 @@ Jekyll 은 <span class="tooltip" id="id-4">Ruby</span> 의 패키지 매니저�
 <br>
 
 Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.  
-여기서 <span style="color:red">***<U>꼭!꼭!꼭! Ruby-Devkit 2.6.6-1</U>***</span> 를 추천한다.  
-이제 구 버전이라 해당 페이지에서 안보이는데, 상단에 Archives 를 누르고 버전을 찾으면 나온다.   
-![ruby-archive](/assets/img/post-img/jekyll-start/ruby-archive.png)    
-참고로 <span style="color:red">***<U>Ruby-Devkit 3.x 버전은 절대 받지 말자.</U>***</span>
-([ Ruby 3.x 버전을 받으면 어떻게 될까? ][install-lastest-ruby-link]){:class="lazyload" .img-w550}  
+혹시 원하는 버전이 안보이면, 상단에 Archives 를 누르고 버전을 찾으면 나온다.   
+![ruby-archive](/assets/img/post-img/jekyll-start/ruby-archive.png)      
 <br>
 
 다운받고 평소와 같이 next 를 누르다 보면 다음과 같이 
@@ -123,12 +120,6 @@ GitHub 를 로그인 한 뒤 좌 상단을 보면 아래와 같은 Repository �
 <hr>
 
 
-# 부록
-- [ Ruby 3.x 버전을 받으면 어떻게 될까? ][install-lastest-ruby-link]
-  - Ruby3.2 를 받고 겪은 삽질 이야기.  
-
-<br>
-
 # 참고
 1. 두-번째저장소 : [GitHub Pages에 포트폴리오 호스팅하기][github-page-link]
 2. IT Technical Training : [Jekyll 기반의 GitHub Page 생성][it-tech-link]
@@ -184,4 +175,3 @@ GitHub 를 로그인 한 뒤 좌 상단을 보면 아래와 같은 Repository �
 [GNU-link]: http://korea.gnu.org/
 
 [jekyll-link2]: /develop/2021/12/21/blog-start-jekyll2.html
-[install-lastest-ruby-link]: /bugs/2021/12/23/install-lastest-ruby.html

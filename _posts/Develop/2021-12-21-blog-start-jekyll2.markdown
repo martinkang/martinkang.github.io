@@ -108,7 +108,7 @@ bundle 을 사용하여 다시 install 해야 한다.
 bundle install
 ```  
 
-<span style="color:red">***Ruby 버전을 잘못 설치했을 경우 여기서 에러가 대차게 날것이다.***</span>  -> ***[해결하기][install-lastest-ruby-link]***
+<span style="color:red">***Ruby 버전에 따라 여기서 에러가 날 수도 있다.***</span> 
 ```
 bundle exec jekyll serve
 ```  
@@ -220,7 +220,7 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 사실 읽고보니 크게 중요한 내용은 아닌거 같아서 지금은 넘기고 나중에 잘 알게되면 적겠다.  
 
 - ***[jekyll 실행시 `require': cannot load such file -- webrick (LoadError). 가 발생한다.][준호-link]***
-  - 이 에러메시지가 나오면 Ruby3.0 버전 이상을 깔았단 거다. Ruby3.x 를 지우고 2.5 이상 버전을 받자.  
+  - webbrick 이란 file 이 Ruby 3.x 버전에서 빠졌기 때문에 발생한다. 위 링크를 보고 해결하자.
 
 <br>
 
@@ -275,4 +275,3 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 [jekyll-docu-link]: https://jekyllrb-ko.github.io/docs/structure/
 
 [config-link]: /develop/2021/12/22/blog-start-github-config.html
-[install-lastest-ruby-link]: /bugs/2021/12/23/install-lastest-ruby.html
