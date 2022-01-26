@@ -75,6 +75,13 @@ jekyll 을 이용하여, 지금 이 프로젝트의 웹 사이틀을 내 로컬�
 하지만 bundle 을 쓰는쪽이 편하다. ( 이유는 부록에 )
 <br>
 
+혹시 Ruby 3.x 버전을 뜨면 
+```
+`require': cannot load such file -- webrick (LoadError).
+```
+이런 에러가 발생할 것이다. 이 [여기][준호-link] 해결방법이 있다.  
+<br>
+
 # Jekyll 테마 입히기
 jekyll 엔 정말 많은 테마가 존재한다.  
 나는 직접 레이아웃을 구성할 것이라 테마를 입히지 않을 것이지만,  
