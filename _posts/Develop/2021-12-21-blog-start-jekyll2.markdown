@@ -109,7 +109,8 @@ jekyll 엔 정말 많은 테마가 존재한다.
 
 <br>
 
-Download 를 하고 ***jekyll new ./***  한 폴더에 덮어 씌우자.   
+Download 를 하고 ***jekyll new ./***  한 폴더에 덮어 씌우자.     
+( 받은 테마의 Gemfile 이 내 Repository Root 폴더에 복사되도록 덮어 씌워야 한다. )    
 그리고 테마를 새로 입혔으니, 이 테마에 필요한 기능들을 설치하기 위하여  
 bundle 을 사용하여 다시 install 해야 한다.  
 ```
@@ -218,7 +219,7 @@ GitHub 서버의 내 Repository 에 반영을 해야 실제 웹에 올라가게 
 <br>
 
 # 다음 주제
-- [[GitHub Blog - 4] - 기본페이지 만들기][base-page-link]
+- [[GitHub Blog - 4] - 기본페이지 만들기 1][base-page-link]
 <hr>
 
 
@@ -299,4 +300,4 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 [git-scm-link]: https://git-scm.com/book/ko/v2
 [jekyll-docu-link]: https://jekyllrb-ko.github.io/docs/structure/
 
-[base-page-link]: /develop/2022/01/16/blog-base-page.html
+[base-page-link]: /develop/2022/01/15/blog-base-page.html
