@@ -86,6 +86,7 @@ jekyll 을 이용하여, 지금 이 프로젝트의 웹 사이틀을 내 로컬�
 jekyll 엔 정말 많은 테마가 존재한다.  
 나는 직접 레이아웃을 구성할 것이라 테마를 입히지 않을 것이지만,  
 테마 중 마음에 드는게 있다면 간단하게 받아서 적용 가능하다.  
+( 공부를 위해 블로그를 만든다면, ***테마를 입히지 말고 기본에서 시작*** 해보자. )  
 <br>
 ***[Jekyll Themes][jekyll-themes-link]*** 여기에 접속해서 맘에 드는 테마를 골라보자.  
 
@@ -206,7 +207,8 @@ GitHub 서버의 내 Repository 에 반영을 해야 실제 웹에 올라가게 
 ![github-page](/assets/img/post-img/jekyll-start/start-web.png){:class="lazyload" .img-w700}  
 
 
-진짜로 웹에 블로그 올리기 성공! 
+진짜로 웹에 블로그 올리기 성공!  
+다음부턴 기본테마로 기본페이지 만들기부터 시작해보자.  
 
 <br>
 
@@ -216,7 +218,7 @@ GitHub 서버의 내 Repository 에 반영을 해야 실제 웹에 올라가게 
 <br>
 
 # 다음 주제
-- [[GitHub Blog - 4] - 기본 정보 설정하기][config-link]
+- [[GitHub Blog - 4] - 기본페이지 만들기][base-page-link]
 <hr>
 
 
@@ -297,4 +299,4 @@ config.i18.error 가 발생한다면 여길 확인해보면 좋을 것 같다. -
 [git-scm-link]: https://git-scm.com/book/ko/v2
 [jekyll-docu-link]: https://jekyllrb-ko.github.io/docs/structure/
 
-[config-link]: /develop/2021/12/27/blog-start-github-config.html
+[base-page-link]: /develop/2022/01/16/blog-base-page.html
