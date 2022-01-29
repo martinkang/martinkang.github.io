@@ -28,8 +28,8 @@ github_username: martinkang
 highlighter: rouge
 svg:
   optimize: true
+
 # Build settings
-# theme: minima
 # https://spsarolkar.github.io/rouge-theme-preview/
 highlighter-theme: github
 date_format: "%Y-%M-%D"
@@ -37,6 +37,7 @@ plugins:
   - jekyll-feed
 category_dir: category/
 tag_dir: tag/
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
