@@ -4,16 +4,18 @@ title:  "[GitHub Blog - 4] - 기본페이지 만들기 2"
 description: "기본 페이지를 만들어 보자."
 date:   2022-01-17 19:20:00 +0900
 categories: develop
-tags: [blog, jekyll, Front-End]
+tags: [blog, jekyll, html, Front-End]
 img-tag: jekyll
 ---
 
 # Ruby 테마를 일반 테마로 변경하자
 테마를 다운받아 압축을 풀었으면 상관이 없다.  
 그런데 jekyll new 와 같이 테마를 Ruby gem 으로 받았다면,  
-이 테마를 내 루트 폴더 ( index.md 가 있는 )로 전부 복사 붙여 넣기 하자.  
-지난 페이지에서 본  .../ruby/gems/3.0.0/gems/minima-2.5.1 과 같이,  
-ruby 폴더에 있는걸 고쳐봤자, 실제 GitHub Blog 에는 적용이 안된다.  
+이전시간에 찾았던 내 테마 gem 의 위치로 간다.   
+그리고 이 gem 테마의 모든 파일과 폴더를 내 루트 폴더 ( index.md 가 있는 )로 전부 복사 붙여 넣기 하자.  
+
+Ruby Gem 폴더인 .../ruby/gems/3.0.0/gems/minima-2.5.1 에서 고쳐봤자    
+실제 GitHub Blog 에는 적용이 안된다.  
 
 <br>
 
@@ -29,17 +31,23 @@ Ruby 의 라이브러리 중 하나일 뿐이다. )
 Ruby 테마를 내 Repository 에 옮겼으니, 이제 Ruby Gem 이 아닌  
 내 Repository 의 내용을 쓰면 된다.  
 
-우선 Root 폴더의 _config.yml 에 아래 theme 를 삭제해 준다.   
+우선 Root 폴더의 <span class="tooltip" id="id-1">_config.yml</span> 에 아래 theme 를 삭제해 준다.   
 ```
 theme: minima
 ```
 
-그리고 Root 폴더의 Gemfile 로 간다. 여긴 필요한 Gem 들의 리스트이다.  
+그리고 Root 폴더의 <span class="tooltip" id="id-2">Gemfile</span> 로 간다. 여긴 필요한 Gem 들의 리스트이다.  
 ```
 gem "minima", "~> x.x"
 ```
 
-우린 Ruby Gem 기반 에서 테마를 가져올것이 아니기 때문에 해당 부분을 삭제해 준다.  
+우린 Ruby Gem 기반 에서 테마를 가져올것이 아니기 때문에   
+Config 에 minima 테마를 나타낼 필요도,   
+gem 의 "minima" x.x 버전이 필요하지 않다.  
+따라서 해당 부분을 삭제해 준다.  
+
+<br>
+
 그리고 아래 다음과 같이 작성해 준다.  
 ```
 group :jekyll_plugins do
@@ -47,6 +55,13 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.6"
 end
 ```
+
+추가하는 이유는 기존 minima 테마를 복사해오면서,   
+해당 기능 ( feed 와 seo ) 이 포함된 코드들이 있다.  
+이게 기존 Ruby Gem 에서 복사하여 내 Repository 로 옮겼으므로,   
+이 기능을 온전히 쓰려면 저 기능들을 가져와야 한다.   
+
+<br> 
 
 아마 group :jekyll_plugins do 가 이미 있을 수 있다.   
 이미 적혀있다면 그걸 제외하고 없는걸 추가해주자.  
@@ -100,23 +115,26 @@ Layout 구조
 
 # 나만의 기본 페이지를 만들어 보자
 디자인은 생각하지 말고, 간단한 기본 페이지 구성만 만들어 보자.  
-아직 HTML 도 Liquid 도 모르니 간단한 변경만 해보자.  
-네비바의 제목을 바꾸고 파란 네모 실제 페이지 부분은 간단한 인삿말을 쓰고,      
+해당 파일들에 기존 내용들이 있다면 내용을 다 지우고 새로 작성해 보자.   
+
+<br>
+
+아직 <span class="tooltip" id="id-3">HTML</span> 도 <span class="tooltip" id="id-4">Liquid</span> 도 모르니 간단한 변경만 해보자.  
+네비바의 제목을 바꾸고 파란 네모 실제 페이지 부분은 간단한 인사말을 쓰고,      
 아래 Footer 에는 간단한 연락처를 써보자.  
 
 <br>
 
 ### 전체 페이지 default.html 을 만들자
-사실 기본 레이아웃은 바꿀것도 없이 정해져 있다.   
-그래도 한번 다시 만들어보자.  
-_layout/default.html 안에 내용을 다 지워보자.  
+기본 레이아웃은 보통 모든 페이지를 나타내는 레이아웃이다.  
+일단 _layout/default.html 안에 내용을 다 지워보자.  
 그리고 아래와 같이 html 을 쳐보자. 그럼 아래와 같이 선택란이 뜰 것이다.
 
 ![html5](/assets/img/post-img/base-page/html5.png){:class="lazyload" .img-w700}  
 
 html:5 에서 Tab 키를 눌러보자.  
 그럼 아래와 같이 기본 웹페이지가 생성된다.  
-
+( 혹시 html 을 쳤는데 아래와 같이 선택 기능이 나오지 않는다면 [여기](#부록) )  
 ![html-base](/assets/img/post-img/base-page/html-base.png){:class="lazyload" .img-w700}   
 
 이 웹페이지를 효율적으로 쪼개보자.  
@@ -134,7 +152,7 @@ html:5 에서 Tab 키를 눌러보자.
     
 
 ### header.html 을 만들자
-네비바는 보통  header 태그로 많이 쓴다.  
+네비바는 보통  header 태그로 많이 쓴다. ( 아니여도 된다 )
 일단 _include 에 기존 header.html 내용을 전부 지우자.  
 일단 여기에 아래처럼 쓰자.  
 ```
@@ -150,7 +168,7 @@ html:5 에서 Tab 키를 눌러보자.
 
 
 ### 실제 페이지 내용인 content 를 붙이자
-이제 첫 페이지에 들어갈 내용을 index.markdown 에 써보자.  
+이제 첫 페이지에 들어갈 내용을 index.markdown ( 또는 md ) 에 써보자.  
 기본 첫 페이지 layout 은 _layout/default.html 이므로,  
 아래와 같이 머릿말 layout: default 를 적고 그 아래 실제 들어갈 내용을 쓰자.  
 이 페이지에 내용은 _layout/defualt.html 에 {content} 부위에 들어갈 것이다.  
@@ -246,9 +264,35 @@ Commit & Push 가 기억이 안나면
 - [[GitHub Blog - 5] - 기본 정보 설정하기][config-link]
 <hr>
 
+# 부록
+- ***html 을 눌렀는데 Emmet 기능이 뜨지 않는다.***
+  - Emmet 기능은 VSCode 에서 html, css 등 웹 관련 몇 파일들에 대해서 자동 완성해주는 기능이다.
+  - File -> Preference -> Settings -> Extension -> Emmet 으로 가서 Trigger On Tab 을 체크해주자.
+    - 파일 -> 기본 설정 -> 설정 -> 확장 -> Emmet 
+  ![lang-html](/assets/img/post-img/base-page/emmet.png){:class="lazyload" .img-w700}  
+  
+  - 위에 설정을 해도 안되면 좌하단에 언어 설정을 보자.  
+    - 좌하단이 지금 내가 수정하는 파일의 확장자와 같은지 보자.
+    - Html 파일을 수정하는데 DJango Html 등으로 보인다면 Html 로 변경해주자.  
+  ![lang-html](/assets/img/post-img/base-page/lang-html.png){:class="lazyload" .img-w500}  
+<hr>
 
 <div class="tooltip-desc">
+    <div class="tooltip-description" id="desc-1">
+    Jekyll 의 환경 설정 파일
+    </div>
+    <div class="tooltip-description" id="desc-2">
+    Gem 은 루비 프로젝트에 포함시킬 수 있는 코드이며 기능들을 패키지화 해서 다른 사람들이나 프로젝트에 공유할 수 있게 함.
+    Gemfile 은 해당 프로젝트에서 필요한 Gem 들의 목록을 기록한 파일이다.
+    </div>
+    <div class="tooltip-description" id="desc-3">
+    Hyper Text Markup Languag. 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공
+    </div>
+    <div class="tooltip-description" id="desc-4">
+    Ruby 기반의 오픈소스 HTML 템플릿 언어
+    </div>
 </div>
 
+[base-page-link]: /develop/2022/01/15/blog-base-page.html
 [config-link]: /develop/2022/01/20/blog-start-github-config.html
 [jekyll-link2]: /develop/2021/12/21/blog-start-jekyll2.html
