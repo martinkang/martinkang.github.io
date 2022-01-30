@@ -129,7 +129,7 @@ config.yml 에 title 값만 바꾸면 site.title 을 설정한 모든 부분의 
 - jekyll 번역 : [jekyll 공식페이지][jekyll-link]
 - spsarolkar.github.io : [블로그 Theme 미리보기][theme-view-link]
 - MDN Web Dock : [head: 문서 메타데이터 (헤더) 요소][head-link]
-- MDN Web Dock : [head 태그에는 무엇이 있을까? HTML의 메타데이터[head-meta-link]
+- MDN Web Dock : [head 태그에는 무엇이 있을까? HTML의 메타데이터][head-meta-link]
 
 <hr>
 
