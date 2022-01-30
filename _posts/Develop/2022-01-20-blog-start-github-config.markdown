@@ -111,7 +111,9 @@ config.yml 을 바꾸었으면 jekyll 을 재시작 해야한다.
 config.yml 에 title 값만 바꾸면 site.title 을 설정한 모든 부분의 값이 바뀐다 !!
 <br>
 
-다음엔 <span class="tooltip" id="id-3">Favicon</span> 을 설정해보자.
+다음엔 아래와 같은 <span class="tooltip" id="id-3">Favicon</span> 을 설정해보자.
+
+![after-favicon](/assets/img/post-img/favicon/after-favicon.png){:class="lazyload" .img-w100}  
 <br>
 
 
