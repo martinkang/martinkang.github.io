@@ -9,17 +9,21 @@
 			{{ page.title | escape }}
 		</div>	
 	</header>
+	
+	<div class="post-tags">
+	{% if page.tags %}
+	{% for tag in page.tags %}
+		{% if site.data.tags | downcase contains tag | downcase %}
+		<span class="tag-content-tag">#{{ tag }}</span>
+		{% endif %}	
+	{% endfor %}
+	{% endif %}	
+	</div>
 
 	<div class="post-content">
 		{{ content }}
 		<div class="tag-content">
-			{% if page.tags %}
-				{% for tag in page.tags %}
-					{% if site.data.tags | downcase contains tag | downcase %}
-					<span class="tag-content-tag">#{{ tag }}</span>
-					{% endif %}	
-				{% endfor %}
-			{% endif %}	
+			
 		</div>
 		<p>
 			<img class="home-img" src="/assets/img/infos/kobuki-col-small.png" style="float: right" width="15%" height="auto" >

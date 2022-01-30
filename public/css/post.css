@@ -1,3 +1,7 @@
+.post-tags {
+    font-size: 0.7em;
+}
+
 .img-w50  { width: 3em; height: auto; } /* width 50px */
 .img-w100 { width: 6em; height: auto; } 
 .img-w150 { width: 9em; height: auto; } 
