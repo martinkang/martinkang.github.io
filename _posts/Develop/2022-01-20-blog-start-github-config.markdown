@@ -118,7 +118,7 @@ config.yml 에 title 값만 바꾸면 site.title 을 설정한 모든 부분의 
 
   
 # 다음 주제
-- [[GitHub Blog - 5] Favicon 을 설정해보자][favicon-link]
+- [[GitHub Blog - 6] Favicon 을 설정해보자][favicon-link]
 
 <hr>
 
