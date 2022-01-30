@@ -100,13 +100,13 @@ link 태그가 무엇을 뜻하고, rel 가 뭔지 정도만 안다면 이번에
 
 <br>
 깨알 디테일이 생겼다.  
-다음엔 아래 사진같은 Open Graph 를 설정해보자.   
+다음엔 아래 사진같은 <span class="tooltip" id="id-2">Open Graph</span> 를 설정해보자.   
 
 ![og](/assets/img/post-img/favicon/og.png){:class="lazyload" .img-w300}  
 
 
 # 다음 주제
-- [[GitHub Blog - 6] Open Graph 를 설정해보자]
+- [[GitHub Blog - 7] Open Graph 를 설정해보자]
 
 <hr>
 
@@ -150,11 +150,15 @@ link 태그가 무엇을 뜻하고, rel 가 뭔지 정도만 안다면 이번에
 - ICOConvert : [ICO Converter][icoconvert-link]
 - 준스파파 : [홈 바로가기 만들기][홈바로가기-link]
 - 코드로그 : [ico, png 확장자 차이][ico vs png-link]
+- 나무위키 : [오픈그래프][og-def-link]
 
 <hr>
 <div class="tooltip-desc">
     <div class="tooltip-description" id="desc-1">
     다른 데이터를 설명해 주는 데이터이다. 대량의 정보 가운데에서 찾고 있는 정보를 효율적으로 찾아내서 이용하기 위해 일정한 규칙에 따라 콘텐츠에 대하여 부여되는 데이터
+    </div>
+    <div class="tooltip-description" id="desc-2">
+    오픈 그래프 프로토콜은 어떠한 인터넷 웹사이트의 HTML 문서에서 head -> meta 태그 중 "og:XXX"가 있는 태그들을 찾아내어 보여주는 프로토콜이다.
     </div>
 </div>
 
@@ -163,6 +167,7 @@ link 태그가 무엇을 뜻하고, rel 가 뭔지 정도만 안다면 이번에
 [파피콘만드는방법-link]: https://ux.stories.pe.kr/106
 [홈바로가기-link]: https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=nainside&logNo=221504373274
 [ico vs png-link]: https://simigeum.tistory.com/18
+[og-def-link]: https://namu.wiki/w/%EC%98%A4%ED%94%88%20%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C
 
 [fontawesome-link]: https://fontawesome.com/
 [og-link]: /develop/2022/01/03/open-graph.html
