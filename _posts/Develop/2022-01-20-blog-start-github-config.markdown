@@ -85,9 +85,18 @@ _config.yml 을 수정해보자.
 
 ![config](/assets/img/post-img/start-config/config.png){:class="lazyload" .post-img .img-w650}   
 
-이 변수는 다른 페이지 어디서든 {site.title} 을 쓰면 저 부분은 코딩 독학 으로 값이 변경된다.  
+이 변수는 다른 페이지 어디서든 {% raw %}{{site.title}}{% endraw %} 을 쓰면 저 부분은 코딩 독학 으로 값이 변경된다.  
 그럼 아까 바꾼 \<head> 에 title 을 아래처럼 바꿔보자.  
-
+{% raw %}   
+```
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{site.title}}</title>
+</head>
+```
+{% endraw %}   
 ![config-title-modi](/assets/img/post-img/start-config/config-title.png){:class="lazyload" .post-img .img-w650}   
 
 config.yml 을 바꾸었으면 jekyll 을 재시작 해야한다.   
