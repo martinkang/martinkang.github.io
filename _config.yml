@@ -38,6 +38,8 @@ plugins:
 category_dir: category/
 tag_dir: tag/
 
+root: /
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
