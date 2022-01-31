@@ -59,14 +59,20 @@ Favicon 은 정사각형 이며, 일반 이미지 ( jpg, png 등 ) 도 가능하
 \<head> 에는 <span class="tooltip" id="id-1">metadata</span> 가 들어간다고 이야기 했었다.  
 이 Favicon 역시 metadata 이다.  
 \<head> 와 \</head> 사이에 아래와 같이 써주자.  
+
+
 ```
-<!-- 일반적인 Fabicon 설정. (인터넷 탭창 또는 주소창에 표기되는 아이콘) -->
-<link rel="icon" href=ico 파일 주소.ico />
+<!-- 일반적인 Fabicon 설정. 
+(인터넷 탭창 또는 주소창에 표기되는 아이콘) -->
+<link rel="icon" href=favicon 주소 />
 <!-- 아이폰용 Fabicon 설정 -->
-<link rel="apple-touch-icon" href=ico 파일 주소.ico />
+<link rel="apple-touch-icon" href=favicon 주소 />
 <!-- 인터넷 익스플로러 Fabicon -->
-<link rel="short icon" type="image/x-icon" href=ico 파일 주소.ico />
-``` 
+<link rel="short icon" type="image/x-icon" href=favicon 주소 />
+```   
+
+![head-favicon](/assets/img/post-img/favicon/head-favicon.png){:class="lazyload" .img-w800}   
+
 
 ### 각 문단의 의미
 - <!- 이부분은 주석 표시이다. <!- 와 -> 사이는 주석으로 무엇을 써도 반영이 되지 않는다.  
@@ -122,9 +128,9 @@ link 태그가 무엇을 뜻하고, rel 가 뭔지 정도만 안다면 이번에
     이를 위해서 아래 코드와 같은 방법으로 size 별로 여러 Favicon 설정이 가능하다.
 
     ```
-    <link rel="icon" type="image/png" href="/favicon16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="/favicon32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon64.png" sizes="64x64"> 
+    <link ... href="/favicon16.png" sizes="16x16">
+    <link ..." href="/favicon32.png" sizes="32x32">
+    <link ... href="/favicon64.png" sizes="64x64"> 
     ```  
     
     - Favicon 은 기기마다, 환경마다 필요한 크기가 다르다.   
