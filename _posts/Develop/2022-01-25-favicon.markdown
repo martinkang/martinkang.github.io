@@ -5,7 +5,7 @@ description: "내 블로그 아이콘을 설정하여 블로그 디테일을 높
 date:   2022-01-25 20:00:00 +0900
 categories: develop
 tags: [blog, html, Front-End]
-img-tag: config
+img-tag: html
 ---
 
 # Favicon  
@@ -62,8 +62,7 @@ Favicon 은 정사각형 이며, 일반 이미지 ( jpg, png 등 ) 도 가능하
 
 
 ```
-<!-- 일반적인 Fabicon 설정. 
-(인터넷 탭창 또는 주소창에 표기되는 아이콘) -->
+<!-- 일반적인 Fabicon 설정. (인터넷 탭창 또는 주소창에 표기되는 아이콘) -->
 <link rel="icon" href=favicon 주소 />
 <!-- 아이폰용 Fabicon 설정 -->
 <link rel="apple-touch-icon" href=favicon 주소 />
@@ -118,7 +117,7 @@ link 태그가 무엇을 뜻하고, rel 가 뭔지 정도만 안다면 이번에
 
 
 # 다음 주제
-- [[GitHub Blog - 7] Open Graph 를 설정해보자]
+- [[GitHub Blog - 7] Open Graph 를 설정해보자][og-link]
 
 <hr>
 
@@ -182,4 +181,4 @@ link 태그가 무엇을 뜻하고, rel 가 뭔지 정도만 안다면 이번에
 [og-def-link]: https://namu.wiki/w/%EC%98%A4%ED%94%88%20%EA%B7%B8%EB%9E%98%ED%94%84%20%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C
 
 [fontawesome-link]: https://fontawesome.com/
-[og-link]: /develop/2022/01/03/open-graph.html
+[og-link]: /develop/2022/01/29/open-graph.html
