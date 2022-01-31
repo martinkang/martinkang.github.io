@@ -27,7 +27,8 @@ img-tag: html
 # Favicon 이미지 만들기
 Favicon 을 설정하기 위해선 당연히 Favicon 을 설정할 그림이 필요하다.  
 일단 Favicon 에 필요한 그림을 구하자.  
-Favicon 은 정사각형 이며, 일반 이미지 ( jpg, png 등 ) 도 가능하지만 ico 로 변환하는걸 추천한다.    
+Favicon 은 정사각형 최대 256 x 256 픽셀 이며,   
+일반 이미지 ( jpg, png 등 ) 도 가능하지만 ico 로 변환하는걸 추천한다.    
 ( ICO Covert 를 지원하는 사이트 ([ICO Converter][icoconvert-link]) 에 가서   
 이미지를 올리면 ICO 파일을 만들어준다. [왜 ICO 를 추천할까?](#부록) )    
 <br>
