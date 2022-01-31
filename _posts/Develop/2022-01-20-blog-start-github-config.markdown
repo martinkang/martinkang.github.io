@@ -77,8 +77,6 @@ Commit & Push 후 자신의 홈페이지에 접속해보고, 카카오톡 링크
 
 ![github-page](/assets/img/post-img/start-config/kakao-title-modify.png){:class="lazyload" .img-w350}  
 
-웹 페이지에 페이지 이름도 바뀌었는데 카카오톡 링크의 이름이 바뀌지 않았다면 [여기](#부록) 를 참고하자.
-
 
 # _config.yml 수정
 _config.yml 을 수정해보자. 
@@ -109,6 +107,7 @@ config.yml 을 바꾸었으면 jekyll 을 재시작 해야한다.
 나중에 title 이 바뀔때마다 해당 부분을 다 찾아서 바꿔줘야 한다.  
 그런데 _config.yml 에 전역 변수로 설정해줄 경우,  
 config.yml 에 title 값만 바꾸면 site.title 을 설정한 모든 부분의 값이 바뀐다 !!
+
 <br>
 
 다음엔 아래와 같은 <span class="tooltip" id="id-3">Favicon</span> 을 설정해보자.
