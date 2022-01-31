@@ -106,6 +106,7 @@ Twitter 에서 인식을 하지 못한다.
     따라서 {% raw %}{{site.url}}{% endraw %} 을 써두면, 내가 지정한 나의 Root 주소값이 /assets 앞에 붙게 된다.  
     따라서 내가 지정한 이미지의 전체 경로가 완성이 된다.  
   
+<br>
 
 # Open Graph 설정전
 
@@ -121,7 +122,9 @@ Twitter 에서 인식을 하지 못한다.
 ![before-OG-twitter](/assets/img/post-img/open-graph/before-og-twitter.png){:class="lazyload" .post-img .img-w400}  
 
   
-***Open Graph 설정후***  
+<br>
+
+# Open Graph 설정후  
 
 ### 카카오톡
 ![after-OG](/assets/img/post-img/open-graph/after-OG.png){:class="lazyload" .post-img .img-w400}    
@@ -159,7 +162,9 @@ Twitter 에서 인식을 하지 못한다.
 - 리뷰나라 : [jekyll 내에서 이중 중괄호 쓰기][raw-link]
 
 
+
 <hr>
+
 <div class="tooltip-desc">
     <div class="tooltip-description" id="desc-1">
     프로토콜은 컴퓨터 내부에서, 또는 컴퓨터 사이에서 데이터의 교환 방식을 정의하는 규칙 체계.
