@@ -1,6 +1,5 @@
-.post-tags {
-    font-size: 0.7em;
-}
+.post-tags { font-size: 0.7em;}
+.highlighter-rouge > .highlight { overflow: auto; }
 
 .img-w50  { width: 3em; height: auto; } /* width 50px */
 .img-w100 { width: 6em; height: auto; } 
