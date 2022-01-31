@@ -113,12 +113,12 @@ Twitter 에서 인식을 하지 못한다.
 ![before-OG](/assets/img/post-img/open-graph/before-OG.png){:class="lazyload" .post-img .img-w400}   
 
 ### 페이스북
-![before-OG-facebook](/assets/img/post-img/open-graph/before-OG-facebook.png){:class="lazyload" .post-img .img-w400}    
+![before-OG-facebook](/assets/img/post-img/open-graph/before-og-facebook.png){:class="lazyload" .post-img .img-w400}    
 
 ### 트위터
 트위터는 아래 사이트서 미리보기가 가능하다.   
 [이 사이트][twitter-card-val-link]에서 자신의 GitHub Blog 주소를 치면 된다.  
-![before-OG-twitter](/assets/img/post-img/open-graph/before-OG-twitter.png){:class="lazyload" .post-img .img-w400}  
+![before-OG-twitter](/assets/img/post-img/open-graph/before-og-twitter.png){:class="lazyload" .post-img .img-w400}  
 
   
 ***Open Graph 설정후***  
@@ -127,10 +127,10 @@ Twitter 에서 인식을 하지 못한다.
 ![after-OG](/assets/img/post-img/open-graph/after-OG.png){:class="lazyload" .post-img .img-w400}    
 
 ### 페이스북
-![after-OG-facebook](/assets/img/post-img/open-graph/after-OG-facebook.png){:class="lazyload" .post-img .img-w400}     
+![after-OG-facebook](/assets/img/post-img/open-graph/after-og-facebook.png){:class="lazyload" .post-img .img-w400}     
 
 ### 트위터
-![after-OG-twitter](/assets/img/post-img/open-graph/after-OG-twitter.png){:class="lazyload" .post-img .img-w400}  
+![after-OG-twitter](/assets/img/post-img/open-graph/after-og-twitter.png){:class="lazyload" .post-img .img-w400}  
 
 <br>
 
