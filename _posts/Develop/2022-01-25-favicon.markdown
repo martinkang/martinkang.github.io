@@ -14,14 +14,14 @@ img-tag: html
 
 ### Favicon 이란?
 아래와 같이 웹 브라우저의 주소창에 표시되는 웹사이트나 웹페이지를 대표하는 아이콘이다.  
-![favicon-def](/assets/img/post-img/favicon/favicon.png){:class="lazyload" .img-w150}     
+![favicon-def](/assets/img/post-img/favicon/favicon.png){:class="lazyload" .post-img .img-w150}     
 스마트 폰 또는 PC 에서 웹 페이지를 홈화면에 추가하면 아래와 같이 나타난다.  
-![favicon-home](/assets/img/post-img/favicon/favicon-home.png){:class="lazyload" .img-w100}     
+![favicon-home](/assets/img/post-img/favicon/favicon-home.png){:class="lazyload" .post-img .img-w100}     
 
 
 ### Favicon 기본 값 ###  
 보통 Favicon 을 따로 설정하지 않으면 (크롬 기준으로) 아래와 같이 `(Favicon)Title` 로 표기가 된다.  
-![before-favicon](/assets/img/post-img//favicon/web-favicon.png){:class="lazyload" .img-w150}     
+![before-favicon](/assets/img/post-img//favicon/web-favicon.png){:class="lazyload" .post-img .img-w150}     
 
 
 # Favicon 이미지 만들기
@@ -38,7 +38,7 @@ Favicon 은 정사각형 최대 256 x 256 픽셀 이며,
 
 나는 아내한테 부탁해서 아래의 코북이를 ***유료***로 만들었다.  
 저작권이 있으니 가져가서 쓰면 안된다.  
-![kobuk](/assets/img/post-img//favicon/kobuk.png){:class="lazyload" .img-w150}        
+![kobuk](/assets/img/post-img//favicon/kobuk.png){:class="lazyload" .post-img .img-w150}        
 모든 창작물은 특허와 다르게 따로 등록을 안해도 ***저작권***을 가지기 때문에,  
 인터넷에 아무 그림이나 가져오면 안된다.  
 ( 특히나 상업적으로 이용하는 경우에 더더욱 )  
@@ -71,7 +71,7 @@ Favicon 은 정사각형 최대 256 x 256 픽셀 이며,
 <link rel="short icon" type="image/x-icon" href=favicon 주소 />
 ```   
 
-![head-favicon](/assets/img/post-img/favicon/head-favicon.png){:class="lazyload" .img-w800}   
+![head-favicon](/assets/img/post-img/favicon/head-favicon.png){:class="lazyload" .post-img .img-w800}   
 
 
 ### 각 문단의 의미
@@ -102,19 +102,19 @@ link 태그가 무엇을 뜻하고, rel 가 뭔지 정도만 안다면 이번에
 # Favicon 이미지 확인 
 127.0.0.1:4000 에 접속해서 확인해보자.  
 웹 사이트 상단에 아이콘이 바뀌었다.  
-![after-favicon-web](/assets/img/post-img/favicon/web-favicon-after.png){:class="lazyload" .img-w150}  
+![after-favicon-web](/assets/img/post-img/favicon/web-favicon-after.png){:class="lazyload" .post-img .img-w150}  
 
 <br>
 바탕화면 바로가기 화면 역시 바뀐걸 볼 수 있다.   
 ( 기존 바로가기는 그대로이고, ***바로가기를 새로 만들어야*** 한다. )   
 
-![after-favicon](/assets/img/post-img/favicon/after-favicon.png){:class="lazyload" .img-w100}    
+![after-favicon](/assets/img/post-img/favicon/after-favicon.png){:class="lazyload" .post-img .img-w100}    
 
 <br>
 깨알 디테일이 생겼다.  
 다음엔 아래 사진같은 <span class="tooltip" id="id-2">Open Graph</span> 를 설정해보자.   
 
-![og](/assets/img/post-img/favicon/og.png){:class="lazyload" .img-w300}  
+![og](/assets/img/post-img/favicon/og.png){:class="lazyload" .post-img .img-w300}  
 
 
 # 다음 주제
@@ -154,7 +154,7 @@ link 태그가 무엇을 뜻하고, rel 가 뭔지 정도만 안다면 이번에
     - 기술 문서들을 잘 보면 아래처럼 크롬, 사파리, 익스플로러 등 어느 버전에서 지원하는지 표가 있다.  
     일단 지금은 이런게 있다 정도만 알아두자.  
 
-![compatibility](/assets/img/post-img/favicon/compatibility.png){:class="lazyload" .img-w650}   
+![compatibility](/assets/img/post-img/favicon/compatibility.png){:class="lazyload" .post-img .img-w650}   
 <br>
 
 # 참조

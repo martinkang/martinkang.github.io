@@ -42,7 +42,7 @@ Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.
 
 ***주의할점*** : 윈도우 ID 가 한글로 되어 있으면 문제 발생의 여지가 크다.  
 한글 계정일 경우 영문으로 ID 를 바꾸고 해야 한다.  
-![MSYS2설치](/assets/img/post-img/jekyll-start/msys2-install.png){:class="lazyload" .img-w550}    
+![MSYS2설치](/assets/img/post-img/jekyll-start/msys2-install.png){:class="lazyload" .post-img .img-w550}    
 
 이 창에서 설치할 경우 MSYS2 를 직접 받아 설치하는 것과 두가지가 다른데
 1. 원하는 Path 에 설치가 불가능하다.
@@ -56,7 +56,7 @@ Ruby 는 [RubyInstaller][Ruby-install-link] 에서 다운 가능하다.
 
 ### Jekyll 과 Bundler 설치
 Ruby 와 MSYS2 를 다 설치하였다면, 윈도우 좌하단에 검색창에서 Ruby 를 검색해보자.  
-![ruby](/assets/img/post-img/jekyll-start/cmd-ruby.png){:class="lazyload" .img-w300}    
+![ruby](/assets/img/post-img/jekyll-start/cmd-ruby.png){:class="lazyload" .post-img .img-w300}    
 혹시 안나오면 검색창에 cmd 라 검색하면 cmd 또는  명령 프롬프트 라고도 나온다.  
 ```
 gem install jekyll bundler
@@ -97,14 +97,14 @@ Blog 페이지를 추가/수정 하려면, 내가 작업할 로컬 장비에 Blo
 ( GitHub 홈페이지 내에서 Repository 에 추가/수정이 가능하지만, 추천하지 않는다. )   
 위에서 다운받은 GitHub Desktop 을 실행시킨 후 로그인을 하자.  
 그리고 나서 상단의 File 메뉴에서 Clone Repository 를 선택하자.   
-![repo-list](/assets/img/post-img/jekyll-start/clone-repo.png){:class="lazyload" .img-w300}        
+![repo-list](/assets/img/post-img/jekyll-start/clone-repo.png){:class="lazyload" .post-img .img-w300}        
 
 <br>
 
 GitHub 를 로그인 한 뒤 좌 상단을 보면 아래와 같은 Repository 목록이 있다.  
 그리고 내려받을 위치를 고른 뒤 Clone 을 누르자.  
 그럼 내 블로그 코드가 내 로컬 장비에 다운로드 된다.  
-![repo-list](/assets/img/post-img/jekyll-start/clone-repo2.png){:class="lazyload" .img-w500}  
+![repo-list](/assets/img/post-img/jekyll-start/clone-repo2.png){:class="lazyload" .post-img .img-w500}  
 
 앞으로 이 폴더에서 작업을 하면 된다.  
  

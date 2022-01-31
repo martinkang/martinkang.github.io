@@ -18,7 +18,7 @@ https://martinmk63.github.io/
 그런데 내 <span class="tooltip" id="id-1">Repository</span> 를 찾아봐도 비슷한 화면이 전혀 보이지 않든다.  
 내 블로그에 접속하면 나오는 이 기본페이지는 어떻게 만들고 구성할까?    
 그리고 이 파일들은 어디에 있을까?   
-![index](/assets/img/post-img/base-page/index.png){:class="lazyload" .img-w750}
+![index](/assets/img/post-img/base-page/index.png){:class="lazyload" .post-img .img-w750}
 
 
 <br>
@@ -44,14 +44,14 @@ jekyll 에선 ( index.html 이 없다면 ) *.md 를 *.html 로 생성시켜준�
 
 이제 내 Root 에 있는 index.md 파일을 다시 보자. 아래와 같을 것이다.  
 잘 모르겠지만 내가 본 웹페이지랑 많이 달라보이지 않은가?  
-![index-md](/assets/img/post-img/base-page/indexmd.png){:class="lazyload" .img-w750}  
+![index-md](/assets/img/post-img/base-page/indexmd.png){:class="lazyload" .post-img .img-w750}  
 
 <br>
 
 이제 index.md 로 만든 _site/index.html 파일을 보자.   
 한눈에 봐도 엄청 다르지 않은가?  
 이 index.html 은 어떻게 만들어 진 것일까?  
-![index-md](/assets/img/post-img/base-page/indexhtml.png){:class="lazyload" .img-w750}
+![index-md](/assets/img/post-img/base-page/indexhtml.png){:class="lazyload" .post-img .img-w750}
 <br>
 
 
@@ -80,7 +80,7 @@ C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/minima-2.5.1
 이 경로를 찾아가보자.  
 그러면 실제 https://martinmk63.github.io/ 에서 쓰인 레이아웃이나 내용이 아래 폴더에 있다.  
 
-![minima](/assets/img/post-img/base-page/minima.png){:class="lazyload" .img-w500}  
+![minima](/assets/img/post-img/base-page/minima.png){:class="lazyload" .post-img .img-w500}  
 
 <br>
 
@@ -107,14 +107,14 @@ C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/minima-2.5.1
 여기서 layout: home 이란 뜻은 layout 폴더에 home.html 을   
 레이아웃 템플릿으로 사용한단 의미이다.    
 즉 첫 페이지인 ***index.md 는 layout 의 home.html 파일을 불러다가 포장***하게 된다.   
-![index-md2](/assets/img/post-img/base-page/indexmd.png){:class="lazyload" .img-w750}  
+![index-md2](/assets/img/post-img/base-page/indexmd.png){:class="lazyload" .post-img .img-w750}  
 
 <br>
 
 ### _layouts/home.html 분석
 
 그럼 이제 첫페이지 ***index.md 의 layout 인 _layouts/home.html*** 을 봐보자.
-![home](/assets/img/post-img/base-page/home.png){:class="lazyload" .img-w750}  
+![home](/assets/img/post-img/base-page/home.png){:class="lazyload" .post-img .img-w750}  
 - 파란색 네모 : layout 의 default 를 템플릿으로 사용한다는 의미이다.
 - 빨간색 네모 : {content} 해당 파일 (home.html) 을 레이아웃 템플릿으로 쓴 파일이 이 위치에 들어간다. 
 즉 위에서 index.md 에 뭔가를 쓴다면 이 {content} 에 들어가게 된다.  
@@ -125,7 +125,7 @@ C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/minima-2.5.1
 ### _layouts/defualt.html 분석
 
 이제 ***home.html 의 layout 인 _layouts/defualt.html*** 도 봐보자.  
-![home](/assets/img/post-img/base-page/default.png){:class="lazyload" .img-w750}   
+![home](/assets/img/post-img/base-page/default.png){:class="lazyload" .post-img .img-w750}   
 - 피란색 네모 : _include 안에 있는 head.html 을 여기에 붙여넣는다.
 - 초록색 네모 : _include 안에 header.html 을 여기에 붙여넣는다.
 - 빨간색 네모 : 이 파일을 layout 으로 지정한 home.html 을 여기 붙여 넣는다.  
@@ -139,7 +139,7 @@ include 자체가 정해진 명령어이다.
 
 <br>
 즉 _site/index.html 은 사실 아래와 같은 많은 파일들을 합쳐서 만든다.  
-![makeindex](/assets/img/post-img/base-page/makeindexhtml.png){:class="lazyload" .img-w750}
+![makeindex](/assets/img/post-img/base-page/makeindexhtml.png){:class="lazyload" .post-img .img-w750}
 
 <br>
 

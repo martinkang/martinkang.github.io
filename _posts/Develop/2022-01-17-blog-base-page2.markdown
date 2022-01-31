@@ -102,7 +102,7 @@ bundle exec jekyll serve
 
 기존 웹 페이지는 다음과 같이 크게 3등분으로 나눠 볼 수 있다.  
 
-![layout](/assets/img/post-img/base-page/layout.png){:class="lazyload" .img-w700}  
+![layout](/assets/img/post-img/base-page/layout.png){:class="lazyload" .post-img .img-w700}  
 Layout 구조
 - 빨간 네모 : Navigation Bar ( 일명 네비바 ) 로 불린다. 
   - 웹 사이트를 탐색하기 위한 링크를 가지고 있다.   
@@ -130,12 +130,12 @@ Layout 구조
 일단 _layout/default.html 안에 내용을 다 지워보자.  
 그리고 아래와 같이 html 을 쳐보자. 그럼 아래와 같이 선택란이 뜰 것이다.
 
-![html5](/assets/img/post-img/base-page/html5.png){:class="lazyload" .img-w700}  
+![html5](/assets/img/post-img/base-page/html5.png){:class="lazyload" .post-img .img-w700}  
 
 html:5 에서 Tab 키를 눌러보자.  
 그럼 아래와 같이 기본 웹페이지가 생성된다.  
 ( 혹시 html 을 쳤는데 아래와 같이 선택 기능이 나오지 않는다면 [여기](#부록) )  
-![html-base](/assets/img/post-img/base-page/html-base.png){:class="lazyload" .img-w700}   
+![html-base](/assets/img/post-img/base-page/html-base.png){:class="lazyload" .post-img .img-w700}   
 
 이 웹페이지를 효율적으로 쪼개보자.  
 
@@ -143,12 +143,12 @@ html:5 에서 Tab 키를 눌러보자.
 
 위의 사진에서 \<head> \</head> 안에 내용을 전부 _include/head.html 내용과 바꿔주자.  
 
-![head](/assets/img/post-img/base-page/head.png){:class="lazyload" .img-w700}   
+![head](/assets/img/post-img/base-page/head.png){:class="lazyload" .post-img .img-w700}   
 
 그리고 default.html 에 head 가 있던 자리를 include 를 이용하여 불러오자.    
 이제 어느 페이지를 만들어도 head.html 파일이 저 위치에 붙여질 것이다.  
 꼭 아래 사진과 같이 똑같이 써야 한다.  
-![head-2](/assets/img/post-img/base-page/head-2.png){:class="lazyload" .img-w700}   
+![head-2](/assets/img/post-img/base-page/head-2.png){:class="lazyload" .post-img .img-w700}   
     
 
 ### header.html 을 만들자
@@ -159,11 +159,11 @@ html:5 에서 Tab 키를 눌러보자.
 <header class="클래스 이름"> 홈페이지 이름</header> 
 ```
 
-![header](/assets/img/post-img/base-page/header.png){:class="lazyload" .img-w700}  
+![header](/assets/img/post-img/base-page/header.png){:class="lazyload" .post-img .img-w700}  
 
 그리고 default.html 에 body 바로 아래 header.html 를 include 추가 해주자. 
 
-![default-header](/assets/img/post-img/base-page/default-header.png){:class="lazyload" .img-w700}  
+![default-header](/assets/img/post-img/base-page/default-header.png){:class="lazyload" .post-img .img-w700}  
 
 
 
@@ -182,7 +182,7 @@ layout: default
 
 <br>
 
-![default-index](/assets/img/post-img/base-page/default-index.png){:class="lazyload" .img-w700}  
+![default-index](/assets/img/post-img/base-page/default-index.png){:class="lazyload" .post-img .img-w700}  
 
 <br>
 
@@ -190,7 +190,7 @@ layout: default
 보통 \<header> 밑에 실제 내용을 붙어넣자.  
 
 
-![default-content](/assets/img/post-img/base-page/default-content.png){:class="lazyload" .img-w700}  
+![default-content](/assets/img/post-img/base-page/default-content.png){:class="lazyload" .post-img .img-w700}  
 
 
 \<main class="클래스 이름">  \</main> 을 위아래로 꼭 쓰자.  
@@ -209,7 +209,7 @@ _include/footer.html 에 아래와 같이 쓰자.
 <footer class="클래스 이름"> 연락처 </footer>
 ```
 
-![footer](/assets/img/post-img/base-page/footer.png){:class="lazyload" .img-w700}  
+![footer](/assets/img/post-img/base-page/footer.png){:class="lazyload" .post-img .img-w700}  
 
 <br>
 역시 _layout/default.html 에 \</main> 바로 아래에 넣어주자.   
@@ -217,7 +217,7 @@ _include/footer.html 에 아래와 같이 쓰자.
 include footer.html
 ```    
 
-![default-footer](/assets/img/post-img/base-page/default-footer.png){:class="lazyload" .img-w700}  
+![default-footer](/assets/img/post-img/base-page/default-footer.png){:class="lazyload" .post-img .img-w700}  
 
 <br>
 
@@ -228,7 +228,7 @@ include footer.html
 ```
 bundle exec jekyll serve
 ```
-![first-page](/assets/img/post-img/base-page/first-page.png){:class="lazyload" .img-w700}   
+![first-page](/assets/img/post-img/base-page/first-page.png){:class="lazyload" .post-img .img-w700}   
 
 <br>
 페이지가 변경된 것을 확인할 수 있다.  
@@ -241,7 +241,7 @@ bundle exec jekyll serve
 실제 내가 작업한 내용이 어떻게 변했는지 보면   
 작동 원리를 이해하는데 조금 도움이 될 것이다.  
 
-![index-com](/assets/img/post-img/base-page/index-com.png){:class="lazyload" .img-w700}  
+![index-com](/assets/img/post-img/base-page/index-com.png){:class="lazyload" .post-img .img-w700}  
 
 여러 파일로 쪼개 만든 작업들이,   
 index.html 이 한파일에 모인 것을 볼 수 있다.  
@@ -269,12 +269,12 @@ Commit & Push 가 기억이 안나면
   - Emmet 기능은 VSCode 에서 html, css 등 웹 관련 몇 파일들에 대해서 자동 완성해주는 기능이다.
   - File -> Preference -> Settings -> Extension -> Emmet 으로 가서 Trigger On Tab 을 체크해주자.
     - 파일 -> 기본 설정 -> 설정 -> 확장 -> Emmet 
-  ![lang-html](/assets/img/post-img/base-page/emmet.png){:class="lazyload" .img-w700}  
+  ![lang-html](/assets/img/post-img/base-page/emmet.png){:class="lazyload" .post-img .img-w700}  
   
   - 위에 설정을 해도 안되면 좌하단에 언어 설정을 보자.  
     - 좌하단이 지금 내가 수정하는 파일의 확장자와 같은지 보자.
     - Html 파일을 수정하는데 DJango Html 등으로 보인다면 Html 로 변경해주자.  
-  ![lang-html](/assets/img/post-img/base-page/lang-html.png){:class="lazyload" .img-w500}  
+  ![lang-html](/assets/img/post-img/base-page/lang-html.png){:class="lazyload" .post-img .img-w500}  
 <hr>
 
 <div class="tooltip-desc">

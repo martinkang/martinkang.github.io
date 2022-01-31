@@ -12,7 +12,7 @@ img-tag: github
  GitHub Blog 를 시작하기 위해선 우선 
  <span class="tooltip" id="id-1">Repository</span> 를 생성해야 한다.  
  Repository 를 생성하기 위해선 GitHub 에 로그인 한 뒤, 좌상단에 다음 버튼을 누르면 된다.  
-![create-repo](/assets/img/post-img/start-github-github/create-repo.png){:class="lazyload" .img-w300}
+![create-repo](/assets/img/post-img/start-github-github/create-repo.png){:class="lazyload" .post-img .img-w300}
 
 
 그럼 다음과 같이 Repository Name 을 정할 수 있는데,   
@@ -21,11 +21,11 @@ img-tag: github
 <br>
 즉 username 이 martinmk63 라면 Repository 이름은 martinmk63.github.io 가 된다.  
 그 외 아래 선택 옵션은 ***Public / Private*** 를 제외하곤 당장은 신경쓰지 않아도 된다.  
-![create-new-repo](/assets/img/post-img/start-github-github/create-new-repo.png){:class="lazyload" .img-w600}  
+![create-new-repo](/assets/img/post-img/start-github-github/create-new-repo.png){:class="lazyload" .post-img .img-w600}  
 
 
 ### 생성 옵션들 ###
-![create-repo2](/assets/img/post-img/start-github-github/create-repo2.png){:class="lazyload" .img-w600}  
+![create-repo2](/assets/img/post-img/start-github-github/create-repo2.png){:class="lazyload" .post-img .img-w600}  
 
 - ***Public / Private***
   - Repository 의 공개여부이다. ***나중에도 변경 가능하다.***
@@ -48,7 +48,7 @@ img-tag: github
 # GitHub Page 확인하기
 Repository 생성이 성공하면, 나의 새로운 GitHub Blog 의 주소는 https://username.github.io 가 된다.  
 그럼 들어가서 확인해보자.  
-![newblog](/assets/img/post-img/start-github-github/newblog.png){:class="lazyload" .img-w400}      
+![newblog](/assets/img/post-img/start-github-github/newblog.png){:class="lazyload" .post-img .img-w400}      
 
 GitHub Blog 스타트 성공!.  
 <br>
@@ -79,13 +79,13 @@ GitHub Blog 스타트 성공!.
 - ***나중에 private 로 바꾸고 싶다면***  
   - setting 맨 아래에, 아래와 같은 Danger Zone 이 있다. 여기에서 아래 버튼을 누르면 가능하다.  
   - private 저장소를 호스팅하고 싶으면 ***GitHub Pro 이상의 계정*** 을 구매해야 한다.   
-  ![change-private](/assets/img/post-img/start-github-github/change-private.png){:class="lazyload" .img-w550}  
+  ![change-private](/assets/img/post-img/start-github-github/change-private.png){:class="lazyload" .post-img .img-w550}  
 
 
 
 - ***내 username 은 어떻게 찾을까?***
   - Username 을 모른다면 GitHub 우상단, 아래 그림의 빨간 네모를 클릭해보면 알 수 있다.    
-  ![check-user-name](/assets/img/post-img/start-github-github/check-user-name.png){:class="lazyload" .img-w200}
+  ![check-user-name](/assets/img/post-img/start-github-github/check-user-name.png){:class="lazyload" .post-img .img-w200}
 
 <br>
 

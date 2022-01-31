@@ -39,18 +39,18 @@ Title 은 기본적으로 웹 페이지 창에 이름으로 나타난다.
 
 지금 내 Title 은 Document 로 설정되어 있다.  
 
-![head](/assets/img/post-img/base-page/head.png){:class="lazyload" .img-w700}     
+![head](/assets/img/post-img/base-page/head.png){:class="lazyload" .post-img .img-w700}     
 
 <br>
 이제 웹 페이지상 내 Title 을 확인해보자.
 
-![github-page](/assets/img/post-img/start-config/main-title.png){:class="lazyload" .img-w700}   
+![github-page](/assets/img/post-img/start-config/main-title.png){:class="lazyload" .post-img .img-w700}   
 
 
 <br>
 그리고 이렇게 카카오톡을 통해 링크를 보냈을때도 확인해보자. 
 
-![github-page](/assets/img/post-img/start-config/kakao-title.png){:class="lazyload" .img-w350}  
+![github-page](/assets/img/post-img/start-config/kakao-title.png){:class="lazyload" .post-img .img-w350}  
   
 
 
@@ -62,11 +62,11 @@ _indluce/head.html 파일을 수정하자.
 <title> 블로그 이름 </title>
 ```  
 
-![github-page](/assets/img/post-img/start-config/head-title.png){:class="lazyload" .img-w650}   
+![github-page](/assets/img/post-img/start-config/head-title.png){:class="lazyload" .post-img .img-w650}   
 
 
 이제 127.0.0.1:4000 에 접속해서 확인해보자.  
-![github-page](/assets/img/post-img/start-config/main-title-modify.png){:class="lazyload" .img-w650}  
+![github-page](/assets/img/post-img/start-config/main-title-modify.png){:class="lazyload" .post-img .img-w650}  
 
 <br>
 바뀐 것을 확인 했으면 GitHub Desktop 을 이용해 Commit & Push 를 하자.  
@@ -75,7 +75,7 @@ _indluce/head.html 파일을 수정하자.
 즉 실제로 GitHub 에 반영전까진 카카오톡에서 확인을 할 수 없다.  
 Commit & Push 후 자신의 홈페이지에 접속해보고, 카카오톡 링크도 보내보자.  
 
-![github-page](/assets/img/post-img/start-config/kakao-title-modify.png){:class="lazyload" .img-w350}  
+![github-page](/assets/img/post-img/start-config/kakao-title-modify.png){:class="lazyload" .post-img .img-w350}  
 
 
 # _config.yml 수정
@@ -83,12 +83,12 @@ _config.yml 을 수정해보자.
 이 _config.yml 에서 추가하거나 수정한 변수들은, 전역적으로 쓸 수 있다.  
 예를들어 아래 config.yml 에 title 을 코딩독학으로 바꾸었다.  
 
-![config](/assets/img/post-img/start-config/config.png){:class="lazyload" .img-w650}   
+![config](/assets/img/post-img/start-config/config.png){:class="lazyload" .post-img .img-w650}   
 
 이 변수는 다른 페이지 어디서든 {site.title} 을 쓰면 저 부분은 코딩 독학 으로 값이 변경된다.  
 그럼 아까 바꾼 \<head> 에 title 을 아래처럼 바꿔보자.  
 
-![config-title-modi](/assets/img/post-img/start-config/config-title.png){:class="lazyload" .img-w650}   
+![config-title-modi](/assets/img/post-img/start-config/config-title.png){:class="lazyload" .post-img .img-w650}   
 
 config.yml 을 바꾸었으면 jekyll 을 재시작 해야한다.   
 ( _config.yml 을 제외하곤, 수정사항을 저장한 뒤 웹 페이지 새로고침하면 바로 반영된다. )    
@@ -112,7 +112,7 @@ config.yml 에 title 값만 바꾸면 site.title 을 설정한 모든 부분의 
 
 다음엔 아래와 같은 <span class="tooltip" id="id-3">Favicon</span> 을 설정해보자.
 
-![after-favicon](/assets/img/post-img/favicon/after-favicon.png){:class="lazyload" .img-w100}  
+![after-favicon](/assets/img/post-img/favicon/after-favicon.png){:class="lazyload" .post-img .img-w100}  
 <br>
 
 

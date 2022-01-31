@@ -1,19 +1,22 @@
 .post-tags { font-size: 0.7em;}
 .highlighter-rouge > .highlight { overflow: auto; }
 
-.img-w50  { width: 3em; height: auto; } /* width 50px */
-.img-w100 { width: 6em; height: auto; } 
-.img-w150 { width: 9em; height: auto; } 
-.img-w200 { width: 12em; height: auto; } 
-.img-w250 { width: 15em; height: auto; } 
-.img-w300 { width: 18em; height: auto; } 
-.img-w350 { width: 21em; height: auto; } 
-.img-w400 { width: 24em; height: auto; } 
-.img-w450 { width: 27em; height: auto; } 
-.img-w500 { width: 30em; height: auto; } 
-.img-w550 { width: 33em; height: auto; } 
-.img-w600 { width: 36em; height: auto; } 
-.img-w650 { width: 39em; height: auto; } 
-.img-w700 { width: 42em; height: auto; } 
-.img-w750 { width: 45em; height: auto; } 
-.img-w800 { width: 48em; height: auto; } 
+/* 포스트 이미지 공통 속성 */
+.post-img { height: auto; } 
+
+.img-w50  { width: 3em; } /* width 50px */
+.img-w100 { width: 6em; } 
+.img-w150 { width: 9em; } 
+.img-w200 { width: 12em; } 
+.img-w250 { width: 15em; } 
+.img-w300 { width: 18em; } 
+.img-w350 { width: 21em; } 
+.img-w400 { width: 24em; } 
+.img-w450 { width: 27em; } 
+.img-w500 { width: 30em; } 
+.img-w550 { width: 33em; } 
+.img-w600 { width: 36em; } 
+.img-w650 { width: 39em; } 
+.img-w700 { width: 42em; } 
+.img-w750 { width: 45em; } 
+.img-w800 { width: 48em; } 

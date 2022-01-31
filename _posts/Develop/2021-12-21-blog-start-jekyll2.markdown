@@ -21,10 +21,10 @@ img-tag: jekyll
 <br>
 VS Code 를 깔았다면 폴더 열기로 열면 된다.  
 그리고 아래에 터미널 창을 누르거나 상단에 터미널 메뉴에서 새 터미널 메뉴를 누르자.  
-![new-ter-menu](/assets/img/post-img/jekyll-start/new-ter.png){:class="lazyload" .img-w450}    
+![new-ter-menu](/assets/img/post-img/jekyll-start/new-ter.png){:class="lazyload" .post-img .img-w450}    
 
 위에서 실행시킨 명령창과 동일한 창이 아래와 같이 생긴다.  
-![new-ter2](/assets/img/post-img/jekyll-start/new-ter2.png){:class="lazyload" .img-w450}    
+![new-ter2](/assets/img/post-img/jekyll-start/new-ter2.png){:class="lazyload" .post-img .img-w450}    
 <br>
 
 이제 여기에 아래와 같은 명령어를 수행한다.
@@ -45,7 +45,7 @@ jekyll new ./ --force
 해당 명령어를 치면 아래와 같은 메시지가 나오고   
 왼편 탐색기에 새로운 파일과 폴더들이 생긴것을 볼 수 있다.   
 혹시 새로 생긴 Jekyll 파일이 궁금하다면 - [Jekyll 구조 살펴보기][jekyll-docu-link]   
-![jekyll-new](/assets/img/post-img/jekyll-start/jekyll-new.png){:class="lazyload" .img-w700}  
+![jekyll-new](/assets/img/post-img/jekyll-start/jekyll-new.png){:class="lazyload" .post-img .img-w700}  
 
 <br>
 
@@ -65,10 +65,10 @@ jekyll 을 이용하여, 지금 이 프로젝트의 웹 사이틀을 내 로컬�
 ( 즉 지금 내 장비의 4000 번 포트로 GitHub Blog 에 접속이 가능하다 )  
 인터넷 주소창에 <span class="tooltip" id="id-3">127.0.0.1:4000</span> 라 치면 내 페이지에 접근할 수 있다.  
 
-![jekyll-run](/assets/img/post-img/jekyll-start/jekyll-run.png){:class="lazyload" .img-w700}   
+![jekyll-run](/assets/img/post-img/jekyll-start/jekyll-run.png){:class="lazyload" .post-img .img-w700}   
 
 접속하면 다음과 같은 화면이 나올 것이다.  
-![first-page](/assets/img/post-img/jekyll-start/first-page.png){:class="lazyload" .img-w700}      
+![first-page](/assets/img/post-img/jekyll-start/first-page.png){:class="lazyload" .post-img .img-w700}      
 
 <br>
 명령어는 bundle exec jekyll serve 와 jekyll serve 둘다 가능하다.  
@@ -96,16 +96,16 @@ jekyll 엔 정말 많은 테마가 존재한다.
 
 <br>
 반응형인지 알기 제일 쉬운 방법은 아래 Demo 버튼을 누르고 창 크기를 줄여보자.  
-![jekyll-list](/assets/img/post-img/jekyll-start/jekyll-theme.png){:class="lazyload" .img-w700}   
+![jekyll-list](/assets/img/post-img/jekyll-start/jekyll-theme.png){:class="lazyload" .post-img .img-w700}   
 
 일반적으로 PC 에서의 화면이다.  
-![jekyll-list](/assets/img/post-img/jekyll-start/theme-h.png){:class="lazyload" .img-w700}   
+![jekyll-list](/assets/img/post-img/jekyll-start/theme-h.png){:class="lazyload" .post-img .img-w700}   
 
 <br>
 
 가로를 극단적으로 줄여보자. 어느순간 화면이 바뀌는걸 볼 수 있다.  
 반응형이 아니면, 사이즈에 상관없이 같은 디자인을 가진다.  
-![jekyll-list](/assets/img/post-img/jekyll-start/theme-v.png){:class="lazyload" .img-w500}   
+![jekyll-list](/assets/img/post-img/jekyll-start/theme-v.png){:class="lazyload" .post-img .img-w500}   
 
 <br>
 
@@ -138,7 +138,7 @@ Jekyll 테마를 적용하기 위해서 처음부터 2.6 버전을 받는 것도
 bundle exec jekyll serve
 ```  
 다시 수행하면 테마가 적용된걸 볼 수 있다.  
-![jekyll-start](/assets/img/post-img/jekyll-start/jekyl-start-theme.png){:class="lazyload" .img-w700}   
+![jekyll-start](/assets/img/post-img/jekyll-start/jekyl-start-theme.png){:class="lazyload" .post-img .img-w700}   
 하지만 웹 페이지 주소를 보면 127.0.0.1:4000 이다.  
 즉 내 로컬 서버에서만 동작하는 블로그이다.  
 내 로컬에서 홈페이지가 잘 구동하는걸 봣으니  
@@ -154,18 +154,18 @@ bundle exec jekyll serve
 실제 https://username.github.io 에 블로그가 올라가게 된다.  
 <br>
 이전에 다운받은 GitHub Desktop 을 찾아서 실행시켜 보자.  
-![github-desk](/assets/img/post-img/jekyll-start/github-desktop.png){:class="lazyload" .img-w300}    
+![github-desk](/assets/img/post-img/jekyll-start/github-desktop.png){:class="lazyload" .post-img .img-w300}    
 
 <br>
 
 좌상단에 Current repository 가 내 username.github.io 로  
 선택되어 있지 않다면, 좌상단에 repository 버튼을 눌러  
 지금 작업하는 Repository 를 선택하자.
-![github-page](/assets/img/post-img/jekyll-start/choose-repo.png){:class="lazyload" .img-w700}     
+![github-page](/assets/img/post-img/jekyll-start/choose-repo.png){:class="lazyload" .post-img .img-w700}     
 
 <br>
 아래 사진에서 좌측 창은 추가/변경 된 파일 리스트이고 오른쪽은 파일에서 추가/변경 된 내용이다.  
-![github-page](/assets/img/post-img/jekyll-start/github-page.png){:class="lazyload" .img-w700}     
+![github-page](/assets/img/post-img/jekyll-start/github-page.png){:class="lazyload" .post-img .img-w700}     
 
 파일 리스트에서 초록 + 는 새로 추가된 파일이고,   
 노랑 점 찍힌 네모는 수정된 파일이다.  
@@ -181,7 +181,7 @@ GitHub 를 사용하려면 간단하게 GitHub 에 대해선 알아야 한다.
 
 ( 다른건 몰라도 위 링크에서 버전관리, 브랜치, Commit/Rollback/Push/Pull 정도는 지금 읽어보자.)  
 
-![github-page](/assets/img/post-img/jekyll-start/commit.png){:class="lazyload" .img-w350}     
+![github-page](/assets/img/post-img/jekyll-start/commit.png){:class="lazyload" .post-img .img-w350}     
 이전 버전 ( 마지막 Commit/Rollback ) 이후 변화된점이 있다면  
 아래 Commit 버튼이 있는데 여기에 메시지를 적고 Commit 하자.  
 ***Commit 은 내 로컬 저장소 이전버전에서 추가/변경된 사항을 기록하는 것이다.***  
@@ -189,23 +189,23 @@ GitHub 를 사용하려면 간단하게 GitHub 에 대해선 알아야 한다.
 <br>
 이 Commit 메시지는 의미있는게 좋다.  
 혹시 이전 시점으로 소스를 돌려야 할때, 과거의 Commit 시점으로 되돌릴 수 있는데 이 메시지를 보고 돌려야 한다.  
-![github-page](/assets/img/post-img/jekyll-start/commit-history.png){:class="lazyload" .img-w350}     
+![github-page](/assets/img/post-img/jekyll-start/commit-history.png){:class="lazyload" .post-img .img-w350}     
 
 ABCD 이런식으로 Commit 하면 나중에 찾기 곤란하다.  
 <br>
 
 참고로 Commit 후 파일을 변경했는데, 변경한걸 마지막 Commit 으로 되돌리고 싶다면 Discard 시키면 된다.  
-![github-page](/assets/img/post-img/jekyll-start/discard.png){:class="lazyload" .img-w450}    
+![github-page](/assets/img/post-img/jekyll-start/discard.png){:class="lazyload" .post-img .img-w450}    
 
 
 Commit 을 다했으면 상단에 Push 를 누르자.  
-![github-page](/assets/img/post-img/jekyll-start/push.png){:class="lazyload" .img-w700}    
+![github-page](/assets/img/post-img/jekyll-start/push.png){:class="lazyload" .post-img .img-w700}    
 ***push 는 내 로컬에 Commit 된 것을 GitHub 서버의 내 Repository 에 반영해준다.***  
 <br>
 
 GitHub 서버의 내 Repository 에 반영을 해야 실제 웹에 올라가게 된다.  
 
-![github-page](/assets/img/post-img/jekyll-start/start-web.png){:class="lazyload" .img-w700}  
+![github-page](/assets/img/post-img/jekyll-start/start-web.png){:class="lazyload" .post-img .img-w700}  
 
 
 진짜로 웹에 블로그 올리기 성공!  
@@ -227,7 +227,7 @@ GitHub 서버의 내 Repository 에 반영을 해야 실제 웹에 올라가게 
 - ***bundle exec jekyll serve VS jekyll serve***   
   - jekyll serve 로 실행이 가능하지만 bundle exec 를 앞에 붙이는걸 추천한다.  
 이유는 jekyll serve 만 수행할 경우 아래와 비슷한 에러가 날 확률이 매우 크다.  
-![bundle-exec](/assets/img/post-img/jekyll-start/bundle-exec.png){:class="lazyload" .img-w700}     
+![bundle-exec](/assets/img/post-img/jekyll-start/bundle-exec.png){:class="lazyload" .post-img .img-w700}     
 에러 메시지는 다 다르겠지만, 말하고자 하는건 버전이 꼬였다 정도로 생각하면 된다.    
 위와 같은 상황을 <span class="tooltip" id="id-5">의존성 지옥</span> 이라고 한다.   
 Bundle 은 정확하고 필요한 버전을 추적 설치하기 때문에  
