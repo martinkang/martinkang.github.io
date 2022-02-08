@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[GitHub Blog - 2] GitHub Page 만들기"
+title:  "[GitHub Blog - 2] GitHub Repository 만들기"
 description: "GitHub Repository 를 생성하고 Blog를 시작해보자."
 date:   2021-12-20 18:00:00 +0900
 categories: develop

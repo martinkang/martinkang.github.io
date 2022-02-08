@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[GitHub Blog - 1] GitHub Bog 시작하기."
+title:  "[GitHub Blog - 1] GitHub Blog 시작하기."
 description: "GitHub 블로그 개발 순서와 목표. Front End 공부와 개발 포트폴리오를 만들어 보자."
 date:   2021-12-19 19:10:00 +0900
 categories: develop
