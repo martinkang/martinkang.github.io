@@ -2,7 +2,7 @@
 layout: post
 title:  "[CSS] - Position 속성"
 description: "CSS 의 Position 속성에 대해 알아보자."
-date:   2022-02-07 15:20:00 +0900
+date:   2022-02-10 15:20:00 +0900
 categories: study
 tags: [css, Front-End]
 img-tag: css
