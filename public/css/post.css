@@ -20,3 +20,5 @@
 .img-w700 { width: 42em; } 
 .img-w750 { width: 45em; } 
 .img-w800 { width: 48em; } 
+
+iframe { border: 0; }

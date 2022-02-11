@@ -1,0 +1,50 @@
+<div class="box-outer">
+    <span class="box box-hidden">
+        zero
+    </span>
+    <span class="box">
+        one
+    </span>
+    <span class="box-none">
+        two
+    </span>
+    <span class="box">
+        three
+    </span>
+</div>
+
+<style>    
+    .box-outer{
+        width: 350px;
+        height: 200px;
+        border: dashed black;
+    }
+    
+    .box-none{
+        display: none;
+        width: 50;
+        height: 50px;
+        color: white;
+        margin: 5px;
+        background: red;  
+    }
+
+    .box-hidden {
+        display: inline-block;
+        width: 50;
+        height: 50px;
+        color: white;
+        margin: 5px;
+        background: red;
+        visibility: hidden
+    }
+
+    .box {
+        display: inline-block;
+        width: 50;
+        height: 50px;
+        color: white;
+        margin: 5px;
+        background: red;
+    }
+</style>
