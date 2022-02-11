@@ -141,7 +141,7 @@ grid 라는 속성도 있지만, 이 홈페이지에선 쓰질 않고 호환이 
 [display-link]: https://developer.mozilla.org/ko/docs/Web/CSS/display
 [display-1min-link]: https://studiomeal.com/archives/282
 
-[display2-link]: /study/2022/02/12/css-display2.html
+[display2-link]: /study/2022/02/11/css-display2.html
 
 
 
