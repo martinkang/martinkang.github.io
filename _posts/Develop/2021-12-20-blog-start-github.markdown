@@ -118,4 +118,4 @@ GitHub Blog 스타트 성공!.
 [webhosting-link]: https://www.dotname.co.kr/hosting/web/guide
 
 [jekyll-link]: /develop/2021/12/21/blog-start-jekyll.html
-[repository-link]: /study/2021/12/20/github-repository.html
+[repository-link]: /bugs/2021/12/22/github-repository.html

@@ -136,7 +136,7 @@ config.yml 에 title 값만 바꾸면 site.title 을 설정한 모든 부분의 
 
 # 참고
 - 취미로 코딩하는 개발자 : [GitHub 블로그 기본 설정하기][github-config-link]
-- jekyll 번역 : [jekyll 공식페이지][jekyll-link]
+- jekyll 번역 : [jekyll 환경설정][jekyll-config-link]
 - spsarolkar.github.io : [블로그 Theme 미리보기][theme-view-link]
 - MDN Web Doc : [head: 문서 메타데이터 (헤더) 요소][head-link]
 - MDN Web Doc : [head 태그에는 무엇이 있을까? HTML의 메타데이터][head-meta-link]
@@ -163,4 +163,4 @@ config.yml 에 title 값만 바꾸면 site.title 을 설정한 모든 부분의 
 
 [head-meta-link]:https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML
 
-[favicon-link]: /develop/2022/01/02/favicon.html
+[favicon-link]: /develop/2022/01/25/favicon.html

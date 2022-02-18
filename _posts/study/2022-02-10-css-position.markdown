@@ -132,6 +132,8 @@ absolute 는 부모 요소를 기준으로 배치되기 때문에, 화면이 스
 absoulte 는 부모 요소에 대한 절대적인 위치를 차지하기 때문에 화면에서 보이지 않게 된다.  
 
 ![absolute-fixed2](/assets/img/post-img/base-layout/absolute-fixed2.png){:class="lazyload" .post-img .img-w500} 
+
+
 ## sticky
 - 요소를 일반적인 문서 흐름에 따라 배치.  
 - 테이블 관련 요소를 포함해 가장 가까운, 스크롤 되는 조상과,  
@@ -142,16 +144,14 @@ top, right, bottom, left의 값에 따라 오프셋을 적용.
 
 <br>
 스크롤을 아래로 내려 Two 의 변화를 보자.  
+<iframe src="/assets/html/base-layout/sticky.html" style="width:300px; height:150px"></iframe>
 
-<div class="big-box">
-    <div class="box" id="one">One</div>
-    <div class="box box-position-sticky box-top-20 box-left-20" id="two">Two</div>
-    <div class="box" id="three">Three</div>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
-
-가장 가까운 블록 레벨 조상 ( 위 사진에서 검은 점선 )을 기준으로 잡기때문에   
-Two 박스는 Top 기준으로 20px 떨어진곳에 위치한다.   
+기본적으로 요소를 일반적인 문서 흐름에 따라 배치하기 때문에,    
+***스크롤 하기 전에는 문서 흐름에 따라 존재***한다.   
+스크롤을 하게 되면 sticky 속성을 지정한 박스만 다르게 움직이는 것을 볼 수 있다.  
+sticky 는 가장 가까운 블록 레벨 조상 ( 위 사진에서 검은 점선 )을 기준으로 잡기때문에   
+조상과 거리가 지정한 위치 ( top, left 20px ) 보다 작거나 같아지면, 해당 값을 따르게 된다.  
+따라서 Two 박스는 Top 기준으로 20px 떨어진곳에 위치한다.   
 Two 박스는 의 Left 속성 값은 20px 인데 아래 사진을 보면 Two 의 위치는 부모 기준 20px 보다 훨씬 멀리 있다.  
 이유는 ***sticky 요소는 일반적인 문서 흐름에 따르기 때문***에,   
 블록 레벨 조상 ( 검은 점선 ) 에서 20px 를 떨어지려 하여도
@@ -163,18 +163,13 @@ Two 박스는 의 Left 속성 값은 20px 인데 아래 사진을 보면 Two 의
 <br>
 
 - Two 에 Top:20, Left:70 속성을 주었다.  
+<iframe src="/assets/html/base-layout/sticky2.html" style="width:300px; height:150px"></iframe>
 
-<div class="big-box">
-    <div class="box" id="one">One</div>
-    <div class="box box-position-sticky box-top-20 box-left-70" id="two">Two</div>
-    <div class="box" id="three">Three</div>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
 
 부모 ( 검은 점선 ) 기준으로 70px 는 원래 위치 ( One 의 오른편 ) 보다 더 오른편이므로,  
 Left: 20px 때와는 다르게 Left 위치 변경한 것이 보인다.  
 
- 
+
 <br>
 
 CSS 로 웹 페이지를 만들다 보면, 생각처럼 꾸며지지 않을때가 있다.  
