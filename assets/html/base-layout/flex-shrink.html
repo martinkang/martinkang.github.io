@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flexbtn-block">
+        <b>flex-direction</b><br> 
+        <div class="flex-radio-btn"> 
+            <input type="radio" id="row" name="flex-btn" checked="checked"> 
+            <label for="row">row</label>
+         </div>
+         <div class="flex-radio-btn"> 
+            <input type="radio" id="column" name="flex-btn"> 
+            <label for="column">column</label>
+         </div>
+    </div>
+    <div class="display-block">
+        <div class="container code-flex-grow-m1 flex-direction-row" id="flex-container">
+            <div class="flex-item" id="item1">item 1</div>
+            <div class="flex-item" id="item2">long item 2</div>
+            <div class="flex-item" id="item3">item 3</div>
+            <div class="flex-item" id="item4">item 4</div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .btn-block {
+        display: block;
+        width: 100%;
+        background-color: white;
+
+        margin-top: 20px;
+    }
+
+    .display-block {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        width: 500px;
+        height: 400px;
+        background-color:white;
+        border: dashed 2px red;
+    }
+
+    .flex-direction-row {
+        flex-direction: row;
+    }
+
+    .flex-direction-column {
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .flex-item { 
+        flex-basis: 200px;
+        border: solid 1px #385d8a;
+        line-height: 3em;
+        text-align: center;
+        background-color: #4f81bd; 
+        color: white; 
+    }
+
+    #item1 { flex-shrink: 2; }
+    #item2 { flex-shrink: 1; }
+    #item3 { flex-shrink: 0; }
+    #item4 { flex-shrink: 3; }
+
+    .flex-radio-btn {
+        display: inline-block;
+        margin: 5px;    
+    }
+
+</style>
+
+<script>
+
+window.addEventListener( "pageshow", (event) => 
+{
+    let sFlexContainer = document.getElementById('flex-container');
+
+    let sFlexRadioBtn = document.getElementsByName('flex-btn');
+    let sFlexRadioBtnCnt = sFlexRadioBtn.length;
+
+    let i = 0;
+
+    for( i = 0; i < sFlexRadioBtnCnt; i++ ) {
+        sFlexRadioBtn[i].addEventListener( 'click', function() {
+            sFlexContainer.classList.remove( 'flex-direction-row' );
+            sFlexContainer.classList.remove( 'flex-direction-column' );
+           
+            switch( this.id )
+            {
+                case 'row' :
+                    sFlexContainer.classList.add( 'flex-direction-row' );
+                    break;
+
+                case 'column' :
+                    sFlexContainer.classList.add( 'flex-direction-column' );
+                    break;
+            }
+        });
+    }
+});
+
+</script>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="display-block">
+        <div class="container code-wrap" id="flex-container">
+            <div class="item">item 1</div>
+            <div class="item">item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </div>
+    </div>
+
+    <div class="btn-block">
+        <div class="radio-btn"> 
+            <input type="radio" id="wrap" name="wrap-btn" checked="checked"> 
+            <label for="wrap">wrap</label>
+         </div>
+         <div class="radio-btn"> 
+            <input type="radio" id="wrap-r" name="wrap-btn"> 
+            <label for="wrap-r">wrap-reverse</label>
+         </div>
+         <div class="radio-btn"> 
+            <input type="radio" id="nowrap" name="wrap-btn"> 
+            <label for="nowrap">nowrap</label>
+         </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .btn-block {
+        display: block;
+        width: 100%;
+        background-color: white;
+
+        margin-top: 20px;
+    }
+
+    .display-block {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        width: 20em;
+        height: 10em;
+        background-color:white;
+        border: dashed 2px red;
+    }
+
+    .item { 
+        width: 7em; 
+        height: 3em; 
+        border: solid 1px #385d8a;
+        line-height: 3em;
+        text-align: center;
+        background-color: #4f81bd; 
+        color: white; 
+    }
+    .code-wrap { flex-wrap: wrap; }
+    .code-wrapr { flex-wrap: wrap-reverse; }
+    .code-nowrap { flex-wrap: nowrap; }
+    
+    .radio-btn {
+        display: inline-block;
+        margin: 5px;    
+    }
+
+</style>
+
+<script>
+
+window.addEventListener( "pageshow", (event) => 
+{
+    let sFlexContainer = document.getElementById('flex-container');
+    let sRadioBtn = document.getElementsByName('wrap-btn');
+    let sRadioBtnCnt = sRadioBtn.length;
+    let i = 0;
+
+    for( i = 0; i < sRadioBtnCnt; i++ ) {
+        sRadioBtn[i].addEventListener('click', function () {
+            sFlexContainer.classList.remove( 'code-wrap' );
+            sFlexContainer.classList.remove( 'code-wrapr' );
+            sFlexContainer.classList.remove( 'code-nowrap' );
+
+            switch( this.id )
+            {
+                case "wrap" :
+                    sFlexContainer.classList.add( 'code-wrap' );
+                    break;
+
+                case "wrap-r" :
+                    sFlexContainer.classList.add( 'code-wrapr' );
+                    break;
+
+                case "nowrap" :
+                    sFlexContainer.classList.add( 'code-nowrap' );
+                    break;
+            }
+        });
+    }
+});
+
+</script>

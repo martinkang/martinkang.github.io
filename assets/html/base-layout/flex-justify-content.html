@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flexbtn-block">
+        <b>flex-direction</b><br> 
+        <div class="flex-radio-btn"> 
+            <input type="radio" id="row" name="flex-btn" checked="checked"> 
+            <label for="row">row</label>
+         </div>
+         <div class="flex-radio-btn"> 
+            <input type="radio" id="column" name="flex-btn"> 
+            <label for="column">column</label>
+         </div>
+    </div>
+    <div class="display-block">
+        <div class="container code-flex-start flex-direction-row" id="flex-container">
+            <div class="item">item 1</div>
+            <div class="item">long item 2</div>
+            <div class="item">item 3</div>
+            <div class="item">item 4</div>
+        </div>
+    </div>
+
+    <div class="btn-block">
+        <b>justify-content</b><br> 
+         <div class="radio-btn"> 
+            <input type="radio" id="flex-start" name="justify-btn" checked="checked"> 
+            <label for="flex-start">flex-start</label>
+         </div>
+         <div class="radio-btn"> 
+            <input type="radio" id="flex-end" name="justify-btn"> 
+            <label for="flex-end">flex-end</label>
+         </div>
+         <div class="radio-btn"> 
+            <input type="radio" id="center" name="justify-btn"> 
+            <label for="center">center</label>
+         </div>
+         <div class="radio-btn"> 
+            <input type="radio" id="space-around" name="justify-btn"> 
+            <label for="space-around">space-around</label>
+         </div>
+         <div class="radio-btn"> 
+            <input type="radio" id="space-between" name="justify-btn"> 
+            <label for="space-between">space-between</label>
+         </div>
+         <div class="radio-btn"> 
+            <input type="radio" id="space-evenly" name="justify-btn"> 
+            <label for="space-evenly">space-evenly</label>
+         </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .btn-block {
+        display: block;
+        width: 100%;
+        background-color: white;
+
+        margin-top: 20px;
+    }
+
+    .display-block {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        width: 25em;
+        height: max-content;
+        background-color:white;
+        border: dashed 2px red;
+    }
+
+    .flex-direction-row {
+        flex-direction: row;
+    }
+
+    .flex-direction-column {
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .item { 
+        border: solid 1px #385d8a;
+        line-height: 3em;
+        text-align: center;
+        background-color: #4f81bd; 
+        color: white; 
+    }
+
+    .code-flex-start { justify-content: flex-start; }
+    .code-flex-end { justify-content: flex-end; }
+    .code-center { justify-content: center; }
+    .code-space-around { justify-content: space-around; }
+    .code-space-between { justify-content: space-between; }
+    .code-space-evenly { justify-content: space-evenly; }
+
+    .flex-radio-btn {
+        display: inline-block;
+        margin: 5px;    
+    }
+
+    .radio-btn {
+        display: inline-block;
+        margin: 5px;    
+    }
+
+</style>
+
+<script>
+
+window.addEventListener( "pageshow", (event) => 
+{
+    let sFlexContainer = document.getElementById('flex-container');
+    let sFlexRadioBtn = document.getElementsByName('flex-btn');
+    let sFlexRadioBtnCnt = sFlexRadioBtn.length;
+    let sRadioBtn = document.getElementsByName('justify-btn');
+    let sRadioBtnCnt = sRadioBtn.length;
+    let i = 0;
+
+    for( i = 0; i < sFlexRadioBtnCnt; i++ ) {
+        sFlexRadioBtn[i].addEventListener( 'click', function() {
+            sFlexContainer.classList.remove( 'flex-direction-row' );
+            sFlexContainer.classList.remove( 'flex-direction-column' );
+           
+            switch( this.id )
+            {
+                case 'row' :
+                    sFlexContainer.classList.add( 'flex-direction-row' );
+                    break;
+
+                case 'column' :
+                    sFlexContainer.classList.add( 'flex-direction-column' );
+                    break;
+            }
+        })
+    }
+
+    for( i = 0; i < sRadioBtnCnt; i++ ) {
+        sRadioBtn[i].addEventListener('click', function () {
+            sFlexContainer.classList.remove( 'code-flex-start' );
+            sFlexContainer.classList.remove( 'code-flex-end' );
+            sFlexContainer.classList.remove( 'code-center' );
+            sFlexContainer.classList.remove( 'code-space-around' );
+            sFlexContainer.classList.remove( 'code-space-between' );
+            sFlexContainer.classList.remove( 'code-space-evenly' );
+
+            switch( this.id )
+            {
+                case "flex-start" :
+                    sFlexContainer.classList.add( 'code-flex-start' );
+                    break;
+
+                case "flex-end" :
+                    sFlexContainer.classList.add( 'code-flex-end' );
+                    break;
+                case "center" :
+                    sFlexContainer.classList.add( 'code-center' );
+                    break;
+                case "space-around" :
+                    sFlexContainer.classList.add( 'code-space-around' );
+                    break
+                case "space-between" :
+                    sFlexContainer.classList.add( 'code-space-between' );
+                    break
+                case "space-evenly" :
+                    sFlexContainer.classList.add( 'code-space-evenly' );
+                    break
+            }
+        });
+    }
+});
+
+</script>

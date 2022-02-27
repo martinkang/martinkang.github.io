@@ -8,6 +8,9 @@ tags: [css, Front-End]
 img-tag: css
 ---
 
+
+<script defer src="/public/js/iframe.js"></script>
+
 # Display 속성
 HTML 요소(Element) 의 외부와 내부 자식 요소의 디스플레이 유형을 설정한다.  
 외부적으로 자신과 다른 요소의 배치 레이아웃을 설정하고,    
@@ -38,7 +41,7 @@ HTML 요소(Element) 의 외부와 내부 자식 요소의 디스플레이 유�
         - display: inline-block
     - two box
         - ***display: none***
-<iframe src="/assets/html/base-layout/none.html" style="width:400px; height:250px"></iframe>
+<iframe class="code-box" src="/assets/html/base-layout/none.html"></iframe>
 
 
 위의 사진을 보면   
@@ -62,7 +65,7 @@ HTML 요소(Element) 의 외부와 내부 자식 요소의 디스플레이 유�
 <br>
 
 
-<iframe src="/assets/html/base-layout/inline.html" style="width:400px; height:250px"></iframe>
+<iframe class="code-box" src="/assets/html/base-layout/inline.html"></iframe>
 
 위의 사진을 보면 
 - 모든 요소들 끼리 전부 일렬로 배치되어 있다.  
@@ -85,7 +88,7 @@ HTML 요소(Element) 의 외부와 내부 자식 요소의 디스플레이 유�
 
 <br>
 
-<iframe src="/assets/html/base-layout/block.html" style="width:400px; height:250px"></iframe>
+<iframe class="code-box" src="/assets/html/base-layout/block.html"></iframe>
 
 위의 사진을 보면 
 - 모든 요소들 각각 한줄을 차지하고 있다.    
@@ -105,7 +108,7 @@ HTML 요소(Element) 의 외부와 내부 자식 요소의 디스플레이 유�
     - \<button>, \<input>, \<select> 등
 
 <br>
-<iframe src="/assets/html/base-layout/inline-block.html" style="width:400px; height:250px"></iframe>
+<iframe class="code-box" src="/assets/html/base-layout/inline-block.html"></iframe>
 
 위의 사진을 보면 
 - 모든 요소들 끼리 전부 일렬로 배치되어 있다.  
