@@ -123,7 +123,7 @@ grid 라는 속성도 있지만, 이 홈페이지에선 쓰질 않고 호환이 
 <br>
 
 # 다음 주제
-- [[CSS] - Display 속성 [flex]][display2-link]
+- [[CSS] - Display 속성 flex [flex container]][display2-link]
 
 <hr>
 
