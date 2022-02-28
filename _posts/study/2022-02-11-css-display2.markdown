@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[CSS] - Display 속성 flex [flex container]"
+title:  "[CSS] - Display 속성 flex [flex container] "
 description: "CSS 의 Display 속성 flex 의 flex container 에대해 알아보자."
 date:   2022-02-11 17:20:00 +0900
 categories: study
