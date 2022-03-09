@@ -69,11 +69,11 @@ HTML 문서상에선 스타일, 스크립트, 각종 소프트웨어(검색 엔�
       <link href="css 주소" rel="stylesheet"> 
       ```
         - css 주소에 있는 css 파일을 해당 문서에 적용시킨다
-    - Favicon 연결
+    - Favicon 연결 예시
       -  [[GitHub Blog - 6] Favicon 을 설정해보자][favicon-link]
 - **\<meta>** 
     - base, link, script, style, title과 같은 다른 메타관련 요소로 나타낼 수 없는 Metadata를 나타낸다
-    -  OG 등을 설정할때 사용 
+    -  OG 설정 예시 
         - [[GitHub Blog - 7] Open Graph 를 설정해보자][og-link] 
 - **\<style>**
     - 문서나 문서 일부에 대한 스타일 정보를 포함
