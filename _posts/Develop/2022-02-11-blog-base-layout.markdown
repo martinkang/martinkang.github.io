@@ -108,7 +108,7 @@ CSS 를 사용하기 위해선 HTML 태그, Display, Position 속성 그리고 C
 [display3-link]: /study/2022/02/12/css-display3.html
 [position-link]: /study/2022/02/10/css-position.html
 [css-selector-link]: https://developer.mozilla.org/ko/docs/Learn/CSS/Building_blocks/Selectors
-[html-link]: /study/2022/02/28/html-tag.html
+[html-link]: /study/2022/03/09/html-tag.html
 [css-sel-link]: /study/2022/02/28/css-selector.html
 [mark-link]: https://ko.wikipedia.org/wiki/%EB%A7%88%ED%81%AC%EC%97%85_%EC%96%B8%EC%96%B4
 
