@@ -10,7 +10,7 @@ img-tag: html
 
 # CSS Selectors
 CSS Selectors 가 무엇인지 잘 모르겠다면     
-[[CSS] CSS Selectors ( Type, Class, ID, Attribute Selectors )][css-sel-link] 를 먼저 읽어보자.  
+[[CSS] CSS Selectors 정의와 Type, Class, ID, Attribute Selectors][css-sel-link] 를 먼저 읽어보자.  
 
 <br>
 
