@@ -1,5 +1,5 @@
 ---
 layout: category
-title: Category
+title: 카테고리
 permalink: /category/
 ---

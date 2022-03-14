@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {%- include head.html -%}
   <style>@import url(/public/css/syntax/{{ site.highlighter-theme }}.css);</style>
-  <title>{{ site.title }}</title>
+  <title>{% if page.title %}[코딩독학] {{ page.title | escape }}{% else %}{{ site.title }}{% endif %}</title>
  
   <link href="/public/css/all.min.css" rel="preeload" as="style" >
   <link href="/public/css/style.css" rel="preload stylesheet" as="style"> 

@@ -69,6 +69,11 @@
 	font-weight: bold;
 	vertical-align: middle;
 	align-items: center;
+	font-weight: bolder !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
 }
 
 .post-content {
