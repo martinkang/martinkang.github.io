@@ -613,7 +613,7 @@ grandchild_1-1 요소의 형제중 div 태그를 가진 모든 요소가 선택�
 [Pseudo-elements-link]: https://developer.mozilla.org/ko/docs/Web/CSS/Pseudo-elements
 [display2-link]: /study/2022/02/11/css-display2.html
 
-[css-sel-link2]: /study/2022/03/14/css-selector2.html
+[css-sel-link2]: /study/2022/03/13/css-selector2.html
 
 <style>
     .selector-box {border: 5px dashed blue;}
