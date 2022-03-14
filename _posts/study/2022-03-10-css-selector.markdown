@@ -616,7 +616,7 @@ grandchild_1-1 요소의 형제중 div 태그를 가진 모든 요소가 선택�
 [css-sel-link2]: /study/2022/03/14/css-selector2.html
 
 <style>
-    .selector-box {border: dashed black;}
+    .selector-box {border: 5px dashed blue;}
     .selector-box-title { text-align: center; }
 
     .parent { font-size: x-large; }

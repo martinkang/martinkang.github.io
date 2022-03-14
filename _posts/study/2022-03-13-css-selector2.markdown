@@ -343,7 +343,7 @@ grandchild_1-1 요소의 형제중 div 태그를 가진 모든 요소가 선택�
 
 
 <style>
-    .selector-box {border: dashed black;}
+    .selector-box {border: 5px dashed blue;}
     .selector-box-title { text-align: center; }
 
     .parent { font-size: x-large; }
