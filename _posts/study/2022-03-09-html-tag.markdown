@@ -13,12 +13,12 @@ img-tag: html
 웹 콘텐츠의 의미와 구조를 정의할 때 사용합니다.   
 HTML 이외의 다른 기술은 일반적으로 웹 페이지의 모양/표현 (CSS),   
 또는 기능/동작 (JavaScript)을 설명하는 데 사용됩니다.   
-<cite>MDN Web Doc - HTML 요소 참고서</cite>
+<cite>MDN Web Docs- HTML 요소 참고서</cite>
 
 <br>
 
 
-내용의 대부분은 <cite>[MDN Web Doc - HTML 요소 참고서][html-element-link]</cite> 여기서 가져왔으며,  
+내용의 대부분은 <cite>[MDN Web Docs- HTML 요소 참고서][html-element-link]</cite> 여기서 가져왔으며,  
 자세히 보고 싶은 사람은 저 페이지에 아주 잘 설명이 되어있다.   
 여기에는 자주 쓰는 태그들과 간단한 예시만 적어두겠다.  
 
@@ -332,8 +332,8 @@ HTML은 여러가지 입력 가능한 요소를 제공한다.
 <hr>
 
 # 참조
-- MDN Web Doc : [HTML: Hypertext Markup Language][html-link]
-- MDN Web Doc : [HTML 요소 참고서][[html-element-link]
+- MDN Web Docs: [HTML: Hypertext Markup Language][html-link]
+- MDN Web Docs: [HTML 요소 참고서][[html-element-link]
 
 <hr>
 

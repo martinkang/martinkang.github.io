@@ -62,9 +62,9 @@ CSS 를 사용하기 위해선 HTML 태그, Display, Position 속성 그리고 C
 
 [[CSS] - position 속성][position-link]
 
-## CSS Selector
+## CSS Selectors
 웹 문서안에 HTML 의 특정 태그나 속성에 접근하는 방식이다.    
-[[CSS] - CSS Selector][css-sel-link]
+[[CSS] - CSS Selectors][css-sel-link]
 
 
 
@@ -84,9 +84,9 @@ CSS 를 사용하기 위해선 HTML 태그, Display, Position 속성 그리고 C
 <hr>
 
 # 참조
-- MDN Web Doc : [display 문서][mdn-display-link]
-- MDN Web Doc : [position 문서][mdn-position-link]
-- MDN Web Doc : [CSS 선택자][css-selector-link]
+- MDN Web Docs: [display 문서][mdn-display-link]
+- MDN Web Docs: [position 문서][mdn-position-link]
+- MDN Web Docs: [CSS 선택자][css-selector-link]
 - 위키백과 : [마크업 언어][mark-link]
 
 <hr>

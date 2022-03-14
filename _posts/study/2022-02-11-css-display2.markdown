@@ -202,8 +202,8 @@ flex-flow: row wrap;
 <hr>
 
 # 참조
-- MDN Web Doc : [flexbox의 기본 개념][flex-box-link]
-- MDN Web Doc : [display 문서][display-link]
+- MDN Web Docs: [flexbox의 기본 개념][flex-box-link]
+- MDN Web Docs: [display 문서][display-link]
 - Naver D2 : [flexbox로 만들 수 있는 10가지 레이아웃][naver-flex-link]
 
 

@@ -157,7 +157,7 @@ Twitter 에서 인식을 하지 못한다.
 - Jekyllrb : [jekyll 변수 목록][jekyll-변수-link]
 - 준스파파 : [홈 바로가기][홈바로가기-link]
 - 코드로그 : [ico, png 확장자 차이][ico vs png-link]
-- MDN Web Doc : [프로토콜][protocol-link]
+- MDN Web Docs: [프로토콜][protocol-link]
 - Ryte Magagine : [OG Size][OG-size-link]
 - 리뷰나라 : [jekyll 내에서 이중 중괄호 쓰기][raw-link]
 

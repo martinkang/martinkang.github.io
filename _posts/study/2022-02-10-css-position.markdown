@@ -179,9 +179,9 @@ disply, position 등 화면에 대한 속성을 이해하면 의도한 대로 �
 <hr>
 
 # 참조
-- MDN Web Doc : [Viewport 란][viewport-link]
-- MDN Web Doc : [position 문서][position-link]
-- MDN Web Doc : [Containing Block 의 모든것][containing-block-link]
+- MDN Web Docs: [Viewport 란][viewport-link]
+- MDN Web Docs: [position 문서][position-link]
+- MDN Web Docs: [Containing Block 의 모든것][containing-block-link]
 
 <hr>
 

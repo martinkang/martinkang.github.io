@@ -128,7 +128,7 @@ grid 라는 속성도 있지만, 이 홈페이지에선 쓰질 않고 호환이 
 <hr>
 
 # 참조
-- MDN Web Doc : [display 문서][display-link]
+- MDN Web Docs: [display 문서][display-link]
 - 위키피아 : [문서 객체 모델][dom-link]
 - 1분 코딩 : [CSS 레이아웃을 시작하는 사람들이 반드시 알아야 할 개념][display-1min-link]
 <hr>

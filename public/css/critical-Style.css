@@ -104,14 +104,14 @@ a:hover {
 }
 
 .container {
-min-height: 100%;
-display: flex;
-justify-content: left;
-flex-flow: row nowrap;
+	min-height: 100%;
+	display: flex;
+	justify-content: left;
+	flex-flow: row nowrap;
 }
 
 header {
-padding: 10px;
+	padding: 10px;
 }
 
 .content {
