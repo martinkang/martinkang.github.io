@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="box-block">
+        <div class="box" id="box"> box-sizing 예제 박스 </div>
+    </div>
+
+    <div class="btn-block">
+        box-sizing : 
+        <div class="radio-btn"> 
+            <input type="radio" id="content" name="box-sizing-btn" checked="checked"> 
+            <label for="content-box">content-box</label>
+         </div>
+         <div class="radio-btn"> 
+            <input type="radio" id="border-box" name="box-sizing-btn"> 
+            <label for="border-box">border-box</label>
+         </div>
+         <div class="radio-btn"> 
+            <input type="radio" id="inherit" name="box-sizing-btn"> 
+            <label for="inherit">inherit</label>
+         </div>
+    </div>
+</body>
+</html>
+
+
+    
+
+<style>
+    .content-box { box-sizing: content-box; }
+    .border-box { box-sizing: border-box; }
+    .inherit { box-sizing: inherit; }
+
+    .box-block {
+        box-sizing: border-box;
+        width: 400px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-block .box {
+        background-color: black;
+        color: white;
+        width: 250px;
+        height: 250px;
+        border: 20px solid blue;
+        margin : 10px;
+        padding: 40px;
+    }
+</style>
+
+<script>
+
+window.addEventListener( "pageshow", (event) => 
+{
+    let sBox = document.getElementById('box');
+    let sRadioBtn = document.getElementsByName('box-sizing-btn');
+    let sRadioBtnCnt = sRadioBtn.length;
+    let i = 0;
+
+    for( i = 0; i < sRadioBtnCnt; i++ ) {
+        sRadioBtn[i].addEventListener('click', function () {
+            sBox.classList.remove( 'content-box' );
+            sBox.classList.remove( 'border-box' );
+            sBox.classList.remove( 'inherit' );
+
+            switch( this.id )
+            {
+                case "content-box" :
+                    sBox.classList.add( 'content-box' );
+                    break;
+
+                case "border-box" :
+                    sBox.classList.add( 'border-box' );
+                    break;
+
+                case "inherit" :
+                    sBox.classList.add( 'inherit' );
+                break;
+            }
+        });
+    }
+});
+
+</script>

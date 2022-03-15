@@ -596,7 +596,7 @@ grandchild_1-1 요소의 형제중 div 태그를 가진 모든 요소가 선택�
 <br>
 
 남은 CSS Selectors 는 아래 링크에 이어서 쓴다.  
-[[CSS] CSS Selectors - Pseudo-classes, Pseudo-elements, Combinators Selectors][css-sel-link2]  
+[[CSS] CSS Selectors 정의와 Pseudo-classes, Pseudo-elements, Combinators Selectors][css-sel-link2]  
 
 <hr>
 

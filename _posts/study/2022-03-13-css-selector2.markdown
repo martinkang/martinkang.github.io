@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[CSS] CSS Selectors - Pseudo-classes, Pseudo-elements, Combinators Selectors"
+title:  "[CSS] CSS Selectors 정의와 Pseudo-classes, Pseudo-elements, Combinators Selectors"
 description: "Pseudo-classes Pseudo-elements, Combinators, Selectors 에 대해 알아보자"
 date:   2022-03-13 13:20:00 +0900
 categories: study
@@ -117,9 +117,9 @@ pseudo-elements 는 요소의 특정 부분을 뜻한다.
 <body>
     <div class="selector-box pseudo-elements-classes-box">
         <p>
-            첫번째 문단<br>
-            두번째 문단<br>
-            세번째 문단<br>
+            문단 첫번째 줄<br>
+            문단 두번째 줄<br>
+            문단 세번째 줄<br>
         </p>
     </div>
 </body>
@@ -131,9 +131,9 @@ pseudo-elements 는 요소의 특정 부분을 뜻한다.
 
 <div class="selector-box pseudo-elements-classes-box">
         <p>
-            첫번째 문단<br>
-            두번째 문단<br>
-            세번째 문단<br>
+            문단 첫번째 줄<br>
+            문단 두번째 줄<br>
+            문단 세번째 줄<br>
         </p>
 </div>
 
