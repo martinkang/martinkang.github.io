@@ -55,7 +55,7 @@ GitHub Blog 스타트 성공!.
 
 
 # 다음 주제
-- [[GitHub Blog - 3] Jekyll 시작하기 1][jekyll-link]  
+- [[GitHub Blog - 3] Jekyll 설치 및 GitHub Repository 다운][jekyll-link]  
 <hr>
 
 # 부록

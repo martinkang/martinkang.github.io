@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[GitHub Blog - 5] - 블로그 이름 설정하기"
+title:  "[GitHub Blog - 7] - 블로그 이름 설정"
 description: "<head> 와 _config.yml 을 수정하여 블로그 이름을 설정해보자."
 date:   2022-01-20 19:20:00 +0900
 categories: develop
@@ -128,7 +128,7 @@ config.yml 에 title 값만 바꾸면 site.title 을 설정한 모든 부분의 
 
   
 # 다음 주제
-- [[GitHub Blog - 6] Favicon 을 설정해보자][favicon-link]
+- [[GitHub Blog - 8] Favicon 을 설정][favicon-link]
 
 <hr>
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[GitHub Blog - 6] Favicon 을 설정해보자"
+title:  "[GitHub Blog - 8] Favicon 을 설정"
 description: "내 블로그 아이콘을 설정하여 블로그 디테일을 높이자."
 date:   2022-01-25 20:00:00 +0900
 categories: develop
@@ -118,7 +118,7 @@ link 태그가 무엇을 뜻하고, rel 가 뭔지 정도만 안다면 이번에
 
 
 # 다음 주제
-- [[GitHub Blog - 7] Open Graph 를 설정해보자][og-link]
+- [[GitHub Blog - 9] Open Graph 를 설정][og-link]
 
 <hr>
 

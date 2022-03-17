@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[GitHub Blog - 3] Jekyll 시작하기 2"
+title:  "[GitHub Blog - 4] Jekyll 을 이용하여 GitHub Blog 시작"
 description: "Jekyll 을 이용하여 GitHub Blog 를 시작해보자."
 date:   2021-12-21 19:10:00 +0900
 categories: develop
@@ -218,7 +218,7 @@ GitHub 서버의 내 Repository 에 반영을 해야 실제 웹에 올라가게 
 <br>
 
 # 다음 주제
-- [[GitHub Blog - 4] - 기본페이지 만들기 1][base-page-link]
+- [[GitHub Blog - 5] - Jekyll 의 페이지 생성 과정][base-page-link]
 <hr>
 
 

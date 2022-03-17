@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[GitHub Blog - 3] Jekyll 시작하기 1"
+title:  "[GitHub Blog - 3] Jekyll 설치 및 GitHub Repository 다운"
 description: "정적 사이트 생성기 Jekyll 을 설치하고, 내 Repository 를 다운받아 보자."
 date:   2021-12-21 18:10:00 +0900
 categories: develop
@@ -116,7 +116,7 @@ GitHub 를 로그인 한 뒤 좌 상단을 보면 아래와 같은 Repository �
 <br>
 
 # 다음 주제
-- [[GitHub Blog - 3] Jekyll 시작하기 2][jekyll-link2]
+- [[GitHub Blog - 4] Jekyll 을 이용하여 GitHub Blog 시작][jekyll-link2]
 <hr>
 
 

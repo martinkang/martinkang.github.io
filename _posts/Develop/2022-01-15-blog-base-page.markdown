@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[GitHub Blog - 4] - 기본페이지 만들기 1"
+title:  "[GitHub Blog - 5] - Jekyll 의 페이지 생성 과정"
 description: "jekyll 의 페이지 생성 과정을 알아보자."
 date:   2022-01-15 19:20:00 +0900
 categories: develop
@@ -171,7 +171,7 @@ include 자체가 정해진 명령어이다.
 
 
 # 다음 주제
-- [[GitHub Blog - 4] - 기본페이지 만들기 2][base-link]
+- [[GitHub Blog - 6] - 기본 접속페이지 index.html 만들기][base-link]
 
 <hr>
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[GitHub Blog - 4] - 기본페이지 만들기 2"
-description: "기본 페이지를 만들어 보자."
+title:  "[GitHub Blog - 6] - 기본 접속페이지 index.html 만들기"
+description: "Root 주소로 접속하면 나오는 기본 index.html 페이지를 만들어 보자."
 date:   2022-01-17 19:20:00 +0900
 categories: develop
 tags: [blog, jekyll, html, Front-End]
@@ -261,7 +261,7 @@ Commit & Push 가 기억이 안나면
 다음엔 기본 설정을 고쳐보자.  
 
 # 다음 주제
-- [[GitHub Blog - 5] - 기본 정보 설정하기][config-link]
+- [[GitHub Blog - 7] - 블로그 이름 설정][config-link]
 <hr>
 
 # 부록
