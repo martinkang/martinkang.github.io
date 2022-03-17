@@ -122,7 +122,7 @@ nav.html 의 위치는 \<body> 의 맨위에 위치시키자.
 
 # 다음 주제
 - [[GitHub Blog - 11] - CSS 를 이용하여 기본 레이아웃 꾸미기][layout-link]
-<hr>
+
 
 
 
