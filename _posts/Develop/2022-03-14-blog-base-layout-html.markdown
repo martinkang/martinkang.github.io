@@ -8,6 +8,7 @@ tags: [blog, html, css, Front-End]
 img-tag: css
 ---
 
+
 # 목표 레이아웃
 아래와 같은 레이아웃을 만드는걸 목표로 한다.  
 실제 이 사이트는 푸터(Footer) 를 쓰지 않지만,   
@@ -81,6 +82,7 @@ HTML 을 쓸 줄 모른다면 아래 링크를 읽어보자.
 다른 웹페이지를 분석할때 이 태그들을 따라 분석하면 도움이 많이 된다.
 
 <br>
+
 \<nav> 태그가 없으니 추가하자.  
 include 를 써서 재활용할 예정이므로 _includes 폴더안에 nav.html 을 만들고  
 아래와 같이 \<nav> 태그를 만든다.     
@@ -125,8 +127,8 @@ nav.html 의 위치는 \<body> 의 맨위에 위치시키자.
 
 
 
-
-
 [html-link]: /study/2022/03/09/html-tag.html
 [base-link]: /develop/2022/01/17/blog-base-page2.html
 [layout-link]: /develop/2022/03/15/blog-base-layout-css.html
+
+
