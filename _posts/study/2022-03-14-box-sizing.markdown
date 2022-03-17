@@ -81,7 +81,6 @@ box-sizing 은 box 의 크기 기준을 어디에 둘지 정하는 속성이다.
     </div>
 </body>
 
-
 <style>
     .box-block {
         box-sizing: border-box;
