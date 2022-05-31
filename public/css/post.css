@@ -21,4 +21,6 @@
 .img-w750 { width: 45em; } 
 .img-w800 { width: 48em; } 
 
+.img-center { display: block; margin: auto; }
+img + em { display: block; text-align: center; font-size: 0.8em; }
 iframe { border: 0; width: 100%;}
