@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "[책정리]인사이드 머신 - 0. 개요와 목차"
+title:  "인사이드 머신 - 0. 개요와 목차"
 description: "인사이드 머신을 공부하는 이유와 목차"
 date:   2022-05-30 19:10:00 +0900
 categories: study
-tags: [inside-the-machine, 책정리]
+tags: [inside-the-machine]
 img-tag: study
 ---
 
@@ -38,7 +38,7 @@ CPU 와 메인 메모리간의 속도 격차를 해소하기 위하여 중간에
 # 목차
 
 1. [[인사이드 머신] 컴퓨터 동작의 기본 개념][inside1]
-2. [인사이드 머신] 프로그램 실행의 원리
+2. [[인사이드 머신] 프로그램 실행의 원리][inside2]
 3. [인사이드 머신] 병렬화를 통한 성능 향상 - 파이프라인
 4. [인사이드 머신] 파이프라인 병렬화 - 수퍼스칼랑 수행
 팬티엄의 등장 나누기
@@ -51,3 +51,4 @@ CPU 와 메인 메모리간의 속도 격차를 해소하기 위하여 중간에
 
 
 [inside1]: /study/2022/05/30/insideMachine-1.html
+[inside2]: /study/2022/05/30/insideMachine-2.html

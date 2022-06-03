@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "[책정리]인사이드 머신 - 2. 프로그램 실행의 원리"
+title:  "인사이드 머신 - 2. 프로그램 실행의 원리"
 description: "컴퓨터가 저장된 프로그램을 실행하는 과정과 분기, 페치-수행 루프 등과 같은 핵심적인 프로그래밍 개념을 알아본다."
 date:   2022-05-30 19:30:00 +0900
 categories: study
 sub-categories: 컴퓨터구조
-keyword: [컴퓨터구조]
-tags: [inside-the-machine, 책정리]
+keyword: [컴퓨터구조, fetch-execute, isa, bootstrap]
+tags: [inside-the-machine]
 img-tag: study
 ---
 

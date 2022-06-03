@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "[책정리]인사이드 머신 - 1. 컴퓨터 동작의 기본 개념"
+title:  "인사이드 머신 - 1. 컴퓨터 동작의 기본 개념"
 description: "컴퓨터를 가장 간단한 모델부터 추후 발전 과정을 이해하고, 프로그램 구성과 시작을 알아본다"
 date:   2022-05-30 19:20:00 +0900
 categories: study
 sub-categories: 컴퓨터구조
 keyword: [컴퓨터구조, ALU, RAM, Register]
-tags: [inside-the-machine, 책정리]
+tags: [inside-the-machine]
 img-tag: study
 ---
 
