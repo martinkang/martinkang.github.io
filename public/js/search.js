@@ -70,7 +70,8 @@ function searchKeyword( aPosts, aKeyword )
     let sPost = aPosts[i];
     if (
       ( sPost.title.toLowerCase().indexOf(aKeyword) >= 0 ) ||
-      ( sPost.description.toLowerCase().indexOf(aKeyword) >= 0 )
+      ( sPost.description.toLowerCase().indexOf(aKeyword) >= 0 ) ||
+      ( sPost.keyword.toLowerCase().indexOf(aKeyword) >= 0 ) 
     ) {
       sSearchResult.push(sPost);
     }

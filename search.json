@@ -7,6 +7,7 @@ permalink: '/search/data.json'
     {
         "title": "{{ subPost.title | xml_escape }}",
         "description": "{{ subPost.description | xml_escape }}",
+        "keyword": "{{subPost.keyword | xml_escape }}",
         "url": "{{ site.url }}/{{subPost.lang}}{{ subPost.url }}",
         "date": "{{ subPost.date | date: '%Y/%m/%d' }}",
         "category": "{{ subPost.categories }}",
