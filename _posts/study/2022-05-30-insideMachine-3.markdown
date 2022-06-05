@@ -4,8 +4,8 @@ title:  "인사이드 머신 - 3. 병렬화를 통한 성능 향상 - 파이프�
 description: "명령어 처리의 병렬화를 통한 성능 향상원리를 알아본다."
 date:   2022-05-30 19:40:00 +0900
 categories: study
-tags: [inside-the-machine]
 keyword: [컴퓨터구조, pipeline]
+tags: [inside-the-machine, pipeline]
 img-tag: study
 ---
 
