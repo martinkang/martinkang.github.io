@@ -168,6 +168,7 @@ LBL1 :
     - A == B : LBL1 으로 jump 하여 add A,  B, B 를 수행.
     - A != B : 순차적으로 add 15, A, A 를 수행.
 - 따라서 아래와 같이 **파이프라인 멈춤이 발생**할 수밖에 없다.
+    - 또한 3ns 에서 add A, 15, A 를 수행할지  add A, B, B 를 수행할지 알 수 없다.
 
 
 ![data-hazard](/assets/img/study-img/inside-machine/control-hazard-e.png ){:class="lazyload" .post-img .img-w500 }
