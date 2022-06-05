@@ -49,6 +49,7 @@ CPU 와 메인 메모리간의 속도 격차를 해소하기 위하여 중간에
 
 # 보충
 1. [[인사이드 머신] 마이크로아키텍쳐와 ISA][inside-ISA]
+2. [[인사이드 머신] 파이프라인 해저드][inside-hazard]
 2. [[인사이드 머신] 64비트 컴퓨터의 등장][inside-64]
 
 
@@ -63,4 +64,5 @@ CPU 와 메인 메모리간의 속도 격차를 해소하기 위하여 중간에
 [inside9]: /study/2022/05/30/insideMachine-9.html
 
 [inside-ISA]: /study/2022/05/30/insideMachine-ISA.html
+[inside-hazard]: /study/2022/05/30/insideMachine-hazard.html
 [inside-64]: /study/2022/05/30/insideMachine-64bit.html
