@@ -119,7 +119,7 @@ img-tag: study
 - 명령어 집합 아키텍쳐.
 - 실제 컴퓨터 구조와 상관없이 프로그래머는 프로그래밍 모델에 맞춰 소프트웨어를 만들면    
 ISA 가 이 소프트웨어와 하드웨어 사이에 중재자 역할을 하여 서로다른 하드웨어에서도 호환이 가능하게 해준다.
-  - 자세히는 4장에서.
+  - 자세한 내용은 [마이크로아키텍쳐와 ISA][inside-ISA].
   ![ISA](/assets/img/study-img/inside-machine/ISA.png ){:class="lazyload" .post-img .img-w500 }
 *ISA 는 여러 세대 하드웨어에 대해 소프트웨어에 일관된 인터페이스를 제공한다.*
 
@@ -244,6 +244,11 @@ LBL1 : add A, B, B
 - 부트로더는 하드 디스크에서 운영체제를 읽어온다.
   - 운영체제가 동작하면 사용자는 컴퓨터를 제어할 수 있게 된다.
 
+<br>
+
+# 다음 주제
+[[인사이드 머신] 병렬화를 통한 성능 향상 - 파이프라인][inside3]
+
 <hr>
 
 <div class="tooltip-desc">
@@ -263,3 +268,5 @@ LBL1 : add A, B, B
 
 
 [inside1]: /study/2022/05/30/insideMachine-1.html
+[inside3]: /study/2022/05/30/insideMachine-3.html
+[inside-ISA]: /study/2022/05/30/insideMachine-ISA.html
