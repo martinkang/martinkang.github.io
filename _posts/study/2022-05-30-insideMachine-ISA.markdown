@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "인사이드 머신 - 마이크로아키텍쳐와 ISA"
+title:  "[인사이드 머신] - 마이크로아키텍쳐와 ISA"
 description: "소프트웨어와 하드웨어 사이에 중재자 역할을 하는 ISA 와 마이크로아키텍쳐에 대해 알아보자."
 date:   2022-05-30 19:35:00 +0900
 categories: study
