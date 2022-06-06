@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "인사이드 머신 - 1. 컴퓨터 동작의 기본 개념"
+title:  "[인사이드 머신] - 1. 컴퓨터 동작의 기본 개념"
 description: "컴퓨터를 가장 간단한 모델부터 추후 발전 과정을 이해하고, 프로그램 구성과 시작을 알아본다"
 date:   2022-05-30 19:20:00 +0900
 categories: study
@@ -224,6 +224,11 @@ img-tag: study
   ![program-ex](/assets/img/study-img/inside-machine/program-ex-rel.png ){:class="lazyload" .post-img .img-w550 }
 *상대 레지스터 주소를 사용한 프로그램 예*
 
+<br>
+
+# 다음 주제
+[[인사이드 머신] 프로그램 실행의 원리][inside2]
+
 <hr>
 
 <div class="tooltip-desc">
@@ -231,4 +236,6 @@ img-tag: study
     microprocessor : 컴퓨터의 중앙 처리장치(CPU) 를 뜻한다.
     </div>
 </div>
+
+[inside2]: /study/2022/05/30/insideMachine-2.html
 

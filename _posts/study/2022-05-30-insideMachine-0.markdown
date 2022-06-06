@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "인사이드 머신 - 0. 개요와 목차"
+title:  "[인사이드 머신] - 0. 개요와 목차"
 description: "인사이드 머신을 공부하는 이유와 목차"
 date:   2022-05-30 19:10:00 +0900
 categories: study
