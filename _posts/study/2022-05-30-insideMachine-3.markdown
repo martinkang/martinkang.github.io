@@ -166,6 +166,35 @@ img-tag: study
 
 <br>
 
+## pipeline flush - 파이프라인 비움
+- 분기 예측등으로 파이프라인을 미리 채워놨으나, 분기 예측이 실패하여 미리 채운 파이프라인을 모두 비우는 현상.
+    - 분기 예측은 [[인사이드 머신] 캐시와 분기예측을 이용한 성능 향상][inside5] 에서.
+
+```
+  sub A, B, C   
+  jumpz LBL1    
+  add A, 15, A  
+LBL1 : 
+  add A, B, B       
+```
+
+![pipeline-null](/assets/img/study-img/inside-machine/pipeline-null.png ){:class="lazyload" .post-img .img-w500 }
+*분기 예측으로 파이프라인을 미리 채움*
+
+
+- 위의 프로그램에서 2번째 명령 **jumpz 는 1번째 명령의 결과를 알아야 결정**할 수 있다.
+    - A == B : LBL1 으로 jump 하여 add A,  B, B 를 수행.
+    - A != B : 순차적으로 add 15, A, A 를 수행.
+- 분기 예측이 **A == B 를 예측하고 이를 미리 채운다**.
+- 하지만 **분기 예측이 실패할 경우 미리 채운 파이프라인을 비워야 한다**.
+    - 실제 분기 예측은 아래와 같이 하나만 채우지 않고 많은 양을 한꺼번에 채우기 때문에   
+    이로 인해 비용이 상당히 클 수 있다.
+
+![pipeline-null2](/assets/img/study-img/inside-machine/pipeline-null2.png ){:class="lazyload" .post-img .img-w550 }
+*분기 예측실패로 파이프라인 비움*
+
+<br>
+
 
 # 파이프라인의 한계
 - 파이프라인으로 인한 이득이 이상적인 경우보다 훨씬 떨어지게 된다.
@@ -189,10 +218,11 @@ img-tag: study
 
 
 ## 파이프라인 성능 극대화를 위한 고려사항
-- 파이프라인 멈춤을 최소화 시켜야 한다. 
+- **파이프라인 멈춤**을 최소화 시켜야 한다. 
     - 파이프라인 멈춤의 주요 이유는 메모리 접근인데, 이 문제는 캐쉬를 사용하여 완화할 수 있다.
-- 파이프라인 비움을 피해야 한다.
+- **파이프라인 비움**을 피해야 한다.
     - 파이프라인을 비우고 다시 채우는 것은 완료율과 성능 모두에 심각한 악영향을 끼친다.
+- **분기 예측과 캐시 사용**은 [[인사이드 머신] 캐시와 분기예측을 이용한 성능 향상][inside5] 에서.
 
 <br>
 
@@ -210,3 +240,4 @@ img-tag: study
 
 [inside2]: /study/2022/05/30/insideMachine-2.html
 [inside4]: /study/2022/05/30/insideMachine-4.html
+[inside5]: /study/2022/05/30/insideMachine-5.html
